@@ -17,7 +17,7 @@ from judge import grade_one, rerank
 # ================== OpenAI clients (sync + async) ==================
 from openai import OpenAI, AsyncOpenAI
 
-API_KEY = "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"
+API_KEY = os.getenv("OPENAI_API_KEY")
 BASE_URL = os.environ.get("OPENAI_BASE_URL")
 
 
