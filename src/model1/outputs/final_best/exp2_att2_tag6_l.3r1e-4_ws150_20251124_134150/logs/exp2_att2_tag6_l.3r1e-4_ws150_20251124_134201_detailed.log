@@ -1,0 +1,1718 @@
+2025-11-24 13:42:01,220 - INFO - 🚀 AutoDL environment detected - using /root/tf-logs/ for automatic TensorBoard access
+2025-11-24 13:42:01,222 - INFO - 📊 CSV metrics logging initialized: outputs/exp2_att2_tag6_l.3r1e-4_ws150_20251124_134150/logs/training_metrics.csv
+2025-11-24 13:42:01,230 - INFO - ============================================================
+2025-11-24 13:42:01,230 - INFO - TRAINING CONFIGURATION
+2025-11-24 13:42:01,230 - INFO - ============================================================
+2025-11-24 13:42:01,230 - INFO - clip_dim                 : 512
+2025-11-24 13:42:01,230 - INFO - hidden_dim               : 512
+2025-11-24 13:42:01,230 - INFO - t5_model_name            : t5-base
+2025-11-24 13:42:01,230 - INFO - aggregation_method       : multi_token
+2025-11-24 13:42:01,230 - INFO - tokens_per_image         : 4
+2025-11-24 13:42:01,230 - INFO - attention_layers         : 2
+2025-11-24 13:42:01,231 - INFO - attention_heads          : 4
+2025-11-24 13:42:01,231 - INFO - use_visual_mlp           : True
+2025-11-24 13:42:01,231 - INFO - features_path            : ../../data/model1_data/image_features.npy
+2025-11-24 13:42:01,231 - INFO - image_ids_path           : ../../data/model1_data/image_ids.json
+2025-11-24 13:42:01,231 - INFO - annotations_path         : ../../data/model1_data/merged_captions_async_augmented.json
+2025-11-24 13:42:01,231 - INFO - use_tags                 : True
+2025-11-24 13:42:01,231 - INFO - tag_top_k                : 4
+2025-11-24 13:42:01,231 - INFO - max_tags_per_sample      : 6
+2025-11-24 13:42:01,231 - INFO - tag_cache_dir            : /root/autodl-tmp/myprj/data/model1_data/blip_tags
+2025-11-24 13:42:01,231 - INFO - clip_text_model_name     : openai/clip-vit-base-patch32
+2025-11-24 13:42:01,231 - INFO - use_lora                 : True
+2025-11-24 13:42:01,231 - INFO - lora_r                   : 8
+2025-11-24 13:42:01,231 - INFO - lora_alpha               : 32
+2025-11-24 13:42:01,231 - INFO - lora_dropout             : 0.1
+2025-11-24 13:42:01,231 - INFO - batch_size               : 16
+2025-11-24 13:42:01,231 - INFO - num_epochs               : 50
+2025-11-24 13:42:01,231 - INFO - learning_rate            : 0.00013
+2025-11-24 13:42:01,231 - INFO - min_lr                   : 5e-05
+2025-11-24 13:42:01,231 - INFO - weight_decay             : 0.0001
+2025-11-24 13:42:01,231 - INFO - max_grad_norm            : 1.0
+2025-11-24 13:42:01,231 - INFO - warmup_steps             : 150
+2025-11-24 13:42:01,231 - INFO - scheduler_type           : cosine
+2025-11-24 13:42:01,231 - INFO - eval_interval            : 1
+2025-11-24 13:42:01,231 - INFO - eval_samples             : None
+2025-11-24 13:42:01,231 - INFO - primary_metric           : CIDEr
+2025-11-24 13:42:01,231 - INFO - max_length               : 128
+2025-11-24 13:42:01,231 - INFO - num_workers              : 2
+2025-11-24 13:42:01,231 - INFO - use_amp                  : True
+2025-11-24 13:42:01,231 - INFO - gradient_accumulation_steps: 2
+2025-11-24 13:42:01,231 - INFO - max_oom_logs_per_epoch   : 3
+2025-11-24 13:42:01,231 - INFO - split_ratio              : [0.7, 0.15, 0.15]
+2025-11-24 13:42:01,231 - INFO - tag_generation_method    : blip_noun_phrases
+2025-11-24 13:42:01,231 - INFO - blip_model_name          : Salesforce/blip-image-captioning-base
+2025-11-24 13:42:01,232 - INFO - image_root               : /root/data/train2017
+2025-11-24 13:42:01,232 - INFO - tag_device               : None
+2025-11-24 13:42:01,232 - INFO - log_interval             : 50
+2025-11-24 13:42:01,232 - INFO - keep_only_best_and_latest: True
+2025-11-24 13:42:01,232 - INFO - delete_checkpoints_after_training: True
+2025-11-24 13:42:01,232 - INFO - checkpoint_dir           : outputs/exp2_att2_tag6_l.3r1e-4_ws150_20251124_134150/checkpoints
+2025-11-24 13:42:01,232 - INFO - log_dir                  : outputs/exp2_att2_tag6_l.3r1e-4_ws150_20251124_134150/logs
+2025-11-24 13:42:01,232 - INFO - samples_dir              : outputs/exp2_att2_tag6_l.3r1e-4_ws150_20251124_134150/samples
+2025-11-24 13:42:01,232 - INFO - label_smoothing          : 0.05
+2025-11-24 13:42:01,232 - INFO - early_stopping_patience  : 10
+2025-11-24 13:42:01,232 - INFO - experiment_name          : exp2_att2_tag6_l.3r1e-4_ws150
+2025-11-24 13:42:01,232 - INFO - ============================================================
+2025-11-24 13:42:01,240 - INFO - ============================================================
+2025-11-24 13:42:01,240 - INFO - MODEL INFORMATION
+2025-11-24 13:42:01,240 - INFO - ============================================================
+2025-11-24 13:42:01,240 - INFO - Total Parameters         : 234,423,296
+2025-11-24 13:42:01,240 - INFO - Trainable Parameters     : 11,519,744
+2025-11-24 13:42:01,240 - INFO - Trainable Ratio          : 4.91%
+2025-11-24 13:42:01,240 - INFO - ============================================================
+2025-11-24 13:42:01,240 - INFO - Starting training for 50 epochs
+2025-11-24 13:42:01,240 - INFO - Training on 1469 samples
+2025-11-24 13:42:01,240 - INFO - Validation on 314 samples
+2025-11-24 13:42:01,240 - INFO - 
+==================== EPOCH 1/50 ====================
+2025-11-24 13:42:55,141 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 1):
+2025-11-24 13:42:55,141 - INFO - --------------------------------------------------
+2025-11-24 13:42:55,141 - INFO - Sample 1:
+2025-11-24 13:42:55,141 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 13:42:55,141 - INFO -   Prediction: A sheep is laying in a field.
+2025-11-24 13:42:55,141 - INFO -   BLEU-4: 0.0214, METEOR: 0.2201
+2025-11-24 13:42:55,141 - INFO - 
+2025-11-24 13:42:55,141 - INFO - Sample 2:
+2025-11-24 13:42:55,141 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 13:42:55,141 - INFO -   Prediction: The cat is a bit of a snob.
+2025-11-24 13:42:55,141 - INFO -   BLEU-4: 0.0027, METEOR: 0.0753
+2025-11-24 13:42:55,141 - INFO - 
+2025-11-24 13:42:55,141 - INFO - Sample 3:
+2025-11-24 13:42:55,141 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 13:42:55,141 - INFO -   Prediction: A boy plays a baseball in the middle of a game.
+2025-11-24 13:42:55,141 - INFO -   BLEU-4: 0.0105, METEOR: 0.0718
+2025-11-24 13:42:55,141 - INFO - 
+2025-11-24 13:42:57,393 - INFO - New best model saved! CIDEr: 0.0467
+2025-11-24 13:42:57,394 - INFO - Epoch 1 Results:
+2025-11-24 13:42:57,395 - INFO - ----------------------------------------
+2025-11-24 13:42:57,395 - INFO - train_loss     : 3.482138
+2025-11-24 13:42:57,395 - INFO - val_loss       : 2.853821
+2025-11-24 13:42:57,395 - INFO - METEOR         : 0.132265
+2025-11-24 13:42:57,395 - INFO - CIDEr          : 0.046652
+2025-11-24 13:42:57,395 - INFO - BLEU-1         : 0.113521
+2025-11-24 13:42:57,395 - INFO - BLEU-2         : 0.055284
+2025-11-24 13:42:57,395 - INFO - BLEU-3         : 0.031612
+2025-11-24 13:42:57,395 - INFO - BLEU-4         : 0.020195
+2025-11-24 13:42:57,395 - INFO - 🏆 NEW BEST MODEL!
+2025-11-24 13:42:57,395 - INFO - ----------------------------------------
+2025-11-24 13:42:57,395 - INFO - 🎯 BEST METRICS ACHIEVED:
+2025-11-24 13:42:57,395 - INFO - CIDEr          : 0.046652 (epoch 1)
+2025-11-24 13:42:57,395 - INFO - 
+==================== EPOCH 2/50 ====================
+2025-11-24 13:43:52,601 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 2):
+2025-11-24 13:43:52,601 - INFO - --------------------------------------------------
+2025-11-24 13:43:52,601 - INFO - Sample 1:
+2025-11-24 13:43:52,601 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 13:43:52,601 - INFO -   Prediction: A group of sheep is laying eggs in a field.
+2025-11-24 13:43:52,601 - INFO -   BLEU-4: 0.1459, METEOR: 0.3910
+2025-11-24 13:43:52,601 - INFO - 
+2025-11-24 13:43:52,601 - INFO - Sample 2:
+2025-11-24 13:43:52,601 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 13:43:52,601 - INFO -   Prediction: A cat, a dog, and a blanket are among the items on display.
+2025-11-24 13:43:52,601 - INFO -   BLEU-4: 0.0123, METEOR: 0.1423
+2025-11-24 13:43:52,601 - INFO - 
+2025-11-24 13:43:52,601 - INFO - Sample 3:
+2025-11-24 13:43:52,601 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 13:43:52,601 - INFO -   Prediction: A young boy plays a baseball with a bat and a baseball bat.
+2025-11-24 13:43:52,601 - INFO -   BLEU-4: 0.0133, METEOR: 0.0948
+2025-11-24 13:43:52,601 - INFO - 
+2025-11-24 13:43:57,245 - INFO - New best model saved! CIDEr: 0.1680
+2025-11-24 13:43:57,246 - INFO - Epoch 2 Results:
+2025-11-24 13:43:57,246 - INFO - ----------------------------------------
+2025-11-24 13:43:57,247 - INFO - train_loss     : 2.919337
+2025-11-24 13:43:57,247 - INFO - val_loss       : 2.530294
+2025-11-24 13:43:57,247 - INFO - METEOR         : 0.210677
+2025-11-24 13:43:57,247 - INFO - CIDEr          : 0.167964
+2025-11-24 13:43:57,247 - INFO - BLEU-1         : 0.260968
+2025-11-24 13:43:57,247 - INFO - BLEU-2         : 0.137664
+2025-11-24 13:43:57,247 - INFO - BLEU-3         : 0.073302
+2025-11-24 13:43:57,247 - INFO - BLEU-4         : 0.043919
+2025-11-24 13:43:57,247 - INFO - 🏆 NEW BEST MODEL!
+2025-11-24 13:43:57,247 - INFO - ----------------------------------------
+2025-11-24 13:43:57,247 - INFO - 🎯 BEST METRICS ACHIEVED:
+2025-11-24 13:43:57,247 - INFO - CIDEr          : 0.167964 (epoch 2)
+2025-11-24 13:43:57,247 - INFO - 
+==================== EPOCH 3/50 ====================
+2025-11-24 13:44:54,119 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 3):
+2025-11-24 13:44:54,119 - INFO - --------------------------------------------------
+2025-11-24 13:44:54,119 - INFO - Sample 1:
+2025-11-24 13:44:54,119 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 13:44:54,119 - INFO -   Prediction: In a field, a group of sheep is grazing on a grassy field.
+2025-11-24 13:44:54,119 - INFO -   BLEU-4: 0.1832, METEOR: 0.4702
+2025-11-24 13:44:54,120 - INFO - 
+2025-11-24 13:44:54,120 - INFO - Sample 2:
+2025-11-24 13:44:54,120 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 13:44:54,120 - INFO -   Prediction: In a room with a large refrigerator, a cat hides under a blanket, while a dog rests on a blanket.
+2025-11-24 13:44:54,120 - INFO -   BLEU-4: 0.0248, METEOR: 0.1890
+2025-11-24 13:44:54,120 - INFO - 
+2025-11-24 13:44:54,120 - INFO - Sample 3:
+2025-11-24 13:44:54,120 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 13:44:54,120 - INFO -   Prediction: A young boy plays a baseball with a bat and a bat, while a pair of baseball bats are on display.
+2025-11-24 13:44:54,120 - INFO -   BLEU-4: 0.0187, METEOR: 0.1370
+2025-11-24 13:44:54,120 - INFO - 
+2025-11-24 13:44:58,944 - INFO - New best model saved! CIDEr: 0.2080
+2025-11-24 13:44:58,946 - INFO - Epoch 3 Results:
+2025-11-24 13:44:58,946 - INFO - ----------------------------------------
+2025-11-24 13:44:58,946 - INFO - train_loss     : 2.665691
+2025-11-24 13:44:58,946 - INFO - val_loss       : 2.414303
+2025-11-24 13:44:58,946 - INFO - METEOR         : 0.221373
+2025-11-24 13:44:58,946 - INFO - CIDEr          : 0.207977
+2025-11-24 13:44:58,946 - INFO - BLEU-1         : 0.285827
+2025-11-24 13:44:58,946 - INFO - BLEU-2         : 0.151054
+2025-11-24 13:44:58,946 - INFO - BLEU-3         : 0.082396
+2025-11-24 13:44:58,947 - INFO - BLEU-4         : 0.050315
+2025-11-24 13:44:58,947 - INFO - 🏆 NEW BEST MODEL!
+2025-11-24 13:44:58,947 - INFO - ----------------------------------------
+2025-11-24 13:44:58,947 - INFO - 🎯 BEST METRICS ACHIEVED:
+2025-11-24 13:44:58,947 - INFO - CIDEr          : 0.207977 (epoch 3)
+2025-11-24 13:44:58,947 - INFO - 
+==================== EPOCH 4/50 ====================
+2025-11-24 13:45:57,469 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 4):
+2025-11-24 13:45:57,469 - INFO - --------------------------------------------------
+2025-11-24 13:45:57,469 - INFO - Sample 1:
+2025-11-24 13:45:57,469 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 13:45:57,469 - INFO -   Prediction: A group of sheep, including a lamb, is laying in a field on a grassy field, while nearby, a cow and a goat are grazing.
+2025-11-24 13:45:57,469 - INFO -   BLEU-4: 0.1444, METEOR: 0.5466
+2025-11-24 13:45:57,469 - INFO - 
+2025-11-24 13:45:57,469 - INFO - Sample 2:
+2025-11-24 13:45:57,469 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 13:45:57,469 - INFO -   Prediction: A cat, a dog, and a dog are resting on a bed in a wooded area with a blanket.
+2025-11-24 13:45:57,470 - INFO -   BLEU-4: 0.0403, METEOR: 0.1603
+2025-11-24 13:45:57,470 - INFO - 
+2025-11-24 13:45:57,470 - INFO - Sample 3:
+2025-11-24 13:45:57,470 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 13:45:57,470 - INFO -   Prediction: A young boy with a baseball bat is playing a baseball in a field, while a man plays a baseball with a bat.
+2025-11-24 13:45:57,470 - INFO -   BLEU-4: 0.0182, METEOR: 0.1357
+2025-11-24 13:45:57,470 - INFO - 
+2025-11-24 13:46:02,070 - INFO - New best model saved! CIDEr: 0.2424
+2025-11-24 13:46:02,072 - INFO - Epoch 4 Results:
+2025-11-24 13:46:02,072 - INFO - ----------------------------------------
+2025-11-24 13:46:02,072 - INFO - train_loss     : nan
+2025-11-24 13:46:02,072 - INFO - val_loss       : 2.361221
+2025-11-24 13:46:02,072 - INFO - METEOR         : 0.235166
+2025-11-24 13:46:02,072 - INFO - CIDEr          : 0.242424
+2025-11-24 13:46:02,072 - INFO - BLEU-1         : 0.303877
+2025-11-24 13:46:02,072 - INFO - BLEU-2         : 0.160410
+2025-11-24 13:46:02,072 - INFO - BLEU-3         : 0.088157
+2025-11-24 13:46:02,072 - INFO - BLEU-4         : 0.053254
+2025-11-24 13:46:02,072 - INFO - 🏆 NEW BEST MODEL!
+2025-11-24 13:46:02,072 - INFO - ----------------------------------------
+2025-11-24 13:46:02,072 - INFO - 🎯 BEST METRICS ACHIEVED:
+2025-11-24 13:46:02,072 - INFO - CIDEr          : 0.242424 (epoch 4)
+2025-11-24 13:46:02,072 - INFO - 
+==================== EPOCH 5/50 ====================
+2025-11-24 13:47:02,771 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 5):
+2025-11-24 13:47:02,771 - INFO - --------------------------------------------------
+2025-11-24 13:47:02,772 - INFO - Sample 1:
+2025-11-24 13:47:02,772 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 13:47:02,772 - INFO -   Prediction: A group of sheep, including a lamb, is grazing on a grassy field, while others are walking along the edge of the field.
+2025-11-24 13:47:02,772 - INFO -   BLEU-4: 0.1393, METEOR: 0.2973
+2025-11-24 13:47:02,772 - INFO - 
+2025-11-24 13:47:02,772 - INFO - Sample 2:
+2025-11-24 13:47:02,772 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 13:47:02,772 - INFO -   Prediction: In a dark room, a cat sits on a bed with a blanket, while a dog rests nearby.
+2025-11-24 13:47:02,772 - INFO -   BLEU-4: 0.0214, METEOR: 0.2008
+2025-11-24 13:47:02,772 - INFO - 
+2025-11-24 13:47:02,772 - INFO - Sample 3:
+2025-11-24 13:47:02,772 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 13:47:02,772 - INFO -   Prediction: A young boy is playing a baseball with a bat and a bat.
+2025-11-24 13:47:02,772 - INFO -   BLEU-4: 0.0123, METEOR: 0.0711
+2025-11-24 13:47:02,772 - INFO - 
+2025-11-24 13:47:07,505 - INFO - New best model saved! CIDEr: 0.2607
+2025-11-24 13:47:07,507 - INFO - Epoch 5 Results:
+2025-11-24 13:47:07,507 - INFO - ----------------------------------------
+2025-11-24 13:47:07,507 - INFO - train_loss     : nan
+2025-11-24 13:47:07,508 - INFO - val_loss       : 2.344903
+2025-11-24 13:47:07,508 - INFO - METEOR         : 0.239194
+2025-11-24 13:47:07,508 - INFO - CIDEr          : 0.260676
+2025-11-24 13:47:07,508 - INFO - BLEU-1         : 0.313260
+2025-11-24 13:47:07,508 - INFO - BLEU-2         : 0.169501
+2025-11-24 13:47:07,508 - INFO - BLEU-3         : 0.092998
+2025-11-24 13:47:07,508 - INFO - BLEU-4         : 0.055711
+2025-11-24 13:47:07,508 - INFO - 🏆 NEW BEST MODEL!
+2025-11-24 13:47:07,508 - INFO - ----------------------------------------
+2025-11-24 13:47:07,508 - INFO - 🎯 BEST METRICS ACHIEVED:
+2025-11-24 13:47:07,508 - INFO - CIDEr          : 0.260676 (epoch 5)
+2025-11-24 13:47:07,508 - INFO - 
+==================== EPOCH 6/50 ====================
+2025-11-24 13:48:06,432 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 6):
+2025-11-24 13:48:06,433 - INFO - --------------------------------------------------
+2025-11-24 13:48:06,433 - INFO - Sample 1:
+2025-11-24 13:48:06,433 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 13:48:06,433 - INFO -   Prediction: A group of sheep, including a lamb, is grazing on a grassy field, while a few other sheep are grazing nearby.
+2025-11-24 13:48:06,433 - INFO -   BLEU-4: 0.1582, METEOR: 0.4527
+2025-11-24 13:48:06,433 - INFO - 
+2025-11-24 13:48:06,433 - INFO - Sample 2:
+2025-11-24 13:48:06,433 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 13:48:06,433 - INFO -   Prediction: In a room featuring a refrigerator, a cat rests on a blanket, while a dog rests nearby.
+2025-11-24 13:48:06,433 - INFO -   BLEU-4: 0.0222, METEOR: 0.2014
+2025-11-24 13:48:06,433 - INFO - 
+2025-11-24 13:48:06,433 - INFO - Sample 3:
+2025-11-24 13:48:06,433 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 13:48:06,433 - INFO -   Prediction: A young boy is playing a baseball with a bat and a bat, both of which are used in a game.
+2025-11-24 13:48:06,433 - INFO -   BLEU-4: 0.0157, METEOR: 0.0685
+2025-11-24 13:48:06,433 - INFO - 
+2025-11-24 13:48:10,240 - INFO - New best model saved! CIDEr: 0.2763
+2025-11-24 13:48:10,242 - INFO - Epoch 6 Results:
+2025-11-24 13:48:10,242 - INFO - ----------------------------------------
+2025-11-24 13:48:10,242 - INFO - train_loss     : nan
+2025-11-24 13:48:10,242 - INFO - val_loss       : 2.301652
+2025-11-24 13:48:10,242 - INFO - METEOR         : 0.244235
+2025-11-24 13:48:10,242 - INFO - CIDEr          : 0.276321
+2025-11-24 13:48:10,242 - INFO - BLEU-1         : 0.319066
+2025-11-24 13:48:10,242 - INFO - BLEU-2         : 0.172506
+2025-11-24 13:48:10,243 - INFO - BLEU-3         : 0.094178
+2025-11-24 13:48:10,243 - INFO - BLEU-4         : 0.057335
+2025-11-24 13:48:10,243 - INFO - 🏆 NEW BEST MODEL!
+2025-11-24 13:48:10,243 - INFO - ----------------------------------------
+2025-11-24 13:48:10,243 - INFO - 🎯 BEST METRICS ACHIEVED:
+2025-11-24 13:48:10,243 - INFO - CIDEr          : 0.276321 (epoch 6)
+2025-11-24 13:48:10,243 - INFO - 
+==================== EPOCH 7/50 ====================
+2025-11-24 13:49:13,330 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 7):
+2025-11-24 13:49:13,330 - INFO - --------------------------------------------------
+2025-11-24 13:49:13,330 - INFO - Sample 1:
+2025-11-24 13:49:13,330 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 13:49:13,330 - INFO -   Prediction: In a field, a group of sheep is grazing on a grassy field, while nearby, a lamb is laying on the ground.
+2025-11-24 13:49:13,330 - INFO -   BLEU-4: 0.1505, METEOR: 0.4503
+2025-11-24 13:49:13,330 - INFO - 
+2025-11-24 13:49:13,331 - INFO - Sample 2:
+2025-11-24 13:49:13,331 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 13:49:13,331 - INFO -   Prediction: In a bedroom, a cat is resting on a bed with a blanket, while nearby, a dog rests on a blanket.
+2025-11-24 13:49:13,331 - INFO -   BLEU-4: 0.0280, METEOR: 0.1739
+2025-11-24 13:49:13,331 - INFO - 
+2025-11-24 13:49:13,331 - INFO - Sample 3:
+2025-11-24 13:49:13,331 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 13:49:13,331 - INFO -   Prediction: In a park, a young boy is playing a baseball with a bat, while nearby, a man holds a baseball bat.
+2025-11-24 13:49:13,331 - INFO -   BLEU-4: 0.0178, METEOR: 0.1142
+2025-11-24 13:49:13,331 - INFO - 
+2025-11-24 13:49:18,023 - INFO - New best model saved! CIDEr: 0.2964
+2025-11-24 13:49:18,025 - INFO - Epoch 7 Results:
+2025-11-24 13:49:18,025 - INFO - ----------------------------------------
+2025-11-24 13:49:18,025 - INFO - train_loss     : nan
+2025-11-24 13:49:18,025 - INFO - val_loss       : 2.281514
+2025-11-24 13:49:18,025 - INFO - METEOR         : 0.253252
+2025-11-24 13:49:18,025 - INFO - CIDEr          : 0.296427
+2025-11-24 13:49:18,025 - INFO - BLEU-1         : 0.323774
+2025-11-24 13:49:18,025 - INFO - BLEU-2         : 0.176644
+2025-11-24 13:49:18,025 - INFO - BLEU-3         : 0.098785
+2025-11-24 13:49:18,025 - INFO - BLEU-4         : 0.061410
+2025-11-24 13:49:18,025 - INFO - 🏆 NEW BEST MODEL!
+2025-11-24 13:49:18,025 - INFO - ----------------------------------------
+2025-11-24 13:49:18,025 - INFO - 🎯 BEST METRICS ACHIEVED:
+2025-11-24 13:49:18,025 - INFO - CIDEr          : 0.296427 (epoch 7)
+2025-11-24 13:49:18,025 - INFO - 
+==================== EPOCH 8/50 ====================
+2025-11-24 13:50:17,268 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 8):
+2025-11-24 13:50:17,269 - INFO - --------------------------------------------------
+2025-11-24 13:50:17,269 - INFO - Sample 1:
+2025-11-24 13:50:17,269 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 13:50:17,269 - INFO -   Prediction: A group of sheep, including a lamb, is grazing on a grassy field, while nearby, a woman walks by.
+2025-11-24 13:50:17,269 - INFO -   BLEU-4: 0.1620, METEOR: 0.4577
+2025-11-24 13:50:17,269 - INFO - 
+2025-11-24 13:50:17,269 - INFO - Sample 2:
+2025-11-24 13:50:17,269 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 13:50:17,269 - INFO -   Prediction: In a dark room, a cat rests on a bed with a blanket, while a dog rests nearby.
+2025-11-24 13:50:17,269 - INFO -   BLEU-4: 0.0214, METEOR: 0.2008
+2025-11-24 13:50:17,269 - INFO - 
+2025-11-24 13:50:17,269 - INFO - Sample 3:
+2025-11-24 13:50:17,269 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 13:50:17,269 - INFO -   Prediction: A young boy is playing a baseball with a bat in his hand, as he stands on the field.
+2025-11-24 13:50:17,269 - INFO -   BLEU-4: 0.0349, METEOR: 0.2210
+2025-11-24 13:50:17,269 - INFO - 
+2025-11-24 13:50:19,622 - INFO - Epoch 8 Results:
+2025-11-24 13:50:19,623 - INFO - ----------------------------------------
+2025-11-24 13:50:19,623 - INFO - train_loss     : nan
+2025-11-24 13:50:19,623 - INFO - val_loss       : 2.267383
+2025-11-24 13:50:19,623 - INFO - METEOR         : 0.253084
+2025-11-24 13:50:19,623 - INFO - CIDEr          : 0.288683
+2025-11-24 13:50:19,623 - INFO - BLEU-1         : 0.318658
+2025-11-24 13:50:19,623 - INFO - BLEU-2         : 0.172365
+2025-11-24 13:50:19,623 - INFO - BLEU-3         : 0.097851
+2025-11-24 13:50:19,623 - INFO - BLEU-4         : 0.060738
+2025-11-24 13:50:19,623 - INFO - ----------------------------------------
+2025-11-24 13:50:19,623 - INFO - 
+==================== EPOCH 9/50 ====================
+2025-11-24 13:51:22,547 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 9):
+2025-11-24 13:51:22,547 - INFO - --------------------------------------------------
+2025-11-24 13:51:22,547 - INFO - Sample 1:
+2025-11-24 13:51:22,547 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 13:51:22,547 - INFO -   Prediction: In a grassy field, a herd of sheep is grazing on a hay bale, while nearby, a group of sheep is engaged in a game of chess.
+2025-11-24 13:51:22,547 - INFO -   BLEU-4: 0.1209, METEOR: 0.4056
+2025-11-24 13:51:22,547 - INFO - 
+2025-11-24 13:51:22,547 - INFO - Sample 2:
+2025-11-24 13:51:22,547 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 13:51:22,547 - INFO -   Prediction: In a bedroom, a cat sits on a bed with a blanket, while nearby, a dog rests beside a refrigerator.
+2025-11-24 13:51:22,547 - INFO -   BLEU-4: 0.0268, METEOR: 0.1744
+2025-11-24 13:51:22,547 - INFO - 
+2025-11-24 13:51:22,547 - INFO - Sample 3:
+2025-11-24 13:51:22,547 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 13:51:22,547 - INFO -   Prediction: A young boy in a white shirt is swinging a baseball bat at a baseball game.
+2025-11-24 13:51:22,547 - INFO -   BLEU-4: 0.0315, METEOR: 0.1992
+2025-11-24 13:51:22,547 - INFO - 
+2025-11-24 13:51:27,162 - INFO - New best model saved! CIDEr: 0.3102
+2025-11-24 13:51:27,164 - INFO - Epoch 9 Results:
+2025-11-24 13:51:27,164 - INFO - ----------------------------------------
+2025-11-24 13:51:27,164 - INFO - train_loss     : nan
+2025-11-24 13:51:27,164 - INFO - val_loss       : 2.257942
+2025-11-24 13:51:27,164 - INFO - METEOR         : 0.260413
+2025-11-24 13:51:27,164 - INFO - CIDEr          : 0.310249
+2025-11-24 13:51:27,164 - INFO - BLEU-1         : 0.332320
+2025-11-24 13:51:27,164 - INFO - BLEU-2         : 0.182955
+2025-11-24 13:51:27,164 - INFO - BLEU-3         : 0.101646
+2025-11-24 13:51:27,164 - INFO - BLEU-4         : 0.061839
+2025-11-24 13:51:27,164 - INFO - 🏆 NEW BEST MODEL!
+2025-11-24 13:51:27,164 - INFO - ----------------------------------------
+2025-11-24 13:51:27,164 - INFO - 🎯 BEST METRICS ACHIEVED:
+2025-11-24 13:51:27,164 - INFO - CIDEr          : 0.310249 (epoch 9)
+2025-11-24 13:51:27,164 - INFO - 
+==================== EPOCH 10/50 ====================
+2025-11-24 13:52:28,734 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 10):
+2025-11-24 13:52:28,734 - INFO - --------------------------------------------------
+2025-11-24 13:52:28,734 - INFO - Sample 1:
+2025-11-24 13:52:28,734 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 13:52:28,734 - INFO -   Prediction: In a grassy field, a herd of sheep is grazing on a lamb, while nearby, a group of sheep is engaged in a game of fetch.
+2025-11-24 13:52:28,734 - INFO -   BLEU-4: 0.1258, METEOR: 0.4407
+2025-11-24 13:52:28,734 - INFO - 
+2025-11-24 13:52:28,734 - INFO - Sample 2:
+2025-11-24 13:52:28,734 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 13:52:28,735 - INFO -   Prediction: In a room, a cat sits on a bed with a blanket, while nearby, a dog rests beside a refrigerator.
+2025-11-24 13:52:28,735 - INFO -   BLEU-4: 0.0268, METEOR: 0.1744
+2025-11-24 13:52:28,735 - INFO - 
+2025-11-24 13:52:28,735 - INFO - Sample 3:
+2025-11-24 13:52:28,735 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 13:52:28,735 - INFO -   Prediction: A young baseball player is preparing to hit a ball with a bat, as he stands on the field in front of a crowd.
+2025-11-24 13:52:28,735 - INFO -   BLEU-4: 0.0408, METEOR: 0.2397
+2025-11-24 13:52:28,735 - INFO - 
+2025-11-24 13:52:33,240 - INFO - New best model saved! CIDEr: 0.3220
+2025-11-24 13:52:33,242 - INFO - Epoch 10 Results:
+2025-11-24 13:52:33,242 - INFO - ----------------------------------------
+2025-11-24 13:52:33,242 - INFO - train_loss     : nan
+2025-11-24 13:52:33,242 - INFO - val_loss       : 2.246978
+2025-11-24 13:52:33,242 - INFO - METEOR         : 0.257579
+2025-11-24 13:52:33,242 - INFO - CIDEr          : 0.321971
+2025-11-24 13:52:33,242 - INFO - BLEU-1         : 0.330348
+2025-11-24 13:52:33,242 - INFO - BLEU-2         : 0.181194
+2025-11-24 13:52:33,242 - INFO - BLEU-3         : 0.102681
+2025-11-24 13:52:33,242 - INFO - BLEU-4         : 0.063562
+2025-11-24 13:52:33,242 - INFO - 🏆 NEW BEST MODEL!
+2025-11-24 13:52:33,242 - INFO - ----------------------------------------
+2025-11-24 13:52:33,242 - INFO - 🎯 BEST METRICS ACHIEVED:
+2025-11-24 13:52:33,242 - INFO - CIDEr          : 0.321971 (epoch 10)
+2025-11-24 13:52:33,242 - INFO - 
+==================== EPOCH 11/50 ====================
+2025-11-24 13:53:34,169 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 11):
+2025-11-24 13:53:34,169 - INFO - --------------------------------------------------
+2025-11-24 13:53:34,169 - INFO - Sample 1:
+2025-11-24 13:53:34,169 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 13:53:34,169 - INFO -   Prediction: In a grassy field, a herd of sheep is grazing on a lamb, while nearby, a group of sheep is walking along the road.
+2025-11-24 13:53:34,169 - INFO -   BLEU-4: 0.1407, METEOR: 0.4777
+2025-11-24 13:53:34,169 - INFO - 
+2025-11-24 13:53:34,169 - INFO - Sample 2:
+2025-11-24 13:53:34,169 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 13:53:34,169 - INFO -   Prediction: In a bedroom, a cat rests on a blanket in front of a refrigerator, while a dog rests on the bed nearby.
+2025-11-24 13:53:34,169 - INFO -   BLEU-4: 0.0325, METEOR: 0.3065
+2025-11-24 13:53:34,169 - INFO - 
+2025-11-24 13:53:34,169 - INFO - Sample 3:
+2025-11-24 13:53:34,169 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 13:53:34,170 - INFO -   Prediction: A young boy in a white shirt is playing a baseball with a bat, while a woman stands nearby with a baseball bat.
+2025-11-24 13:53:34,170 - INFO -   BLEU-4: 0.0174, METEOR: 0.1357
+2025-11-24 13:53:34,170 - INFO - 
+2025-11-24 13:53:36,448 - INFO - Epoch 11 Results:
+2025-11-24 13:53:36,448 - INFO - ----------------------------------------
+2025-11-24 13:53:36,448 - INFO - train_loss     : nan
+2025-11-24 13:53:36,448 - INFO - val_loss       : 2.241492
+2025-11-24 13:53:36,448 - INFO - METEOR         : 0.254757
+2025-11-24 13:53:36,448 - INFO - CIDEr          : 0.309967
+2025-11-24 13:53:36,449 - INFO - BLEU-1         : 0.325645
+2025-11-24 13:53:36,449 - INFO - BLEU-2         : 0.177019
+2025-11-24 13:53:36,449 - INFO - BLEU-3         : 0.100241
+2025-11-24 13:53:36,449 - INFO - BLEU-4         : 0.061792
+2025-11-24 13:53:36,449 - INFO - ----------------------------------------
+2025-11-24 13:53:36,449 - INFO - 
+==================== EPOCH 12/50 ====================
+2025-11-24 13:54:36,523 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 12):
+2025-11-24 13:54:36,523 - INFO - --------------------------------------------------
+2025-11-24 13:54:36,523 - INFO - Sample 1:
+2025-11-24 13:54:36,523 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 13:54:36,523 - INFO -   Prediction: In a grassy field, a herd of sheep is grazing, while nearby, a lamb rests on a bench.
+2025-11-24 13:54:36,523 - INFO -   BLEU-4: 0.0608, METEOR: 0.3824
+2025-11-24 13:54:36,523 - INFO - 
+2025-11-24 13:54:36,523 - INFO - Sample 2:
+2025-11-24 13:54:36,523 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 13:54:36,523 - INFO -   Prediction: In a bedroom, a cat sits on a bed with a blanket, while nearby, a dog rests beside a refrigerator.
+2025-11-24 13:54:36,523 - INFO -   BLEU-4: 0.0268, METEOR: 0.1744
+2025-11-24 13:54:36,523 - INFO - 
+2025-11-24 13:54:36,523 - INFO - Sample 3:
+2025-11-24 13:54:36,523 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 13:54:36,523 - INFO -   Prediction: A young boy in a white shirt stands on a field with a baseball bat, ready to hit the ball.
+2025-11-24 13:54:36,523 - INFO -   BLEU-4: 0.0185, METEOR: 0.1606
+2025-11-24 13:54:36,523 - INFO - 
+2025-11-24 13:54:38,755 - INFO - Epoch 12 Results:
+2025-11-24 13:54:38,755 - INFO - ----------------------------------------
+2025-11-24 13:54:38,755 - INFO - train_loss     : nan
+2025-11-24 13:54:38,755 - INFO - val_loss       : 2.237376
+2025-11-24 13:54:38,755 - INFO - METEOR         : 0.254736
+2025-11-24 13:54:38,755 - INFO - CIDEr          : 0.314787
+2025-11-24 13:54:38,755 - INFO - BLEU-1         : 0.324606
+2025-11-24 13:54:38,755 - INFO - BLEU-2         : 0.175124
+2025-11-24 13:54:38,755 - INFO - BLEU-3         : 0.097957
+2025-11-24 13:54:38,755 - INFO - BLEU-4         : 0.059804
+2025-11-24 13:54:38,755 - INFO - ----------------------------------------
+2025-11-24 13:54:38,755 - INFO - 
+==================== EPOCH 13/50 ====================
+2025-11-24 13:55:37,029 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 13):
+2025-11-24 13:55:37,029 - INFO - --------------------------------------------------
+2025-11-24 13:55:37,029 - INFO - Sample 1:
+2025-11-24 13:55:37,029 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 13:55:37,029 - INFO -   Prediction: In a grassy field, a herd of sheep is engaged in grazing, while nearby, a lamb rests on a bench.
+2025-11-24 13:55:37,029 - INFO -   BLEU-4: 0.0552, METEOR: 0.3782
+2025-11-24 13:55:37,029 - INFO - 
+2025-11-24 13:55:37,029 - INFO - Sample 2:
+2025-11-24 13:55:37,029 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 13:55:37,029 - INFO -   Prediction: A cat sits on a bed, hiding under a blanket in front of a refrigerator, while a dog rests nearby.
+2025-11-24 13:55:37,029 - INFO -   BLEU-4: 0.0248, METEOR: 0.2441
+2025-11-24 13:55:37,029 - INFO - 
+2025-11-24 13:55:37,029 - INFO - Sample 3:
+2025-11-24 13:55:37,029 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 13:55:37,029 - INFO -   Prediction: A young boy in a blue shirt is swinging a baseball bat as he prepares to hit the ball.
+2025-11-24 13:55:37,029 - INFO -   BLEU-4: 0.0164, METEOR: 0.1152
+2025-11-24 13:55:37,029 - INFO - 
+2025-11-24 13:55:41,629 - INFO - New best model saved! CIDEr: 0.3327
+2025-11-24 13:55:41,630 - INFO - Epoch 13 Results:
+2025-11-24 13:55:41,630 - INFO - ----------------------------------------
+2025-11-24 13:55:41,630 - INFO - train_loss     : nan
+2025-11-24 13:55:41,630 - INFO - val_loss       : 2.226334
+2025-11-24 13:55:41,630 - INFO - METEOR         : 0.267339
+2025-11-24 13:55:41,631 - INFO - CIDEr          : 0.332744
+2025-11-24 13:55:41,631 - INFO - BLEU-1         : 0.330426
+2025-11-24 13:55:41,631 - INFO - BLEU-2         : 0.184421
+2025-11-24 13:55:41,631 - INFO - BLEU-3         : 0.103742
+2025-11-24 13:55:41,631 - INFO - BLEU-4         : 0.064310
+2025-11-24 13:55:41,631 - INFO - 🏆 NEW BEST MODEL!
+2025-11-24 13:55:41,631 - INFO - ----------------------------------------
+2025-11-24 13:55:41,631 - INFO - 🎯 BEST METRICS ACHIEVED:
+2025-11-24 13:55:41,631 - INFO - CIDEr          : 0.332744 (epoch 13)
+2025-11-24 13:55:41,631 - INFO - 
+==================== EPOCH 14/50 ====================
+2025-11-24 13:56:39,713 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 14):
+2025-11-24 13:56:39,713 - INFO - --------------------------------------------------
+2025-11-24 13:56:39,713 - INFO - Sample 1:
+2025-11-24 13:56:39,713 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 13:56:39,713 - INFO -   Prediction: In a grassy field, a herd of sheep is grazing on a lamb, while nearby, a group of sheep walks along a trail.
+2025-11-24 13:56:39,713 - INFO -   BLEU-4: 0.1435, METEOR: 0.5180
+2025-11-24 13:56:39,713 - INFO - 
+2025-11-24 13:56:39,713 - INFO - Sample 2:
+2025-11-24 13:56:39,713 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 13:56:39,714 - INFO -   Prediction: In a bedroom, a cat sits on a bed with a blanket, while nearby, a dog rests beside a refrigerator.
+2025-11-24 13:56:39,714 - INFO -   BLEU-4: 0.0268, METEOR: 0.1744
+2025-11-24 13:56:39,714 - INFO - 
+2025-11-24 13:56:39,714 - INFO - Sample 3:
+2025-11-24 13:56:39,714 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 13:56:39,714 - INFO -   Prediction: A young boy in a white shirt is swinging a baseball bat as he prepares to hit the ball.
+2025-11-24 13:56:39,714 - INFO -   BLEU-4: 0.0164, METEOR: 0.1152
+2025-11-24 13:56:39,714 - INFO - 
+2025-11-24 13:56:44,523 - INFO - New best model saved! CIDEr: 0.3364
+2025-11-24 13:56:44,526 - INFO - Epoch 14 Results:
+2025-11-24 13:56:44,526 - INFO - ----------------------------------------
+2025-11-24 13:56:44,526 - INFO - train_loss     : nan
+2025-11-24 13:56:44,526 - INFO - val_loss       : 2.225308
+2025-11-24 13:56:44,526 - INFO - METEOR         : 0.257134
+2025-11-24 13:56:44,526 - INFO - CIDEr          : 0.336400
+2025-11-24 13:56:44,526 - INFO - BLEU-1         : 0.320138
+2025-11-24 13:56:44,526 - INFO - BLEU-2         : 0.181715
+2025-11-24 13:56:44,526 - INFO - BLEU-3         : 0.105846
+2025-11-24 13:56:44,526 - INFO - BLEU-4         : 0.066864
+2025-11-24 13:56:44,526 - INFO - 🏆 NEW BEST MODEL!
+2025-11-24 13:56:44,526 - INFO - ----------------------------------------
+2025-11-24 13:56:44,526 - INFO - 🎯 BEST METRICS ACHIEVED:
+2025-11-24 13:56:44,526 - INFO - CIDEr          : 0.336400 (epoch 14)
+2025-11-24 13:56:44,526 - INFO - 
+==================== EPOCH 15/50 ====================
+2025-11-24 13:57:45,754 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 15):
+2025-11-24 13:57:45,754 - INFO - --------------------------------------------------
+2025-11-24 13:57:45,754 - INFO - Sample 1:
+2025-11-24 13:57:45,754 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 13:57:45,754 - INFO -   Prediction: In a grassy field, a herd of sheep is engaged in grazing, while nearby, a group of sheep walks along a trail.
+2025-11-24 13:57:45,754 - INFO -   BLEU-4: 0.1505, METEOR: 0.4848
+2025-11-24 13:57:45,754 - INFO - 
+2025-11-24 13:57:45,754 - INFO - Sample 2:
+2025-11-24 13:57:45,754 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 13:57:45,754 - INFO -   Prediction: A cat is laying on a bed, hiding under a blanket in front of a refrigerator, while nearby, a dog rests on a blanket.
+2025-11-24 13:57:45,754 - INFO -   BLEU-4: 0.0320, METEOR: 0.2704
+2025-11-24 13:57:45,754 - INFO - 
+2025-11-24 13:57:45,754 - INFO - Sample 3:
+2025-11-24 13:57:45,754 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 13:57:45,754 - INFO -   Prediction: A young boy in a blue shirt is swinging a baseball bat as he prepares to hit the ball.
+2025-11-24 13:57:45,754 - INFO -   BLEU-4: 0.0164, METEOR: 0.1152
+2025-11-24 13:57:45,754 - INFO - 
+2025-11-24 13:57:50,521 - INFO - New best model saved! CIDEr: 0.3406
+2025-11-24 13:57:50,523 - INFO - Epoch 15 Results:
+2025-11-24 13:57:50,523 - INFO - ----------------------------------------
+2025-11-24 13:57:50,523 - INFO - train_loss     : nan
+2025-11-24 13:57:50,523 - INFO - val_loss       : 2.221324
+2025-11-24 13:57:50,523 - INFO - METEOR         : 0.266163
+2025-11-24 13:57:50,523 - INFO - CIDEr          : 0.340650
+2025-11-24 13:57:50,523 - INFO - BLEU-1         : 0.334607
+2025-11-24 13:57:50,523 - INFO - BLEU-2         : 0.189675
+2025-11-24 13:57:50,524 - INFO - BLEU-3         : 0.109260
+2025-11-24 13:57:50,524 - INFO - BLEU-4         : 0.067983
+2025-11-24 13:57:50,524 - INFO - 🏆 NEW BEST MODEL!
+2025-11-24 13:57:50,524 - INFO - ----------------------------------------
+2025-11-24 13:57:50,524 - INFO - 🎯 BEST METRICS ACHIEVED:
+2025-11-24 13:57:50,524 - INFO - CIDEr          : 0.340650 (epoch 15)
+2025-11-24 13:57:50,524 - INFO - 
+==================== EPOCH 16/50 ====================
+2025-11-24 13:58:53,113 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 16):
+2025-11-24 13:58:53,113 - INFO - --------------------------------------------------
+2025-11-24 13:58:53,113 - INFO - Sample 1:
+2025-11-24 13:58:53,113 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 13:58:53,113 - INFO -   Prediction: In a grassy field, a herd of sheep and goats, including a lamb, are engaged in a game of chess, while nearby, a group of sheep walks through a wooded area.
+2025-11-24 13:58:53,113 - INFO -   BLEU-4: 0.1243, METEOR: 0.5601
+2025-11-24 13:58:53,113 - INFO - 
+2025-11-24 13:58:53,113 - INFO - Sample 2:
+2025-11-24 13:58:53,113 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 13:58:53,113 - INFO -   Prediction: In a bedroom, a cat sits on a bed near a refrigerator, while nearby, a dog rests on the couch, and a cat rests beside a blanket.
+2025-11-24 13:58:53,113 - INFO -   BLEU-4: 0.0371, METEOR: 0.2137
+2025-11-24 13:58:53,113 - INFO - 
+2025-11-24 13:58:53,113 - INFO - Sample 3:
+2025-11-24 13:58:53,113 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 13:58:53,113 - INFO -   Prediction: A young boy in a blue shirt is swinging a baseball bat as he prepares to hit the ball.
+2025-11-24 13:58:53,113 - INFO -   BLEU-4: 0.0164, METEOR: 0.1152
+2025-11-24 13:58:53,113 - INFO - 
+2025-11-24 13:58:55,354 - INFO - Epoch 16 Results:
+2025-11-24 13:58:55,354 - INFO - ----------------------------------------
+2025-11-24 13:58:55,354 - INFO - train_loss     : 2.199353
+2025-11-24 13:58:55,354 - INFO - val_loss       : 2.224611
+2025-11-24 13:58:55,355 - INFO - METEOR         : 0.268197
+2025-11-24 13:58:55,355 - INFO - CIDEr          : 0.325146
+2025-11-24 13:58:55,355 - INFO - BLEU-1         : 0.340831
+2025-11-24 13:58:55,355 - INFO - BLEU-2         : 0.188172
+2025-11-24 13:58:55,355 - INFO - BLEU-3         : 0.103873
+2025-11-24 13:58:55,355 - INFO - BLEU-4         : 0.063719
+2025-11-24 13:58:55,355 - INFO - ----------------------------------------
+2025-11-24 13:58:55,355 - INFO - 
+==================== EPOCH 17/50 ====================
+2025-11-24 13:59:56,398 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 17):
+2025-11-24 13:59:56,398 - INFO - --------------------------------------------------
+2025-11-24 13:59:56,398 - INFO - Sample 1:
+2025-11-24 13:59:56,398 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 13:59:56,398 - INFO -   Prediction: In a grassy field, a herd of sheep is engaged in a game of chess, while nearby, a lamb rests on a tree and a sheep walks along the road.
+2025-11-24 13:59:56,398 - INFO -   BLEU-4: 0.0381, METEOR: 0.3310
+2025-11-24 13:59:56,398 - INFO - 
+2025-11-24 13:59:56,398 - INFO - Sample 2:
+2025-11-24 13:59:56,398 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 13:59:56,398 - INFO -   Prediction: In a bedroom, a cat sits in front of a refrigerator, while nearby, a dog rests on a bed with a blanket, and a cat is hiding under a blanket.
+2025-11-24 13:59:56,398 - INFO -   BLEU-4: 0.0422, METEOR: 0.2542
+2025-11-24 13:59:56,398 - INFO - 
+2025-11-24 13:59:56,398 - INFO - Sample 3:
+2025-11-24 13:59:56,398 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 13:59:56,398 - INFO -   Prediction: A young boy in a blue shirt is swinging a baseball bat as he prepares to hit the ball.
+2025-11-24 13:59:56,398 - INFO -   BLEU-4: 0.0164, METEOR: 0.1152
+2025-11-24 13:59:56,398 - INFO - 
+2025-11-24 13:59:58,621 - INFO - Epoch 17 Results:
+2025-11-24 13:59:58,621 - INFO - ----------------------------------------
+2025-11-24 13:59:58,621 - INFO - train_loss     : 2.185237
+2025-11-24 13:59:58,621 - INFO - val_loss       : 2.216147
+2025-11-24 13:59:58,622 - INFO - METEOR         : 0.262983
+2025-11-24 13:59:58,622 - INFO - CIDEr          : 0.334562
+2025-11-24 13:59:58,622 - INFO - BLEU-1         : 0.336436
+2025-11-24 13:59:58,622 - INFO - BLEU-2         : 0.186530
+2025-11-24 13:59:58,622 - INFO - BLEU-3         : 0.103808
+2025-11-24 13:59:58,622 - INFO - BLEU-4         : 0.063575
+2025-11-24 13:59:58,622 - INFO - ----------------------------------------
+2025-11-24 13:59:58,622 - INFO - 
+==================== EPOCH 18/50 ====================
+2025-11-24 14:00:57,173 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 18):
+2025-11-24 14:00:57,173 - INFO - --------------------------------------------------
+2025-11-24 14:00:57,173 - INFO - Sample 1:
+2025-11-24 14:00:57,173 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:00:57,173 - INFO -   Prediction: In a grassy field, a herd of sheep is grazing on a hay bale, while nearby, a lamb rests on a tree.
+2025-11-24 14:00:57,173 - INFO -   BLEU-4: 0.0506, METEOR: 0.3741
+2025-11-24 14:00:57,173 - INFO - 
+2025-11-24 14:00:57,173 - INFO - Sample 2:
+2025-11-24 14:00:57,173 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:00:57,173 - INFO -   Prediction: In a bedroom, a cat and a dog are snuggled up on a bed, with one of them hiding under a blanket.
+2025-11-24 14:00:57,173 - INFO -   BLEU-4: 0.0462, METEOR: 0.1734
+2025-11-24 14:00:57,174 - INFO - 
+2025-11-24 14:00:57,174 - INFO - Sample 3:
+2025-11-24 14:00:57,174 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:00:57,174 - INFO -   Prediction: A young boy is swinging a baseball bat as he prepares to hit the ball.
+2025-11-24 14:00:57,174 - INFO -   BLEU-4: 0.0147, METEOR: 0.1174
+2025-11-24 14:00:57,174 - INFO - 
+2025-11-24 14:00:59,441 - INFO - Epoch 18 Results:
+2025-11-24 14:00:59,441 - INFO - ----------------------------------------
+2025-11-24 14:00:59,441 - INFO - train_loss     : 2.168700
+2025-11-24 14:00:59,441 - INFO - val_loss       : 2.215229
+2025-11-24 14:00:59,441 - INFO - METEOR         : 0.262341
+2025-11-24 14:00:59,441 - INFO - CIDEr          : 0.315800
+2025-11-24 14:00:59,441 - INFO - BLEU-1         : 0.328624
+2025-11-24 14:00:59,441 - INFO - BLEU-2         : 0.179552
+2025-11-24 14:00:59,441 - INFO - BLEU-3         : 0.102000
+2025-11-24 14:00:59,441 - INFO - BLEU-4         : 0.063291
+2025-11-24 14:00:59,441 - INFO - ----------------------------------------
+2025-11-24 14:00:59,442 - INFO - 
+==================== EPOCH 19/50 ====================
+2025-11-24 14:02:00,028 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 19):
+2025-11-24 14:02:00,028 - INFO - --------------------------------------------------
+2025-11-24 14:02:00,028 - INFO - Sample 1:
+2025-11-24 14:02:00,028 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:02:00,028 - INFO -   Prediction: In a grassy field, a herd of sheep, including a white sheep, is grazing on a lamb, while nearby, a group of people walks along the road.
+2025-11-24 14:02:00,028 - INFO -   BLEU-4: 0.0770, METEOR: 0.4226
+2025-11-24 14:02:00,028 - INFO - 
+2025-11-24 14:02:00,028 - INFO - Sample 2:
+2025-11-24 14:02:00,028 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:02:00,028 - INFO -   Prediction: A cat and a dog are sitting on a bed, with one of them hiding under a blanket in front of a refrigerator.
+2025-11-24 14:02:00,028 - INFO -   BLEU-4: 0.0485, METEOR: 0.1873
+2025-11-24 14:02:00,028 - INFO - 
+2025-11-24 14:02:00,028 - INFO - Sample 3:
+2025-11-24 14:02:00,028 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:02:00,028 - INFO -   Prediction: A young boy in a blue shirt is swinging a baseball bat at a baseball game.
+2025-11-24 14:02:00,028 - INFO -   BLEU-4: 0.0315, METEOR: 0.1992
+2025-11-24 14:02:00,028 - INFO - 
+2025-11-24 14:02:01,325 - INFO - Epoch 19 Results:
+2025-11-24 14:02:01,325 - INFO - ----------------------------------------
+2025-11-24 14:02:01,325 - INFO - train_loss     : 2.154040
+2025-11-24 14:02:01,325 - INFO - val_loss       : 2.211345
+2025-11-24 14:02:01,325 - INFO - METEOR         : 0.262732
+2025-11-24 14:02:01,325 - INFO - CIDEr          : 0.317546
+2025-11-24 14:02:01,325 - INFO - BLEU-1         : 0.327904
+2025-11-24 14:02:01,325 - INFO - BLEU-2         : 0.180678
+2025-11-24 14:02:01,325 - INFO - BLEU-3         : 0.102939
+2025-11-24 14:02:01,325 - INFO - BLEU-4         : 0.064069
+2025-11-24 14:02:01,325 - INFO - ----------------------------------------
+2025-11-24 14:02:01,325 - INFO - 
+==================== EPOCH 20/50 ====================
+2025-11-24 14:03:01,531 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 20):
+2025-11-24 14:03:01,531 - INFO - --------------------------------------------------
+2025-11-24 14:03:01,531 - INFO - Sample 1:
+2025-11-24 14:03:01,531 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:03:01,531 - INFO -   Prediction: In a grassy field, a herd of sheep is grazing, while nearby, a lamb rests on a hay bale, and a group of sheep walks along the road.
+2025-11-24 14:03:01,531 - INFO -   BLEU-4: 0.1194, METEOR: 0.4984
+2025-11-24 14:03:01,531 - INFO - 
+2025-11-24 14:03:01,531 - INFO - Sample 2:
+2025-11-24 14:03:01,531 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:03:01,531 - INFO -   Prediction: In a bedroom, a cat is resting on a bed beside a refrigerator, while nearby, a dog rests on a blanket under a blanket.
+2025-11-24 14:03:01,531 - INFO -   BLEU-4: 0.0344, METEOR: 0.2011
+2025-11-24 14:03:01,531 - INFO - 
+2025-11-24 14:03:01,531 - INFO - Sample 3:
+2025-11-24 14:03:01,531 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:03:01,531 - INFO -   Prediction: A young boy in a blue shirt is swinging a bat at a baseball game.
+2025-11-24 14:03:01,531 - INFO -   BLEU-4: 0.0288, METEOR: 0.1746
+2025-11-24 14:03:01,531 - INFO - 
+2025-11-24 14:03:03,754 - INFO - Epoch 20 Results:
+2025-11-24 14:03:03,754 - INFO - ----------------------------------------
+2025-11-24 14:03:03,754 - INFO - train_loss     : 2.142979
+2025-11-24 14:03:03,754 - INFO - val_loss       : 2.214048
+2025-11-24 14:03:03,754 - INFO - METEOR         : 0.260424
+2025-11-24 14:03:03,754 - INFO - CIDEr          : 0.299997
+2025-11-24 14:03:03,754 - INFO - BLEU-1         : 0.329486
+2025-11-24 14:03:03,754 - INFO - BLEU-2         : 0.181406
+2025-11-24 14:03:03,754 - INFO - BLEU-3         : 0.102242
+2025-11-24 14:03:03,754 - INFO - BLEU-4         : 0.063077
+2025-11-24 14:03:03,754 - INFO - ----------------------------------------
+2025-11-24 14:03:03,754 - INFO - 
+==================== EPOCH 21/50 ====================
+2025-11-24 14:04:05,813 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 21):
+2025-11-24 14:04:05,813 - INFO - --------------------------------------------------
+2025-11-24 14:04:05,813 - INFO - Sample 1:
+2025-11-24 14:04:05,813 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:04:05,813 - INFO -   Prediction: In a grassy field, a herd of sheep and goats, including a white lamb, are gathered around a table, while a group of people walks along the road.
+2025-11-24 14:04:05,813 - INFO -   BLEU-4: 0.0950, METEOR: 0.4984
+2025-11-24 14:04:05,814 - INFO - 
+2025-11-24 14:04:05,814 - INFO - Sample 2:
+2025-11-24 14:04:05,814 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:04:05,814 - INFO -   Prediction: In a bedroom, a cat and dog are perched on a bed, while another cat rests on a pillow in front of a refrigerator.
+2025-11-24 14:04:05,814 - INFO -   BLEU-4: 0.0573, METEOR: 0.3365
+2025-11-24 14:04:05,814 - INFO - 
+2025-11-24 14:04:05,814 - INFO - Sample 3:
+2025-11-24 14:04:05,814 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:04:05,814 - INFO -   Prediction: A young boy in a blue shirt is swinging a baseball bat as he prepares to hit the ball.
+2025-11-24 14:04:05,814 - INFO -   BLEU-4: 0.0164, METEOR: 0.1152
+2025-11-24 14:04:05,814 - INFO - 
+2025-11-24 14:04:08,068 - INFO - Epoch 21 Results:
+2025-11-24 14:04:08,068 - INFO - ----------------------------------------
+2025-11-24 14:04:08,068 - INFO - train_loss     : nan
+2025-11-24 14:04:08,068 - INFO - val_loss       : 2.207429
+2025-11-24 14:04:08,068 - INFO - METEOR         : 0.266593
+2025-11-24 14:04:08,068 - INFO - CIDEr          : 0.316838
+2025-11-24 14:04:08,068 - INFO - BLEU-1         : 0.336086
+2025-11-24 14:04:08,068 - INFO - BLEU-2         : 0.182380
+2025-11-24 14:04:08,068 - INFO - BLEU-3         : 0.103276
+2025-11-24 14:04:08,068 - INFO - BLEU-4         : 0.064635
+2025-11-24 14:04:08,068 - INFO - ----------------------------------------
+2025-11-24 14:04:08,068 - INFO - 
+==================== EPOCH 22/50 ====================
+2025-11-24 14:05:08,889 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 22):
+2025-11-24 14:05:08,890 - INFO - --------------------------------------------------
+2025-11-24 14:05:08,890 - INFO - Sample 1:
+2025-11-24 14:05:08,890 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:05:08,890 - INFO -   Prediction: In a grassy field, a herd of sheep and goats, including a lamb, are grazing together, while a group of sheep walks along the road.
+2025-11-24 14:05:08,890 - INFO -   BLEU-4: 0.1697, METEOR: 0.6492
+2025-11-24 14:05:08,890 - INFO - 
+2025-11-24 14:05:08,890 - INFO - Sample 2:
+2025-11-24 14:05:08,890 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:05:08,890 - INFO -   Prediction: A cat and a dog are perched on a bed, with the dog hiding under a blanket next to a refrigerator.
+2025-11-24 14:05:08,890 - INFO -   BLEU-4: 0.0467, METEOR: 0.2433
+2025-11-24 14:05:08,890 - INFO - 
+2025-11-24 14:05:08,890 - INFO - Sample 3:
+2025-11-24 14:05:08,890 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:05:08,890 - INFO -   Prediction: A young boy in a blue shirt is swinging a baseball bat as he prepares to hit the ball.
+2025-11-24 14:05:08,890 - INFO -   BLEU-4: 0.0164, METEOR: 0.1152
+2025-11-24 14:05:08,890 - INFO - 
+2025-11-24 14:05:11,103 - INFO - Epoch 22 Results:
+2025-11-24 14:05:11,103 - INFO - ----------------------------------------
+2025-11-24 14:05:11,103 - INFO - train_loss     : nan
+2025-11-24 14:05:11,103 - INFO - val_loss       : 2.209006
+2025-11-24 14:05:11,103 - INFO - METEOR         : 0.265469
+2025-11-24 14:05:11,103 - INFO - CIDEr          : 0.332913
+2025-11-24 14:05:11,103 - INFO - BLEU-1         : 0.337926
+2025-11-24 14:05:11,103 - INFO - BLEU-2         : 0.184206
+2025-11-24 14:05:11,103 - INFO - BLEU-3         : 0.104150
+2025-11-24 14:05:11,103 - INFO - BLEU-4         : 0.064700
+2025-11-24 14:05:11,103 - INFO - ----------------------------------------
+2025-11-24 14:05:11,103 - INFO - 
+==================== EPOCH 23/50 ====================
+2025-11-24 14:06:12,818 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 23):
+2025-11-24 14:06:12,818 - INFO - --------------------------------------------------
+2025-11-24 14:06:12,818 - INFO - Sample 1:
+2025-11-24 14:06:12,818 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:06:12,818 - INFO -   Prediction: In a grassy field, a herd of sheep and goats, including a lamb, are gathered around a table, while nearby, a group of people walks along the road.
+2025-11-24 14:06:12,818 - INFO -   BLEU-4: 0.0950, METEOR: 0.4984
+2025-11-24 14:06:12,818 - INFO - 
+2025-11-24 14:06:12,818 - INFO - Sample 2:
+2025-11-24 14:06:12,818 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:06:12,818 - INFO -   Prediction: A cat and a dog are perched on a bed in front of a refrigerator, with the dog hiding under a blanket.
+2025-11-24 14:06:12,818 - INFO -   BLEU-4: 0.0491, METEOR: 0.2573
+2025-11-24 14:06:12,818 - INFO - 
+2025-11-24 14:06:12,818 - INFO - Sample 3:
+2025-11-24 14:06:12,818 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:06:12,819 - INFO -   Prediction: A young boy skillfully swings a baseball bat as he prepares to hit the ball.
+2025-11-24 14:06:12,819 - INFO -   BLEU-4: 0.0156, METEOR: 0.1174
+2025-11-24 14:06:12,819 - INFO - 
+2025-11-24 14:06:15,152 - INFO - Epoch 23 Results:
+2025-11-24 14:06:15,152 - INFO - ----------------------------------------
+2025-11-24 14:06:15,152 - INFO - train_loss     : nan
+2025-11-24 14:06:15,152 - INFO - val_loss       : 2.207630
+2025-11-24 14:06:15,152 - INFO - METEOR         : 0.261267
+2025-11-24 14:06:15,152 - INFO - CIDEr          : 0.337463
+2025-11-24 14:06:15,152 - INFO - BLEU-1         : 0.332667
+2025-11-24 14:06:15,153 - INFO - BLEU-2         : 0.186873
+2025-11-24 14:06:15,153 - INFO - BLEU-3         : 0.108496
+2025-11-24 14:06:15,153 - INFO - BLEU-4         : 0.067870
+2025-11-24 14:06:15,153 - INFO - ----------------------------------------
+2025-11-24 14:06:15,153 - INFO - 
+==================== EPOCH 24/50 ====================
+2025-11-24 14:07:14,659 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 24):
+2025-11-24 14:07:14,659 - INFO - --------------------------------------------------
+2025-11-24 14:07:14,659 - INFO - Sample 1:
+2025-11-24 14:07:14,659 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:07:14,659 - INFO -   Prediction: In a grassy field, a herd of sheep is engaged in a game of chess, while nearby, a lamb rests on a wooden racket.
+2025-11-24 14:07:14,659 - INFO -   BLEU-4: 0.0452, METEOR: 0.2860
+2025-11-24 14:07:14,659 - INFO - 
+2025-11-24 14:07:14,659 - INFO - Sample 2:
+2025-11-24 14:07:14,659 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:07:14,659 - INFO -   Prediction: In a bedroom, a cat is resting on a bed near a refrigerator, while nearby, a dog rests on a blanket under a blanket.
+2025-11-24 14:07:14,659 - INFO -   BLEU-4: 0.0344, METEOR: 0.2011
+2025-11-24 14:07:14,659 - INFO - 
+2025-11-24 14:07:14,659 - INFO - Sample 3:
+2025-11-24 14:07:14,659 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:07:14,660 - INFO -   Prediction: A young boy is swinging a baseball bat as he prepares to hit the ball.
+2025-11-24 14:07:14,660 - INFO -   BLEU-4: 0.0147, METEOR: 0.1174
+2025-11-24 14:07:14,660 - INFO - 
+2025-11-24 14:07:16,916 - INFO - Epoch 24 Results:
+2025-11-24 14:07:16,917 - INFO - ----------------------------------------
+2025-11-24 14:07:16,917 - INFO - train_loss     : nan
+2025-11-24 14:07:16,917 - INFO - val_loss       : 2.204840
+2025-11-24 14:07:16,917 - INFO - METEOR         : 0.265448
+2025-11-24 14:07:16,917 - INFO - CIDEr          : 0.338067
+2025-11-24 14:07:16,917 - INFO - BLEU-1         : 0.335333
+2025-11-24 14:07:16,917 - INFO - BLEU-2         : 0.185125
+2025-11-24 14:07:16,917 - INFO - BLEU-3         : 0.105729
+2025-11-24 14:07:16,917 - INFO - BLEU-4         : 0.065816
+2025-11-24 14:07:16,917 - INFO - ----------------------------------------
+2025-11-24 14:07:16,917 - INFO - 
+==================== EPOCH 25/50 ====================
+2025-11-24 14:08:15,943 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 25):
+2025-11-24 14:08:15,943 - INFO - --------------------------------------------------
+2025-11-24 14:08:15,943 - INFO - Sample 1:
+2025-11-24 14:08:15,943 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:08:15,943 - INFO -   Prediction: In a grassy field, a group of sheep, including a lamb, is walking along a trail through the woods.
+2025-11-24 14:08:15,943 - INFO -   BLEU-4: 0.1764, METEOR: 0.4577
+2025-11-24 14:08:15,944 - INFO - 
+2025-11-24 14:08:15,944 - INFO - Sample 2:
+2025-11-24 14:08:15,944 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:08:15,944 - INFO -   Prediction: A cat and a dog are perched on a bed, with one of them hiding under a blanket in front of a refrigerator.
+2025-11-24 14:08:15,944 - INFO -   BLEU-4: 0.0495, METEOR: 0.2017
+2025-11-24 14:08:15,944 - INFO - 
+2025-11-24 14:08:15,944 - INFO - Sample 3:
+2025-11-24 14:08:15,944 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:08:15,944 - INFO -   Prediction: A young boy in a blue shirt is swinging a baseball bat as he prepares to hit the ball.
+2025-11-24 14:08:15,944 - INFO -   BLEU-4: 0.0164, METEOR: 0.1152
+2025-11-24 14:08:15,944 - INFO - 
+2025-11-24 14:08:18,188 - INFO - Epoch 25 Results:
+2025-11-24 14:08:18,188 - INFO - ----------------------------------------
+2025-11-24 14:08:18,188 - INFO - train_loss     : 2.093254
+2025-11-24 14:08:18,188 - INFO - val_loss       : 2.208524
+2025-11-24 14:08:18,188 - INFO - METEOR         : 0.263248
+2025-11-24 14:08:18,188 - INFO - CIDEr          : 0.329610
+2025-11-24 14:08:18,188 - INFO - BLEU-1         : 0.333638
+2025-11-24 14:08:18,188 - INFO - BLEU-2         : 0.183732
+2025-11-24 14:08:18,188 - INFO - BLEU-3         : 0.103768
+2025-11-24 14:08:18,188 - INFO - BLEU-4         : 0.064679
+2025-11-24 14:08:18,189 - INFO - ----------------------------------------
+2025-11-24 14:08:18,189 - INFO - 
+==================== EPOCH 26/50 ====================
+2025-11-24 14:09:20,107 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 26):
+2025-11-24 14:09:20,107 - INFO - --------------------------------------------------
+2025-11-24 14:09:20,107 - INFO - Sample 1:
+2025-11-24 14:09:20,108 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:09:20,108 - INFO -   Prediction: In a grassy field, a herd of sheep is grazing, while nearby, a lamb rests on a tree, and a group of people walks along the road.
+2025-11-24 14:09:20,108 - INFO -   BLEU-4: 0.0791, METEOR: 0.4512
+2025-11-24 14:09:20,108 - INFO - 
+2025-11-24 14:09:20,108 - INFO - Sample 2:
+2025-11-24 14:09:20,108 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:09:20,108 - INFO -   Prediction: A cat and a dog are sitting on a bed with a blanket and a refrigerator, while another cat rests on a pillow next to the refrigerator.
+2025-11-24 14:09:20,108 - INFO -   BLEU-4: 0.0733, METEOR: 0.2883
+2025-11-24 14:09:20,108 - INFO - 
+2025-11-24 14:09:20,108 - INFO - Sample 3:
+2025-11-24 14:09:20,108 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:09:20,108 - INFO -   Prediction: A young boy is swinging a baseball bat as he prepares to hit the ball.
+2025-11-24 14:09:20,108 - INFO -   BLEU-4: 0.0147, METEOR: 0.1174
+2025-11-24 14:09:20,108 - INFO - 
+2025-11-24 14:09:22,493 - INFO - Epoch 26 Results:
+2025-11-24 14:09:22,493 - INFO - ----------------------------------------
+2025-11-24 14:09:22,493 - INFO - train_loss     : 2.084995
+2025-11-24 14:09:22,493 - INFO - val_loss       : 2.203865
+2025-11-24 14:09:22,493 - INFO - METEOR         : 0.260924
+2025-11-24 14:09:22,493 - INFO - CIDEr          : 0.314258
+2025-11-24 14:09:22,493 - INFO - BLEU-1         : 0.328560
+2025-11-24 14:09:22,493 - INFO - BLEU-2         : 0.178168
+2025-11-24 14:09:22,493 - INFO - BLEU-3         : 0.101305
+2025-11-24 14:09:22,493 - INFO - BLEU-4         : 0.063035
+2025-11-24 14:09:22,493 - INFO - ----------------------------------------
+2025-11-24 14:09:22,493 - INFO - 
+==================== EPOCH 27/50 ====================
+2025-11-24 14:10:23,011 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 27):
+2025-11-24 14:10:23,011 - INFO - --------------------------------------------------
+2025-11-24 14:10:23,011 - INFO - Sample 1:
+2025-11-24 14:10:23,011 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:10:23,011 - INFO -   Prediction: In a grassy field, a group of sheep is engaged in a game of chess, while nearby, a lamb rests on a hay bale and a sheep walks along the road.
+2025-11-24 14:10:23,011 - INFO -   BLEU-4: 0.1045, METEOR: 0.3558
+2025-11-24 14:10:23,011 - INFO - 
+2025-11-24 14:10:23,011 - INFO - Sample 2:
+2025-11-24 14:10:23,011 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:10:23,011 - INFO -   Prediction: In a bedroom, a cat sits on a table near a refrigerator, while nearby, a dog rests under a blanket on a bed.
+2025-11-24 14:10:23,011 - INFO -   BLEU-4: 0.0305, METEOR: 0.1873
+2025-11-24 14:10:23,011 - INFO - 
+2025-11-24 14:10:23,011 - INFO - Sample 3:
+2025-11-24 14:10:23,011 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:10:23,011 - INFO -   Prediction: A young boy is swinging a baseball bat as he prepares to hit the ball.
+2025-11-24 14:10:23,011 - INFO -   BLEU-4: 0.0147, METEOR: 0.1174
+2025-11-24 14:10:23,011 - INFO - 
+2025-11-24 14:10:25,263 - INFO - Epoch 27 Results:
+2025-11-24 14:10:25,263 - INFO - ----------------------------------------
+2025-11-24 14:10:25,263 - INFO - train_loss     : 2.071292
+2025-11-24 14:10:25,263 - INFO - val_loss       : 2.202647
+2025-11-24 14:10:25,263 - INFO - METEOR         : 0.263027
+2025-11-24 14:10:25,263 - INFO - CIDEr          : 0.328423
+2025-11-24 14:10:25,263 - INFO - BLEU-1         : 0.333764
+2025-11-24 14:10:25,263 - INFO - BLEU-2         : 0.182852
+2025-11-24 14:10:25,263 - INFO - BLEU-3         : 0.103239
+2025-11-24 14:10:25,263 - INFO - BLEU-4         : 0.064343
+2025-11-24 14:10:25,263 - INFO - ----------------------------------------
+2025-11-24 14:10:25,263 - INFO - 
+==================== EPOCH 28/50 ====================
+2025-11-24 14:11:27,160 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 28):
+2025-11-24 14:11:27,160 - INFO - --------------------------------------------------
+2025-11-24 14:11:27,160 - INFO - Sample 1:
+2025-11-24 14:11:27,160 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:11:27,160 - INFO -   Prediction: In a grassy field, a herd of sheep and goats, including a lamb, are gathered around a table, while nearby, a group of people walks along the road.
+2025-11-24 14:11:27,160 - INFO -   BLEU-4: 0.0950, METEOR: 0.4984
+2025-11-24 14:11:27,160 - INFO - 
+2025-11-24 14:11:27,161 - INFO - Sample 2:
+2025-11-24 14:11:27,161 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:11:27,161 - INFO -   Prediction: A cat and a dog are perched on a bed, with one of them hiding under a blanket in front of a refrigerator.
+2025-11-24 14:11:27,161 - INFO -   BLEU-4: 0.0495, METEOR: 0.2017
+2025-11-24 14:11:27,161 - INFO - 
+2025-11-24 14:11:27,161 - INFO - Sample 3:
+2025-11-24 14:11:27,161 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:11:27,161 - INFO -   Prediction: A young boy is swinging a baseball bat as he prepares to hit the ball.
+2025-11-24 14:11:27,161 - INFO -   BLEU-4: 0.0147, METEOR: 0.1174
+2025-11-24 14:11:27,161 - INFO - 
+2025-11-24 14:11:31,601 - INFO - New best model saved! CIDEr: 0.3568
+2025-11-24 14:11:31,603 - INFO - Epoch 28 Results:
+2025-11-24 14:11:31,603 - INFO - ----------------------------------------
+2025-11-24 14:11:31,603 - INFO - train_loss     : nan
+2025-11-24 14:11:31,603 - INFO - val_loss       : 2.202335
+2025-11-24 14:11:31,603 - INFO - METEOR         : 0.266220
+2025-11-24 14:11:31,603 - INFO - CIDEr          : 0.356789
+2025-11-24 14:11:31,603 - INFO - BLEU-1         : 0.335089
+2025-11-24 14:11:31,603 - INFO - BLEU-2         : 0.185092
+2025-11-24 14:11:31,603 - INFO - BLEU-3         : 0.105793
+2025-11-24 14:11:31,603 - INFO - BLEU-4         : 0.067094
+2025-11-24 14:11:31,603 - INFO - 🏆 NEW BEST MODEL!
+2025-11-24 14:11:31,603 - INFO - ----------------------------------------
+2025-11-24 14:11:31,603 - INFO - 🎯 BEST METRICS ACHIEVED:
+2025-11-24 14:11:31,603 - INFO - CIDEr          : 0.356789 (epoch 28)
+2025-11-24 14:11:31,603 - INFO - 
+==================== EPOCH 29/50 ====================
+2025-11-24 14:12:31,556 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 29):
+2025-11-24 14:12:31,557 - INFO - --------------------------------------------------
+2025-11-24 14:12:31,557 - INFO - Sample 1:
+2025-11-24 14:12:31,557 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:12:31,557 - INFO -   Prediction: In a grassy field, a herd of sheep is engaged in grazing, while nearby, a group of sheep walks along the road.
+2025-11-24 14:12:31,557 - INFO -   BLEU-4: 0.1505, METEOR: 0.4503
+2025-11-24 14:12:31,557 - INFO - 
+2025-11-24 14:12:31,557 - INFO - Sample 2:
+2025-11-24 14:12:31,557 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:12:31,557 - INFO -   Prediction: A cat and a dog are sitting on a bed with a blanket, surrounded by a refrigerator and a blanket.
+2025-11-24 14:12:31,557 - INFO -   BLEU-4: 0.0421, METEOR: 0.1847
+2025-11-24 14:12:31,557 - INFO - 
+2025-11-24 14:12:31,557 - INFO - Sample 3:
+2025-11-24 14:12:31,557 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:12:31,557 - INFO -   Prediction: A young boy is swinging a baseball bat as he prepares to hit the ball.
+2025-11-24 14:12:31,557 - INFO -   BLEU-4: 0.0147, METEOR: 0.1174
+2025-11-24 14:12:31,557 - INFO - 
+2025-11-24 14:12:33,889 - INFO - Epoch 29 Results:
+2025-11-24 14:12:33,889 - INFO - ----------------------------------------
+2025-11-24 14:12:33,889 - INFO - train_loss     : 2.056547
+2025-11-24 14:12:33,889 - INFO - val_loss       : 2.204960
+2025-11-24 14:12:33,889 - INFO - METEOR         : 0.260624
+2025-11-24 14:12:33,889 - INFO - CIDEr          : 0.330127
+2025-11-24 14:12:33,889 - INFO - BLEU-1         : 0.332186
+2025-11-24 14:12:33,889 - INFO - BLEU-2         : 0.182254
+2025-11-24 14:12:33,890 - INFO - BLEU-3         : 0.103001
+2025-11-24 14:12:33,890 - INFO - BLEU-4         : 0.063910
+2025-11-24 14:12:33,890 - INFO - ----------------------------------------
+2025-11-24 14:12:33,890 - INFO - 
+==================== EPOCH 30/50 ====================
+2025-11-24 14:13:35,961 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 30):
+2025-11-24 14:13:35,961 - INFO - --------------------------------------------------
+2025-11-24 14:13:35,961 - INFO - Sample 1:
+2025-11-24 14:13:35,961 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:13:35,961 - INFO -   Prediction: In a grassy field, a herd of sheep is grazing, while nearby, a lamb rests on a tree, and a group of sheep walks along the road.
+2025-11-24 14:13:35,961 - INFO -   BLEU-4: 0.1241, METEOR: 0.5010
+2025-11-24 14:13:35,961 - INFO - 
+2025-11-24 14:13:35,961 - INFO - Sample 2:
+2025-11-24 14:13:35,961 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:13:35,961 - INFO -   Prediction: A cat and a dog are resting on a bed, with the cat hiding under a blanket in front of a refrigerator.
+2025-11-24 14:13:35,961 - INFO -   BLEU-4: 0.0491, METEOR: 0.2312
+2025-11-24 14:13:35,961 - INFO - 
+2025-11-24 14:13:35,961 - INFO - Sample 3:
+2025-11-24 14:13:35,961 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:13:35,961 - INFO -   Prediction: A young boy in a blue shirt is swinging a baseball bat as he prepares to hit the ball.
+2025-11-24 14:13:35,961 - INFO -   BLEU-4: 0.0164, METEOR: 0.1152
+2025-11-24 14:13:35,961 - INFO - 
+2025-11-24 14:13:38,281 - INFO - Epoch 30 Results:
+2025-11-24 14:13:38,281 - INFO - ----------------------------------------
+2025-11-24 14:13:38,281 - INFO - train_loss     : nan
+2025-11-24 14:13:38,281 - INFO - val_loss       : 2.209607
+2025-11-24 14:13:38,281 - INFO - METEOR         : 0.262740
+2025-11-24 14:13:38,281 - INFO - CIDEr          : 0.328157
+2025-11-24 14:13:38,281 - INFO - BLEU-1         : 0.333202
+2025-11-24 14:13:38,281 - INFO - BLEU-2         : 0.182643
+2025-11-24 14:13:38,281 - INFO - BLEU-3         : 0.102243
+2025-11-24 14:13:38,281 - INFO - BLEU-4         : 0.063106
+2025-11-24 14:13:38,281 - INFO - ----------------------------------------
+2025-11-24 14:13:38,281 - INFO - 
+==================== EPOCH 31/50 ====================
+2025-11-24 14:14:43,479 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 31):
+2025-11-24 14:14:43,479 - INFO - --------------------------------------------------
+2025-11-24 14:14:43,479 - INFO - Sample 1:
+2025-11-24 14:14:43,479 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:14:43,479 - INFO -   Prediction: In a grassy field, a herd of sheep is gathered around a fence, while nearby, a lamb rests on a tree branch, and a group of sheep walks along the road.
+2025-11-24 14:14:43,480 - INFO -   BLEU-4: 0.1045, METEOR: 0.4603
+2025-11-24 14:14:43,480 - INFO - 
+2025-11-24 14:14:43,480 - INFO - Sample 2:
+2025-11-24 14:14:43,480 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:14:43,480 - INFO -   Prediction: A cat and a dog are perched on a bed, with the dog hiding under a blanket next to a refrigerator.
+2025-11-24 14:14:43,480 - INFO -   BLEU-4: 0.0467, METEOR: 0.2433
+2025-11-24 14:14:43,480 - INFO - 
+2025-11-24 14:14:43,480 - INFO - Sample 3:
+2025-11-24 14:14:43,480 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:14:43,480 - INFO -   Prediction: A young boy is swinging a baseball bat as he prepares to hit the ball.
+2025-11-24 14:14:43,480 - INFO -   BLEU-4: 0.0147, METEOR: 0.1174
+2025-11-24 14:14:43,480 - INFO - 
+2025-11-24 14:14:46,013 - INFO - Epoch 31 Results:
+2025-11-24 14:14:46,013 - INFO - ----------------------------------------
+2025-11-24 14:14:46,013 - INFO - train_loss     : 2.032643
+2025-11-24 14:14:46,013 - INFO - val_loss       : 2.209953
+2025-11-24 14:14:46,013 - INFO - METEOR         : 0.265410
+2025-11-24 14:14:46,013 - INFO - CIDEr          : 0.337671
+2025-11-24 14:14:46,013 - INFO - BLEU-1         : 0.335761
+2025-11-24 14:14:46,013 - INFO - BLEU-2         : 0.183794
+2025-11-24 14:14:46,013 - INFO - BLEU-3         : 0.104532
+2025-11-24 14:14:46,013 - INFO - BLEU-4         : 0.064919
+2025-11-24 14:14:46,014 - INFO - ----------------------------------------
+2025-11-24 14:14:46,014 - INFO - 
+==================== EPOCH 32/50 ====================
+2025-11-24 14:15:49,496 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 32):
+2025-11-24 14:15:49,496 - INFO - --------------------------------------------------
+2025-11-24 14:15:49,496 - INFO - Sample 1:
+2025-11-24 14:15:49,496 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:15:49,496 - INFO -   Prediction: In a grassy field, a herd of sheep and goats, including a large lamb, are gathered around a table, with one sheep laying on the ground nearby.
+2025-11-24 14:15:49,496 - INFO -   BLEU-4: 0.0729, METEOR: 0.3937
+2025-11-24 14:15:49,496 - INFO - 
+2025-11-24 14:15:49,496 - INFO - Sample 2:
+2025-11-24 14:15:49,496 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:15:49,496 - INFO -   Prediction: A cat and a dog are snuggled together on a bed, with the dog hiding under a blanket.
+2025-11-24 14:15:49,496 - INFO -   BLEU-4: 0.0347, METEOR: 0.2008
+2025-11-24 14:15:49,496 - INFO - 
+2025-11-24 14:15:49,496 - INFO - Sample 3:
+2025-11-24 14:15:49,496 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:15:49,496 - INFO -   Prediction: A young baseball player is swinging a bat as he prepares to hit the ball.
+2025-11-24 14:15:49,496 - INFO -   BLEU-4: 0.0305, METEOR: 0.1408
+2025-11-24 14:15:49,496 - INFO - 
+2025-11-24 14:15:51,827 - INFO - Epoch 32 Results:
+2025-11-24 14:15:51,827 - INFO - ----------------------------------------
+2025-11-24 14:15:51,827 - INFO - train_loss     : 2.021099
+2025-11-24 14:15:51,827 - INFO - val_loss       : 2.203259
+2025-11-24 14:15:51,828 - INFO - METEOR         : 0.259993
+2025-11-24 14:15:51,828 - INFO - CIDEr          : 0.323175
+2025-11-24 14:15:51,828 - INFO - BLEU-1         : 0.328813
+2025-11-24 14:15:51,828 - INFO - BLEU-2         : 0.179965
+2025-11-24 14:15:51,828 - INFO - BLEU-3         : 0.100284
+2025-11-24 14:15:51,828 - INFO - BLEU-4         : 0.061531
+2025-11-24 14:15:51,828 - INFO - ----------------------------------------
+2025-11-24 14:15:51,828 - INFO - 
+==================== EPOCH 33/50 ====================
+2025-11-24 14:16:54,710 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 33):
+2025-11-24 14:16:54,710 - INFO - --------------------------------------------------
+2025-11-24 14:16:54,710 - INFO - Sample 1:
+2025-11-24 14:16:54,710 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:16:54,710 - INFO -   Prediction: In a grassy field, a herd of sheep is engaged in a game of chess, while nearby, a lamb rests on a tree, and a group of sheep walks along the road.
+2025-11-24 14:16:54,710 - INFO -   BLEU-4: 0.1011, METEOR: 0.4580
+2025-11-24 14:16:54,710 - INFO - 
+2025-11-24 14:16:54,710 - INFO - Sample 2:
+2025-11-24 14:16:54,710 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:16:54,710 - INFO -   Prediction: A cat and a dog are perched on a bed, with the dog hiding under a blanket in front of a refrigerator.
+2025-11-24 14:16:54,710 - INFO -   BLEU-4: 0.0491, METEOR: 0.2573
+2025-11-24 14:16:54,710 - INFO - 
+2025-11-24 14:16:54,710 - INFO - Sample 3:
+2025-11-24 14:16:54,710 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:16:54,710 - INFO -   Prediction: A young boy in a blue shirt is swinging a baseball bat as he prepares to hit the ball.
+2025-11-24 14:16:54,710 - INFO -   BLEU-4: 0.0164, METEOR: 0.1152
+2025-11-24 14:16:54,710 - INFO - 
+2025-11-24 14:16:57,122 - INFO - Epoch 33 Results:
+2025-11-24 14:16:57,122 - INFO - ----------------------------------------
+2025-11-24 14:16:57,122 - INFO - train_loss     : 2.020091
+2025-11-24 14:16:57,122 - INFO - val_loss       : 2.207420
+2025-11-24 14:16:57,122 - INFO - METEOR         : 0.261851
+2025-11-24 14:16:57,122 - INFO - CIDEr          : 0.327119
+2025-11-24 14:16:57,122 - INFO - BLEU-1         : 0.331499
+2025-11-24 14:16:57,122 - INFO - BLEU-2         : 0.182416
+2025-11-24 14:16:57,122 - INFO - BLEU-3         : 0.103636
+2025-11-24 14:16:57,122 - INFO - BLEU-4         : 0.064448
+2025-11-24 14:16:57,122 - INFO - ----------------------------------------
+2025-11-24 14:16:57,122 - INFO - 
+==================== EPOCH 34/50 ====================
+2025-11-24 14:18:00,950 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 34):
+2025-11-24 14:18:00,950 - INFO - --------------------------------------------------
+2025-11-24 14:18:00,950 - INFO - Sample 1:
+2025-11-24 14:18:00,950 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:18:00,950 - INFO -   Prediction: In a grassy field, a flock of sheep and goats, including a lamb, are gathered around a table, while a group of sheep walks along the road.
+2025-11-24 14:18:00,950 - INFO -   BLEU-4: 0.1438, METEOR: 0.5409
+2025-11-24 14:18:00,950 - INFO - 
+2025-11-24 14:18:00,950 - INFO - Sample 2:
+2025-11-24 14:18:00,950 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:18:00,950 - INFO -   Prediction: A cat and a dog are perched on a bed, with the dog hiding under a blanket in front of a refrigerator.
+2025-11-24 14:18:00,950 - INFO -   BLEU-4: 0.0491, METEOR: 0.2573
+2025-11-24 14:18:00,950 - INFO - 
+2025-11-24 14:18:00,950 - INFO - Sample 3:
+2025-11-24 14:18:00,950 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:18:00,950 - INFO -   Prediction: A young boy is swinging a baseball bat as he prepares to hit the ball.
+2025-11-24 14:18:00,951 - INFO -   BLEU-4: 0.0147, METEOR: 0.1174
+2025-11-24 14:18:00,951 - INFO - 
+2025-11-24 14:18:05,951 - INFO - New best model saved! CIDEr: 0.3632
+2025-11-24 14:18:05,952 - INFO - Epoch 34 Results:
+2025-11-24 14:18:05,952 - INFO - ----------------------------------------
+2025-11-24 14:18:05,952 - INFO - train_loss     : nan
+2025-11-24 14:18:05,952 - INFO - val_loss       : 2.208177
+2025-11-24 14:18:05,953 - INFO - METEOR         : 0.264409
+2025-11-24 14:18:05,953 - INFO - CIDEr          : 0.363203
+2025-11-24 14:18:05,953 - INFO - BLEU-1         : 0.337213
+2025-11-24 14:18:05,953 - INFO - BLEU-2         : 0.185570
+2025-11-24 14:18:05,953 - INFO - BLEU-3         : 0.104147
+2025-11-24 14:18:05,953 - INFO - BLEU-4         : 0.064648
+2025-11-24 14:18:05,953 - INFO - 🏆 NEW BEST MODEL!
+2025-11-24 14:18:05,953 - INFO - ----------------------------------------
+2025-11-24 14:18:05,953 - INFO - 🎯 BEST METRICS ACHIEVED:
+2025-11-24 14:18:05,953 - INFO - CIDEr          : 0.363203 (epoch 34)
+2025-11-24 14:18:05,953 - INFO - 
+==================== EPOCH 35/50 ====================
+2025-11-24 14:19:06,249 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 35):
+2025-11-24 14:19:06,249 - INFO - --------------------------------------------------
+2025-11-24 14:19:06,249 - INFO - Sample 1:
+2025-11-24 14:19:06,249 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:19:06,249 - INFO -   Prediction: In a grassy field, a group of sheep, including a lamb, are gathered around a table, with one sheep resting on the ground nearby.
+2025-11-24 14:19:06,249 - INFO -   BLEU-4: 0.1371, METEOR: 0.4454
+2025-11-24 14:19:06,249 - INFO - 
+2025-11-24 14:19:06,249 - INFO - Sample 2:
+2025-11-24 14:19:06,249 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:19:06,249 - INFO -   Prediction: In a cozy bedroom, a cat and a dog are resting on a white bed with a blanket, while another cat rests on a shelf nearby.
+2025-11-24 14:19:06,249 - INFO -   BLEU-4: 0.0885, METEOR: 0.3040
+2025-11-24 14:19:06,249 - INFO - 
+2025-11-24 14:19:06,249 - INFO - Sample 3:
+2025-11-24 14:19:06,249 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:19:06,249 - INFO -   Prediction: A baseball game unfolds as a young boy swings his bat at a ball while another player stands nearby, ready to catch the ball.
+2025-11-24 14:19:06,249 - INFO -   BLEU-4: 0.0355, METEOR: 0.2863
+2025-11-24 14:19:06,249 - INFO - 
+2025-11-24 14:19:08,602 - INFO - Epoch 35 Results:
+2025-11-24 14:19:08,603 - INFO - ----------------------------------------
+2025-11-24 14:19:08,603 - INFO - train_loss     : 2.002293
+2025-11-24 14:19:08,603 - INFO - val_loss       : 2.203305
+2025-11-24 14:19:08,603 - INFO - METEOR         : 0.263455
+2025-11-24 14:19:08,603 - INFO - CIDEr          : 0.344651
+2025-11-24 14:19:08,603 - INFO - BLEU-1         : 0.335041
+2025-11-24 14:19:08,603 - INFO - BLEU-2         : 0.184634
+2025-11-24 14:19:08,603 - INFO - BLEU-3         : 0.106450
+2025-11-24 14:19:08,603 - INFO - BLEU-4         : 0.066789
+2025-11-24 14:19:08,603 - INFO - ----------------------------------------
+2025-11-24 14:19:08,603 - INFO - 
+==================== EPOCH 36/50 ====================
+2025-11-24 14:20:08,485 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 36):
+2025-11-24 14:20:08,485 - INFO - --------------------------------------------------
+2025-11-24 14:20:08,485 - INFO - Sample 1:
+2025-11-24 14:20:08,485 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:20:08,485 - INFO -   Prediction: In a grassy field, a herd of sheep is engaged in a game of chess, while nearby, a group of sheep walks together.
+2025-11-24 14:20:08,485 - INFO -   BLEU-4: 0.1435, METEOR: 0.4822
+2025-11-24 14:20:08,485 - INFO - 
+2025-11-24 14:20:08,485 - INFO - Sample 2:
+2025-11-24 14:20:08,485 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:20:08,485 - INFO -   Prediction: In a cozy bedroom, a cat rests on a white bed alongside a dog, while nearby, a black and white cat is hiding under a blanket in front of a refrigerator.
+2025-11-24 14:20:08,485 - INFO -   BLEU-4: 0.0712, METEOR: 0.2817
+2025-11-24 14:20:08,485 - INFO - 
+2025-11-24 14:20:08,486 - INFO - Sample 3:
+2025-11-24 14:20:08,486 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:20:08,486 - INFO -   Prediction: A young boy is swinging a baseball bat as he prepares to hit the ball.
+2025-11-24 14:20:08,486 - INFO -   BLEU-4: 0.0147, METEOR: 0.1174
+2025-11-24 14:20:08,486 - INFO - 
+2025-11-24 14:20:11,112 - INFO - Epoch 36 Results:
+2025-11-24 14:20:11,112 - INFO - ----------------------------------------
+2025-11-24 14:20:11,112 - INFO - train_loss     : 1.993938
+2025-11-24 14:20:11,112 - INFO - val_loss       : 2.205996
+2025-11-24 14:20:11,112 - INFO - METEOR         : 0.262881
+2025-11-24 14:20:11,112 - INFO - CIDEr          : 0.331579
+2025-11-24 14:20:11,112 - INFO - BLEU-1         : 0.325083
+2025-11-24 14:20:11,112 - INFO - BLEU-2         : 0.179221
+2025-11-24 14:20:11,112 - INFO - BLEU-3         : 0.101886
+2025-11-24 14:20:11,112 - INFO - BLEU-4         : 0.063277
+2025-11-24 14:20:11,112 - INFO - ----------------------------------------
+2025-11-24 14:20:11,112 - INFO - 
+==================== EPOCH 37/50 ====================
+2025-11-24 14:21:12,234 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 37):
+2025-11-24 14:21:12,234 - INFO - --------------------------------------------------
+2025-11-24 14:21:12,234 - INFO - Sample 1:
+2025-11-24 14:21:12,235 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:21:12,235 - INFO -   Prediction: In a grassy field, a herd of sheep is gathered around a table, while nearby, a group of sheep walks along the road.
+2025-11-24 14:21:12,235 - INFO -   BLEU-4: 0.1393, METEOR: 0.4144
+2025-11-24 14:21:12,235 - INFO - 
+2025-11-24 14:21:12,235 - INFO - Sample 2:
+2025-11-24 14:21:12,235 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:21:12,235 - INFO -   Prediction: A cat and a dog are perched on a white bed, with the dog hiding under a blanket in front of a window.
+2025-11-24 14:21:12,235 - INFO -   BLEU-4: 0.0504, METEOR: 0.2565
+2025-11-24 14:21:12,235 - INFO - 
+2025-11-24 14:21:12,235 - INFO - Sample 3:
+2025-11-24 14:21:12,235 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:21:12,235 - INFO -   Prediction: A young boy in a blue shirt is swinging a baseball bat as he prepares to hit the ball.
+2025-11-24 14:21:12,235 - INFO -   BLEU-4: 0.0164, METEOR: 0.1152
+2025-11-24 14:21:12,235 - INFO - 
+2025-11-24 14:21:14,486 - INFO - Epoch 37 Results:
+2025-11-24 14:21:14,486 - INFO - ----------------------------------------
+2025-11-24 14:21:14,487 - INFO - train_loss     : 1.989677
+2025-11-24 14:21:14,487 - INFO - val_loss       : 2.206880
+2025-11-24 14:21:14,487 - INFO - METEOR         : 0.265388
+2025-11-24 14:21:14,487 - INFO - CIDEr          : 0.323258
+2025-11-24 14:21:14,487 - INFO - BLEU-1         : 0.329243
+2025-11-24 14:21:14,487 - INFO - BLEU-2         : 0.182336
+2025-11-24 14:21:14,487 - INFO - BLEU-3         : 0.105474
+2025-11-24 14:21:14,487 - INFO - BLEU-4         : 0.066004
+2025-11-24 14:21:14,487 - INFO - ----------------------------------------
+2025-11-24 14:21:14,487 - INFO - 
+==================== EPOCH 38/50 ====================
+2025-11-24 14:22:15,975 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 38):
+2025-11-24 14:22:15,975 - INFO - --------------------------------------------------
+2025-11-24 14:22:15,975 - INFO - Sample 1:
+2025-11-24 14:22:15,975 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:22:15,975 - INFO -   Prediction: In a grassy field, a herd of sheep is gathered around a table, while nearby, a group of sheep walks along the road.
+2025-11-24 14:22:15,975 - INFO -   BLEU-4: 0.1393, METEOR: 0.4144
+2025-11-24 14:22:15,975 - INFO - 
+2025-11-24 14:22:15,975 - INFO - Sample 2:
+2025-11-24 14:22:15,975 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:22:15,975 - INFO -   Prediction: A cat and a dog are perched on a bed, with the dog hiding under a blanket next to a refrigerator.
+2025-11-24 14:22:15,975 - INFO -   BLEU-4: 0.0467, METEOR: 0.2433
+2025-11-24 14:22:15,975 - INFO - 
+2025-11-24 14:22:15,975 - INFO - Sample 3:
+2025-11-24 14:22:15,976 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:22:15,976 - INFO -   Prediction: A young boy in a blue shirt is swinging a baseball bat as he prepares to hit the ball.
+2025-11-24 14:22:15,976 - INFO -   BLEU-4: 0.0164, METEOR: 0.1152
+2025-11-24 14:22:15,976 - INFO - 
+2025-11-24 14:22:18,274 - INFO - Epoch 38 Results:
+2025-11-24 14:22:18,274 - INFO - ----------------------------------------
+2025-11-24 14:22:18,275 - INFO - train_loss     : 1.976975
+2025-11-24 14:22:18,275 - INFO - val_loss       : 2.209758
+2025-11-24 14:22:18,275 - INFO - METEOR         : 0.263529
+2025-11-24 14:22:18,275 - INFO - CIDEr          : 0.343211
+2025-11-24 14:22:18,275 - INFO - BLEU-1         : 0.333648
+2025-11-24 14:22:18,275 - INFO - BLEU-2         : 0.184355
+2025-11-24 14:22:18,275 - INFO - BLEU-3         : 0.104984
+2025-11-24 14:22:18,275 - INFO - BLEU-4         : 0.065256
+2025-11-24 14:22:18,275 - INFO - ----------------------------------------
+2025-11-24 14:22:18,275 - INFO - 
+==================== EPOCH 39/50 ====================
+2025-11-24 14:23:19,108 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 39):
+2025-11-24 14:23:19,108 - INFO - --------------------------------------------------
+2025-11-24 14:23:19,108 - INFO - Sample 1:
+2025-11-24 14:23:19,108 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:23:19,108 - INFO -   Prediction: In a grassy field, a herd of sheep and goats, including a group of sheep, are gathered around a table, with one lamb laying on the ground nearby.
+2025-11-24 14:23:19,108 - INFO -   BLEU-4: 0.1383, METEOR: 0.5043
+2025-11-24 14:23:19,108 - INFO - 
+2025-11-24 14:23:19,109 - INFO - Sample 2:
+2025-11-24 14:23:19,109 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:23:19,109 - INFO -   Prediction: A cat sits on a bed near a refrigerator, while a dog rests nearby on a blanket under a blanket.
+2025-11-24 14:23:19,109 - INFO -   BLEU-4: 0.0243, METEOR: 0.1744
+2025-11-24 14:23:19,109 - INFO - 
+2025-11-24 14:23:19,109 - INFO - Sample 3:
+2025-11-24 14:23:19,109 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:23:19,109 - INFO -   Prediction: A young boy is swinging a bat at a baseball game, swinging his bat to catch the ball.
+2025-11-24 14:23:19,109 - INFO -   BLEU-4: 0.0329, METEOR: 0.1620
+2025-11-24 14:23:19,109 - INFO - 
+2025-11-24 14:23:21,419 - INFO - Epoch 39 Results:
+2025-11-24 14:23:21,419 - INFO - ----------------------------------------
+2025-11-24 14:23:21,419 - INFO - train_loss     : 1.974477
+2025-11-24 14:23:21,419 - INFO - val_loss       : 2.213734
+2025-11-24 14:23:21,419 - INFO - METEOR         : 0.267500
+2025-11-24 14:23:21,419 - INFO - CIDEr          : 0.340793
+2025-11-24 14:23:21,419 - INFO - BLEU-1         : 0.334052
+2025-11-24 14:23:21,419 - INFO - BLEU-2         : 0.184704
+2025-11-24 14:23:21,419 - INFO - BLEU-3         : 0.106315
+2025-11-24 14:23:21,419 - INFO - BLEU-4         : 0.066758
+2025-11-24 14:23:21,419 - INFO - ----------------------------------------
+2025-11-24 14:23:21,419 - INFO - 
+==================== EPOCH 40/50 ====================
+2025-11-24 14:24:23,894 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 40):
+2025-11-24 14:24:23,894 - INFO - --------------------------------------------------
+2025-11-24 14:24:23,894 - INFO - Sample 1:
+2025-11-24 14:24:23,895 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:24:23,895 - INFO -   Prediction: In a grassy field, a herd of sheep and goats, including a white one, are gathered around a table, while a group of sheep walks along the road.
+2025-11-24 14:24:23,895 - INFO -   BLEU-4: 0.1383, METEOR: 0.4676
+2025-11-24 14:24:23,895 - INFO - 
+2025-11-24 14:24:23,895 - INFO - Sample 2:
+2025-11-24 14:24:23,895 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:24:23,895 - INFO -   Prediction: A cat and a dog are perched on a bed, with the dog hiding under a blanket in front of a refrigerator.
+2025-11-24 14:24:23,895 - INFO -   BLEU-4: 0.0491, METEOR: 0.2573
+2025-11-24 14:24:23,895 - INFO - 
+2025-11-24 14:24:23,895 - INFO - Sample 3:
+2025-11-24 14:24:23,895 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:24:23,895 - INFO -   Prediction: A young boy is swinging a bat at a baseball game, swinging his bat as he prepares to catch it.
+2025-11-24 14:24:23,895 - INFO -   BLEU-4: 0.0319, METEOR: 0.1376
+2025-11-24 14:24:23,895 - INFO - 
+2025-11-24 14:24:28,472 - INFO - New best model saved! CIDEr: 0.3713
+2025-11-24 14:24:28,473 - INFO - Epoch 40 Results:
+2025-11-24 14:24:28,474 - INFO - ----------------------------------------
+2025-11-24 14:24:28,474 - INFO - train_loss     : 1.966068
+2025-11-24 14:24:28,474 - INFO - val_loss       : 2.215516
+2025-11-24 14:24:28,474 - INFO - METEOR         : 0.261602
+2025-11-24 14:24:28,474 - INFO - CIDEr          : 0.371275
+2025-11-24 14:24:28,474 - INFO - BLEU-1         : 0.331218
+2025-11-24 14:24:28,474 - INFO - BLEU-2         : 0.182396
+2025-11-24 14:24:28,474 - INFO - BLEU-3         : 0.104595
+2025-11-24 14:24:28,474 - INFO - BLEU-4         : 0.065602
+2025-11-24 14:24:28,474 - INFO - 🏆 NEW BEST MODEL!
+2025-11-24 14:24:28,474 - INFO - ----------------------------------------
+2025-11-24 14:24:28,474 - INFO - 🎯 BEST METRICS ACHIEVED:
+2025-11-24 14:24:28,474 - INFO - CIDEr          : 0.371275 (epoch 40)
+2025-11-24 14:24:28,474 - INFO - 
+==================== EPOCH 41/50 ====================
+2025-11-24 14:25:29,676 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 41):
+2025-11-24 14:25:29,676 - INFO - --------------------------------------------------
+2025-11-24 14:25:29,676 - INFO - Sample 1:
+2025-11-24 14:25:29,676 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:25:29,676 - INFO -   Prediction: In a grassy field, a group of sheep is walking along a trail, with one sheep laying on the ground while another stands nearby.
+2025-11-24 14:25:29,676 - INFO -   BLEU-4: 0.1371, METEOR: 0.4122
+2025-11-24 14:25:29,676 - INFO - 
+2025-11-24 14:25:29,676 - INFO - Sample 2:
+2025-11-24 14:25:29,676 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:25:29,676 - INFO -   Prediction: In a cozy bedroom, a cat rests on a bed with a white blanket next to a refrigerator, while nearby, a dog rests under a blanket in front of a window.
+2025-11-24 14:25:29,676 - INFO -   BLEU-4: 0.0615, METEOR: 0.2254
+2025-11-24 14:25:29,676 - INFO - 
+2025-11-24 14:25:29,676 - INFO - Sample 3:
+2025-11-24 14:25:29,676 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:25:29,676 - INFO -   Prediction: A young boy in a blue shirt is swinging a bat at a baseball game.
+2025-11-24 14:25:29,676 - INFO -   BLEU-4: 0.0288, METEOR: 0.1746
+2025-11-24 14:25:29,676 - INFO - 
+2025-11-24 14:25:31,913 - INFO - Epoch 41 Results:
+2025-11-24 14:25:31,913 - INFO - ----------------------------------------
+2025-11-24 14:25:31,913 - INFO - train_loss     : 1.963054
+2025-11-24 14:25:31,913 - INFO - val_loss       : 2.210458
+2025-11-24 14:25:31,913 - INFO - METEOR         : 0.273438
+2025-11-24 14:25:31,913 - INFO - CIDEr          : 0.338029
+2025-11-24 14:25:31,913 - INFO - BLEU-1         : 0.339539
+2025-11-24 14:25:31,913 - INFO - BLEU-2         : 0.187378
+2025-11-24 14:25:31,913 - INFO - BLEU-3         : 0.107253
+2025-11-24 14:25:31,913 - INFO - BLEU-4         : 0.066924
+2025-11-24 14:25:31,914 - INFO - ----------------------------------------
+2025-11-24 14:25:31,914 - INFO - 
+==================== EPOCH 42/50 ====================
+2025-11-24 14:26:33,761 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 42):
+2025-11-24 14:26:33,762 - INFO - --------------------------------------------------
+2025-11-24 14:26:33,762 - INFO - Sample 1:
+2025-11-24 14:26:33,762 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:26:33,762 - INFO -   Prediction: In a grassy field, a herd of sheep and goats, including a young lamb, are gathered around a table, with some wandering along the road.
+2025-11-24 14:26:33,762 - INFO -   BLEU-4: 0.0786, METEOR: 0.4430
+2025-11-24 14:26:33,762 - INFO - 
+2025-11-24 14:26:33,762 - INFO - Sample 2:
+2025-11-24 14:26:33,762 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:26:33,762 - INFO -   Prediction: A cat and a dog are perched on a white bed, with one of them hiding under a blanket in front of a refrigerator.
+2025-11-24 14:26:33,762 - INFO -   BLEU-4: 0.0554, METEOR: 0.2155
+2025-11-24 14:26:33,762 - INFO - 
+2025-11-24 14:26:33,762 - INFO - Sample 3:
+2025-11-24 14:26:33,762 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:26:33,762 - INFO -   Prediction: A young boy is swinging a baseball bat as he prepares to hit the ball.
+2025-11-24 14:26:33,762 - INFO -   BLEU-4: 0.0147, METEOR: 0.1174
+2025-11-24 14:26:33,762 - INFO - 
+2025-11-24 14:26:35,047 - INFO - Epoch 42 Results:
+2025-11-24 14:26:35,047 - INFO - ----------------------------------------
+2025-11-24 14:26:35,047 - INFO - train_loss     : 1.948444
+2025-11-24 14:26:35,047 - INFO - val_loss       : 2.214364
+2025-11-24 14:26:35,047 - INFO - METEOR         : 0.267047
+2025-11-24 14:26:35,048 - INFO - CIDEr          : 0.362914
+2025-11-24 14:26:35,048 - INFO - BLEU-1         : 0.333951
+2025-11-24 14:26:35,048 - INFO - BLEU-2         : 0.184348
+2025-11-24 14:26:35,048 - INFO - BLEU-3         : 0.107909
+2025-11-24 14:26:35,048 - INFO - BLEU-4         : 0.068866
+2025-11-24 14:26:35,048 - INFO - ----------------------------------------
+2025-11-24 14:26:35,048 - INFO - 
+==================== EPOCH 43/50 ====================
+2025-11-24 14:27:34,085 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 43):
+2025-11-24 14:27:34,086 - INFO - --------------------------------------------------
+2025-11-24 14:27:34,086 - INFO - Sample 1:
+2025-11-24 14:27:34,086 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:27:34,086 - INFO -   Prediction: In a grassy field, a herd of sheep is gathered near a tree, while nearby, a group of sheep walks along the road.
+2025-11-24 14:27:34,086 - INFO -   BLEU-4: 0.1393, METEOR: 0.4144
+2025-11-24 14:27:34,086 - INFO - 
+2025-11-24 14:27:34,086 - INFO - Sample 2:
+2025-11-24 14:27:34,086 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:27:34,086 - INFO -   Prediction: A black and white photograph captures a cat sitting on a bed with a blanket, while nearby, a dog rests on a wooden shelf in front of a refrigerator.
+2025-11-24 14:27:34,086 - INFO -   BLEU-4: 0.0315, METEOR: 0.1983
+2025-11-24 14:27:34,086 - INFO - 
+2025-11-24 14:27:34,086 - INFO - Sample 3:
+2025-11-24 14:27:34,086 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:27:34,086 - INFO -   Prediction: A young baseball player, wearing a helmet, is swinging his bat as he prepares to hit the ball.
+2025-11-24 14:27:34,086 - INFO -   BLEU-4: 0.0329, METEOR: 0.1389
+2025-11-24 14:27:34,086 - INFO - 
+2025-11-24 14:27:36,355 - INFO - Epoch 43 Results:
+2025-11-24 14:27:36,356 - INFO - ----------------------------------------
+2025-11-24 14:27:36,356 - INFO - train_loss     : 1.942358
+2025-11-24 14:27:36,356 - INFO - val_loss       : 2.215116
+2025-11-24 14:27:36,356 - INFO - METEOR         : 0.264051
+2025-11-24 14:27:36,356 - INFO - CIDEr          : 0.328704
+2025-11-24 14:27:36,356 - INFO - BLEU-1         : 0.326438
+2025-11-24 14:27:36,356 - INFO - BLEU-2         : 0.180289
+2025-11-24 14:27:36,356 - INFO - BLEU-3         : 0.104210
+2025-11-24 14:27:36,356 - INFO - BLEU-4         : 0.065390
+2025-11-24 14:27:36,356 - INFO - ----------------------------------------
+2025-11-24 14:27:36,356 - INFO - 
+==================== EPOCH 44/50 ====================
+2025-11-24 14:28:39,846 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 44):
+2025-11-24 14:28:39,847 - INFO - --------------------------------------------------
+2025-11-24 14:28:39,847 - INFO - Sample 1:
+2025-11-24 14:28:39,847 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:28:39,847 - INFO -   Prediction: In a grassy field, a herd of sheep and goats is gathered around a table, while a small group of sheep walks along the road.
+2025-11-24 14:28:39,847 - INFO -   BLEU-4: 0.0988, METEOR: 0.4430
+2025-11-24 14:28:39,847 - INFO - 
+2025-11-24 14:28:39,847 - INFO - Sample 2:
+2025-11-24 14:28:39,847 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:28:39,847 - INFO -   Prediction: A black and white photograph captures a cat resting on a bed near a refrigerator, while a dog rests nearby on a blanket under a blanket.
+2025-11-24 14:28:39,847 - INFO -   BLEU-4: 0.0301, METEOR: 0.2000
+2025-11-24 14:28:39,847 - INFO - 
+2025-11-24 14:28:39,847 - INFO - Sample 3:
+2025-11-24 14:28:39,847 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:28:39,847 - INFO -   Prediction: A young boy in a blue shirt is swinging a bat at a baseball, poised to hit the ball.
+2025-11-24 14:28:39,847 - INFO -   BLEU-4: 0.0334, METEOR: 0.1965
+2025-11-24 14:28:39,847 - INFO - 
+2025-11-24 14:28:42,098 - INFO - Epoch 44 Results:
+2025-11-24 14:28:42,098 - INFO - ----------------------------------------
+2025-11-24 14:28:42,098 - INFO - train_loss     : 1.941278
+2025-11-24 14:28:42,098 - INFO - val_loss       : 2.211852
+2025-11-24 14:28:42,098 - INFO - METEOR         : 0.264193
+2025-11-24 14:28:42,098 - INFO - CIDEr          : 0.344528
+2025-11-24 14:28:42,098 - INFO - BLEU-1         : 0.333017
+2025-11-24 14:28:42,098 - INFO - BLEU-2         : 0.180989
+2025-11-24 14:28:42,099 - INFO - BLEU-3         : 0.103163
+2025-11-24 14:28:42,099 - INFO - BLEU-4         : 0.064507
+2025-11-24 14:28:42,099 - INFO - ----------------------------------------
+2025-11-24 14:28:42,099 - INFO - 
+==================== EPOCH 45/50 ====================
+2025-11-24 14:29:45,314 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 45):
+2025-11-24 14:29:45,315 - INFO - --------------------------------------------------
+2025-11-24 14:29:45,315 - INFO - Sample 1:
+2025-11-24 14:29:45,315 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:29:45,315 - INFO -   Prediction: In a grassy field, a herd of sheep is gathered around a table, while nearby, a group of sheep walks along the road.
+2025-11-24 14:29:45,315 - INFO -   BLEU-4: 0.1393, METEOR: 0.4144
+2025-11-24 14:29:45,315 - INFO - 
+2025-11-24 14:29:45,315 - INFO - Sample 2:
+2025-11-24 14:29:45,315 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:29:45,315 - INFO -   Prediction: A cat and a dog are sitting on a bed, with the cat hiding under a blanket in front of the refrigerator.
+2025-11-24 14:29:45,315 - INFO -   BLEU-4: 0.0443, METEOR: 0.2168
+2025-11-24 14:29:45,315 - INFO - 
+2025-11-24 14:29:45,315 - INFO - Sample 3:
+2025-11-24 14:29:45,315 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:29:45,315 - INFO -   Prediction: A young boy is swinging a baseball bat as he prepares to hit the ball.
+2025-11-24 14:29:45,315 - INFO -   BLEU-4: 0.0147, METEOR: 0.1174
+2025-11-24 14:29:45,315 - INFO - 
+2025-11-24 14:29:47,576 - INFO - Epoch 45 Results:
+2025-11-24 14:29:47,576 - INFO - ----------------------------------------
+2025-11-24 14:29:47,576 - INFO - train_loss     : 1.928570
+2025-11-24 14:29:47,576 - INFO - val_loss       : 2.215113
+2025-11-24 14:29:47,576 - INFO - METEOR         : 0.272626
+2025-11-24 14:29:47,576 - INFO - CIDEr          : 0.367789
+2025-11-24 14:29:47,576 - INFO - BLEU-1         : 0.338930
+2025-11-24 14:29:47,576 - INFO - BLEU-2         : 0.188600
+2025-11-24 14:29:47,576 - INFO - BLEU-3         : 0.109586
+2025-11-24 14:29:47,576 - INFO - BLEU-4         : 0.068872
+2025-11-24 14:29:47,576 - INFO - ----------------------------------------
+2025-11-24 14:29:47,576 - INFO - 
+==================== EPOCH 46/50 ====================
+2025-11-24 14:30:49,037 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 46):
+2025-11-24 14:30:49,038 - INFO - --------------------------------------------------
+2025-11-24 14:30:49,038 - INFO - Sample 1:
+2025-11-24 14:30:49,038 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:30:49,038 - INFO -   Prediction: In a grassy field, a herd of sheep is gathered around a fence, with one lamb laying on the ground.
+2025-11-24 14:30:49,038 - INFO -   BLEU-4: 0.0534, METEOR: 0.3468
+2025-11-24 14:30:49,038 - INFO - 
+2025-11-24 14:30:49,038 - INFO - Sample 2:
+2025-11-24 14:30:49,038 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:30:49,038 - INFO -   Prediction: A black and white photograph captures a cat sitting on a bed near a refrigerator, while a dog rests nearby on a blanket under a blanket.
+2025-11-24 14:30:49,038 - INFO -   BLEU-4: 0.0301, METEOR: 0.2000
+2025-11-24 14:30:49,038 - INFO - 
+2025-11-24 14:30:49,038 - INFO - Sample 3:
+2025-11-24 14:30:49,038 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:30:49,038 - INFO -   Prediction: A young boy in a blue shirt is swinging a baseball bat as he prepares to hit the ball.
+2025-11-24 14:30:49,038 - INFO -   BLEU-4: 0.0164, METEOR: 0.1152
+2025-11-24 14:30:49,038 - INFO - 
+2025-11-24 14:30:51,296 - INFO - Epoch 46 Results:
+2025-11-24 14:30:51,296 - INFO - ----------------------------------------
+2025-11-24 14:30:51,296 - INFO - train_loss     : 1.926482
+2025-11-24 14:30:51,296 - INFO - val_loss       : 2.213238
+2025-11-24 14:30:51,296 - INFO - METEOR         : 0.265369
+2025-11-24 14:30:51,296 - INFO - CIDEr          : 0.351625
+2025-11-24 14:30:51,296 - INFO - BLEU-1         : 0.332873
+2025-11-24 14:30:51,296 - INFO - BLEU-2         : 0.182238
+2025-11-24 14:30:51,296 - INFO - BLEU-3         : 0.104869
+2025-11-24 14:30:51,297 - INFO - BLEU-4         : 0.065282
+2025-11-24 14:30:51,297 - INFO - ----------------------------------------
+2025-11-24 14:30:51,297 - INFO - 
+==================== EPOCH 47/50 ====================
+2025-11-24 14:31:52,933 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 47):
+2025-11-24 14:31:52,933 - INFO - --------------------------------------------------
+2025-11-24 14:31:52,934 - INFO - Sample 1:
+2025-11-24 14:31:52,934 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:31:52,934 - INFO -   Prediction: In a grassy field, a herd of sheep is gathered around a table, while nearby, a group of sheep walks together.
+2025-11-24 14:31:52,934 - INFO -   BLEU-4: 0.1582, METEOR: 0.4874
+2025-11-24 14:31:52,934 - INFO - 
+2025-11-24 14:31:52,934 - INFO - Sample 2:
+2025-11-24 14:31:52,934 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:31:52,934 - INFO -   Prediction: A cat and a dog are resting on a white bed, with the dog hiding under a blanket in front of a refrigerator.
+2025-11-24 14:31:52,934 - INFO -   BLEU-4: 0.0542, METEOR: 0.2711
+2025-11-24 14:31:52,934 - INFO - 
+2025-11-24 14:31:52,934 - INFO - Sample 3:
+2025-11-24 14:31:52,934 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:31:52,934 - INFO -   Prediction: A young baseball player, wearing a helmet, is swinging his bat as he prepares to hit the ball.
+2025-11-24 14:31:52,934 - INFO -   BLEU-4: 0.0329, METEOR: 0.1389
+2025-11-24 14:31:52,934 - INFO - 
+2025-11-24 14:31:55,221 - INFO - Epoch 47 Results:
+2025-11-24 14:31:55,221 - INFO - ----------------------------------------
+2025-11-24 14:31:55,221 - INFO - train_loss     : 1.922442
+2025-11-24 14:31:55,221 - INFO - val_loss       : 2.214070
+2025-11-24 14:31:55,222 - INFO - METEOR         : 0.265618
+2025-11-24 14:31:55,222 - INFO - CIDEr          : 0.323563
+2025-11-24 14:31:55,222 - INFO - BLEU-1         : 0.330722
+2025-11-24 14:31:55,222 - INFO - BLEU-2         : 0.180987
+2025-11-24 14:31:55,222 - INFO - BLEU-3         : 0.102267
+2025-11-24 14:31:55,222 - INFO - BLEU-4         : 0.062935
+2025-11-24 14:31:55,222 - INFO - ----------------------------------------
+2025-11-24 14:31:55,222 - INFO - 
+==================== EPOCH 48/50 ====================
+2025-11-24 14:32:58,624 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 48):
+2025-11-24 14:32:58,624 - INFO - --------------------------------------------------
+2025-11-24 14:32:58,624 - INFO - Sample 1:
+2025-11-24 14:32:58,624 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:32:58,624 - INFO -   Prediction: In a grassy field, a herd of sheep is gathered around a table, with one lamb laying on the ground.
+2025-11-24 14:32:58,624 - INFO -   BLEU-4: 0.0534, METEOR: 0.3468
+2025-11-24 14:32:58,624 - INFO - 
+2025-11-24 14:32:58,624 - INFO - Sample 2:
+2025-11-24 14:32:58,624 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:32:58,624 - INFO -   Prediction: A black and white photograph captures a cat sitting on a bed with a blanket, while a small dog rests on the counter nearby.
+2025-11-24 14:32:58,624 - INFO -   BLEU-4: 0.0126, METEOR: 0.1868
+2025-11-24 14:32:58,624 - INFO - 
+2025-11-24 14:32:58,624 - INFO - Sample 3:
+2025-11-24 14:32:58,624 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:32:58,624 - INFO -   Prediction: A young boy is swinging a baseball bat as he prepares to hit the ball.
+2025-11-24 14:32:58,624 - INFO -   BLEU-4: 0.0147, METEOR: 0.1174
+2025-11-24 14:32:58,624 - INFO - 
+2025-11-24 14:33:00,261 - INFO - Epoch 48 Results:
+2025-11-24 14:33:00,261 - INFO - ----------------------------------------
+2025-11-24 14:33:00,261 - INFO - train_loss     : 1.910230
+2025-11-24 14:33:00,261 - INFO - val_loss       : 2.218879
+2025-11-24 14:33:00,261 - INFO - METEOR         : 0.265142
+2025-11-24 14:33:00,261 - INFO - CIDEr          : 0.341254
+2025-11-24 14:33:00,261 - INFO - BLEU-1         : 0.336861
+2025-11-24 14:33:00,261 - INFO - BLEU-2         : 0.184351
+2025-11-24 14:33:00,261 - INFO - BLEU-3         : 0.105699
+2025-11-24 14:33:00,261 - INFO - BLEU-4         : 0.065418
+2025-11-24 14:33:00,262 - INFO - ----------------------------------------
+2025-11-24 14:33:00,262 - INFO - 
+==================== EPOCH 49/50 ====================
+2025-11-24 14:34:02,486 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 49):
+2025-11-24 14:34:02,486 - INFO - --------------------------------------------------
+2025-11-24 14:34:02,486 - INFO - Sample 1:
+2025-11-24 14:34:02,486 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:34:02,486 - INFO -   Prediction: In a grassy field, a herd of sheep is gathered near a tree, while nearby, a man and a woman walk together.
+2025-11-24 14:34:02,486 - INFO -   BLEU-4: 0.0521, METEOR: 0.4503
+2025-11-24 14:34:02,486 - INFO - 
+2025-11-24 14:34:02,486 - INFO - Sample 2:
+2025-11-24 14:34:02,486 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:34:02,486 - INFO -   Prediction: A cat and a dog are perched on a bed, with the dog hiding under a blanket in front of a refrigerator.
+2025-11-24 14:34:02,486 - INFO -   BLEU-4: 0.0491, METEOR: 0.2573
+2025-11-24 14:34:02,486 - INFO - 
+2025-11-24 14:34:02,487 - INFO - Sample 3:
+2025-11-24 14:34:02,487 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:34:02,487 - INFO -   Prediction: A young baseball player, wearing a helmet, swings a bat as he prepares to hit the ball.
+2025-11-24 14:34:02,487 - INFO -   BLEU-4: 0.0338, METEOR: 0.1395
+2025-11-24 14:34:02,487 - INFO - 
+2025-11-24 14:34:04,792 - INFO - Epoch 49 Results:
+2025-11-24 14:34:04,792 - INFO - ----------------------------------------
+2025-11-24 14:34:04,792 - INFO - train_loss     : 1.907330
+2025-11-24 14:34:04,792 - INFO - val_loss       : 2.216155
+2025-11-24 14:34:04,792 - INFO - METEOR         : 0.269622
+2025-11-24 14:34:04,792 - INFO - CIDEr          : 0.364654
+2025-11-24 14:34:04,792 - INFO - BLEU-1         : 0.337348
+2025-11-24 14:34:04,793 - INFO - BLEU-2         : 0.186179
+2025-11-24 14:34:04,793 - INFO - BLEU-3         : 0.105994
+2025-11-24 14:34:04,793 - INFO - BLEU-4         : 0.065691
+2025-11-24 14:34:04,793 - INFO - ----------------------------------------
+2025-11-24 14:34:04,793 - INFO - 
+==================== EPOCH 50/50 ====================
+2025-11-24 14:35:11,476 - INFO - 
+📝 SAMPLE GENERATIONS (Epoch 50):
+2025-11-24 14:35:11,476 - INFO - --------------------------------------------------
+2025-11-24 14:35:11,476 - INFO - Sample 1:
+2025-11-24 14:35:11,476 - INFO -   Reference: A group of sheep and their lambs are grazing and walking together in a lush, green grassy field.
+2025-11-24 14:35:11,476 - INFO -   Prediction: In a grassy field, a group of sheep is walking along a trail, with two of them laying on the ground.
+2025-11-24 14:35:11,476 - INFO -   BLEU-4: 0.1582, METEOR: 0.3761
+2025-11-24 14:35:11,476 - INFO - 
+2025-11-24 14:35:11,476 - INFO - Sample 2:
+2025-11-24 14:35:11,476 - INFO -   Reference: In a cozy home setting, a curious cat is perched atop a refrigerator in the kitchen while another cat peeks out from beneath a thick white bed comforter, and a dog hides playfully under the bed.
+2025-11-24 14:35:11,476 - INFO -   Prediction: A cat and a dog are perched on a bed, with the dog hiding under a blanket in front of a refrigerator.
+2025-11-24 14:35:11,476 - INFO -   BLEU-4: 0.0491, METEOR: 0.2573
+2025-11-24 14:35:11,476 - INFO - 
+2025-11-24 14:35:11,476 - INFO - Sample 3:
+2025-11-24 14:35:11,476 - INFO -   Reference: A little league baseball player swings the bat at first base while fans watch from behind the fence on the baseball field.
+2025-11-24 14:35:11,476 - INFO -   Prediction: A young boy is swinging a baseball bat as he prepares to hit the ball.
+2025-11-24 14:35:11,476 - INFO -   BLEU-4: 0.0147, METEOR: 0.1174
+2025-11-24 14:35:11,476 - INFO - 
+2025-11-24 14:35:14,102 - INFO - Epoch 50 Results:
+2025-11-24 14:35:14,103 - INFO - ----------------------------------------
+2025-11-24 14:35:14,103 - INFO - train_loss     : 1.903273
+2025-11-24 14:35:14,103 - INFO - val_loss       : 2.221945
+2025-11-24 14:35:14,103 - INFO - METEOR         : 0.268524
+2025-11-24 14:35:14,103 - INFO - CIDEr          : 0.361383
+2025-11-24 14:35:14,103 - INFO - BLEU-1         : 0.339416
+2025-11-24 14:35:14,103 - INFO - BLEU-2         : 0.187494
+2025-11-24 14:35:14,103 - INFO - BLEU-3         : 0.107728
+2025-11-24 14:35:14,103 - INFO - BLEU-4         : 0.066968
+2025-11-24 14:35:14,103 - INFO - ----------------------------------------
+2025-11-24 14:35:14,103 - INFO - Running final evaluation on test set...
+2025-11-24 14:35:55,296 - INFO - ============================================================
+2025-11-24 14:35:55,296 - INFO - FINAL TEST RESULTS
+2025-11-24 14:35:55,296 - INFO - ============================================================
+2025-11-24 14:35:55,296 - INFO - METEOR         : 0.260289
+2025-11-24 14:35:55,296 - INFO - CIDEr          : 0.364266
+2025-11-24 14:35:55,296 - INFO - BLEU-1         : 0.335433
+2025-11-24 14:35:55,296 - INFO - BLEU-2         : 0.184113
+2025-11-24 14:35:55,296 - INFO - BLEU-3         : 0.104505
+2025-11-24 14:35:55,296 - INFO - BLEU-4         : 0.064567
+2025-11-24 14:35:55,296 - INFO - ============================================================
+2025-11-24 14:35:55,297 - INFO - ============================================================
+2025-11-24 14:35:55,297 - INFO - TRAINING COMPLETED!
+2025-11-24 14:35:55,297 - INFO - ============================================================
+2025-11-24 14:35:55,297 - INFO - Total Duration      : 00h 53m 54s
+2025-11-24 14:35:55,297 - INFO - Total Epochs        : 50
+2025-11-24 14:35:55,297 - INFO - Total Steps         : 2300
+2025-11-24 14:35:55,297 - INFO - Detailed Log        : outputs/exp2_att2_tag6_l.3r1e-4_ws150_20251124_134150/logs/exp2_att2_tag6_l.3r1e-4_ws150_20251124_134201_detailed.log
+2025-11-24 14:35:55,297 - INFO - Summary             : outputs/exp2_att2_tag6_l.3r1e-4_ws150_20251124_134150/logs/exp2_att2_tag6_l.3r1e-4_ws150_20251124_134201_summary.json
+2025-11-24 14:35:55,297 - INFO - ============================================================
+2025-11-24 14:35:55,305 - INFO - 📊 TRAINING SUMMARY
+2025-11-24 14:35:55,305 - INFO - ----------------------------------------
+2025-11-24 14:35:55,305 - INFO - Best CIDEr: 0.3713 (epoch 39)
+2025-11-24 14:35:55,305 - INFO - Best BLEU-4: 0.0689 (epoch 44)
+2025-11-24 14:35:55,305 - INFO - Final epoch 49: CIDEr=0.3614, BLEU-4=0.0670
+2025-11-24 14:35:55,305 - INFO - ============================================================
+2025-11-24 14:35:55,305 - INFO - 📊 VISUALIZATION & ANALYSIS
+2025-11-24 14:35:55,305 - INFO - ============================================================
+2025-11-24 14:35:55,305 - INFO - 📈 CSV metrics: outputs/exp2_att2_tag6_l.3r1e-4_ws150_20251124_134150/logs/training_metrics.csv
+2025-11-24 14:35:55,305 - INFO - 📊 TensorBoard: /root/tf-logs
+2025-11-24 14:35:55,305 - INFO - 
+2025-11-24 14:35:55,306 - INFO - 🚀 AutoDL TensorBoard Access:
+2025-11-24 14:35:55,306 - INFO -   ✅ Files saved to /root/tf-logs/ - TensorBoard auto-available!
+2025-11-24 14:35:55,306 - INFO -   🌐 Access via AutoDL Panel > TensorBoard tab
+2025-11-24 14:35:55,306 - INFO - 
+2025-11-24 14:35:55,306 - INFO - 📊 CSV Data Analysis:
+2025-11-24 14:35:55,306 - INFO -   import pandas as pd
+2025-11-24 14:35:55,306 - INFO -   df = pd.read_csv('outputs/exp2_att2_tag6_l.3r1e-4_ws150_20251124_134150/logs/training_metrics.csv')
+2025-11-24 14:35:55,306 - INFO -   df.plot(x='epoch', y=['BLEU-4', 'CIDEr'])
+2025-11-24 14:35:55,306 - INFO - ============================================================
+2025-11-24 14:35:55,395 - INFO - Final cleanup: removed 1 checkpoint(s): ['latest_checkpoint.pth']
+2025-11-24 14:35:55,395 - INFO - Only best_checkpoint.pth is retained.

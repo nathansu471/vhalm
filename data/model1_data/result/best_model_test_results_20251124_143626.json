@@ -1,0 +1,38 @@
+{
+  "timestamp": "20251124_143626",
+  "experiment_dir": "./outputs/exp1_att2_tag6_lr1e-4_ws150_20251124_124122",
+  "checkpoint_info": {
+    "epoch": 29,
+    "best_epoch": 29,
+    "best_metric": 0.37655128732518,
+    "primary_metric": "unknown"
+  },
+  "test_metrics": {
+    "METEOR": 0.258711845710073,
+    "CIDEr": 0.3542384316253209,
+    "BLEU-1": 0.33605488888227847,
+    "BLEU-2": 0.18035534198357983,
+    "BLEU-3": 0.10315547961867422,
+    "BLEU-4": 0.06494801955976034
+  },
+  "model_config": {
+    "clip_dim": 512,
+    "hidden_dim": 512,
+    "t5_model_name": "t5-base",
+    "aggregation_method": "multi_token",
+    "tokens_per_image": 4,
+    "attention_layers": 2,
+    "attention_heads": 4,
+    "use_visual_mlp": true,
+    "use_lora": true,
+    "lora_r": 8,
+    "lora_alpha": 32,
+    "lora_dropout": 0.1
+  },
+  "data_config": {
+    "features_path": "../../data/model1_data/image_features.npy",
+    "image_ids_path": "../../data/model1_data/image_ids.json",
+    "annotations_path": "../../data/model1_data/merged_captions_async_augmented.json"
+  },
+  "test_samples_file": "./outputs/exp1_att2_tag6_lr1e-4_ws150_20251124_124122/test_results/best_model_test_samples_20251124_143626.json"
+}

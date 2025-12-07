@@ -1,0 +1,13 @@
+{
+  "num_items_loaded": 120,
+  "num_results_written": 120,
+  "used_merged_caption": 120,
+  "merged_from_captions_list": 0,
+  "skipped_no_text": 0,
+  "structure_ok_>=4": 120,
+  "avg_total": 16.825,
+  "avg_relevance": 3.1,
+  "mock_mode": false,
+  "model_gen": "gpt-4o-mini",
+  "model_judge": "gpt-4o-mini"
+}
