@@ -1,6 +1,4 @@
-# VHaLM: From Visual Moments to Haiku
-
-# Visual-Haiku Language Model for Multi-Image Poetic Generation
+# VHaLM: Picture to Haiku
 
 ## Image Extraction & Captions
 
