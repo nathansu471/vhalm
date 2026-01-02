@@ -1,0 +1,31 @@
+{
+  "input_key_hist_top": [
+    [
+      "group_id",
+      120
+    ],
+    [
+      "image_ids",
+      120
+    ],
+    [
+      "metrics",
+      120
+    ],
+    [
+      "prediction",
+      120
+    ],
+    [
+      "reference",
+      120
+    ],
+    [
+      "tags",
+      120
+    ]
+  ],
+  "metrics_path": "metrics.json",
+  "best_csv_path": "best.csv",
+  "notes": "If results are empty, check skipped_no_text and the key histogram to see which fields to map."
+}

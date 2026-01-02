@@ -1,0 +1,61 @@
+{
+  "model": {
+    "clip_dim": 512,
+    "hidden_dim": 512,
+    "t5_model_name": "t5-base",
+    "aggregation_method": "multi_token",
+    "tokens_per_image": 4,
+    "attention_layers": 2,
+    "attention_heads": 4,
+    "use_visual_mlp": true,
+    "use_lora": true,
+    "lora_r": 8,
+    "lora_alpha": 32,
+    "lora_dropout": 0.1
+  },
+
+  "training": {
+    "batch_size": 16,
+    "num_epochs": 50,
+    "learning_rate": 1.3e-4,
+    "weight_decay": 1e-4,
+    "max_grad_norm": 1.0,
+    "warmup_steps": 150,
+    "label_smoothing": 0.05,
+    "scheduler_type": "cosine",
+    "min_lr": 5e-5,
+    "early_stopping_patience": 10,
+    "use_amp": true,
+    "gradient_accumulation_steps": 2,
+    "max_oom_logs_per_epoch": 3
+  },
+
+  "evaluation": {
+    "eval_interval": 1,
+    "eval_samples": null,
+    "primary_metric": "CIDEr"
+  },
+
+  "data": {
+    "max_length": 128,
+    "num_workers": 2,
+    "split_ratio": [0.7, 0.15, 0.15],
+
+    "use_tags": true,
+    "max_tags_per_sample": 6,
+    "tag_generation_method": "blip_noun_phrases",
+    "tag_cache_dir": "../../data/model1_data/blip_tags",
+    "clip_text_model_name": "openai/clip-vit-base-patch32",
+    "tag_top_k": 4,
+    "blip_model_name": "Salesforce/blip-image-captioning-base",
+    "image_root": "../../../../../root/data/train2017",
+    "tag_device": null,
+    "features_path": "../../data/model1_data/image_features.npy",
+    "image_ids_path": "../../data/model1_data/image_ids.json",
+    "annotations_path": "../../data/model1_data/merged_captions_async_augmented.json"
+  },
+
+  "logging": {
+    "log_interval": 50
+  }
+}

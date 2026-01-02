@@ -1,0 +1,1813 @@
+{
+  "overall_metrics": {
+    "METEOR": 0.24118678117081718,
+    "CIDEr": 0.28806415007263614,
+    "BLEU-1": 0.33170338870514526,
+    "BLEU-2": 0.17549405997231632,
+    "BLEU-3": 0.09864791688800757,
+    "BLEU-4": 0.060508635136001
+  },
+  "num_samples": 100,
+  "samples": [
+    {
+      "group_id": 778,
+      "image_ids": [
+        "000000245978.jpg",
+        "000000378090.jpg",
+        "000000197503.jpg"
+      ],
+      "reference": "A close-up of a plate of food featuring strawberries is set in a living room adorned with large wooden furniture, tall windows, and a fireplace, where a couple of small kids sit in front of a projector.",
+      "prediction": "A group of people sits at a table in a dining room, while a group of children enjoys a snack on a table and a set of cookies, including a sandwich.",
+      "metrics": {
+        "METEOR": 0.20604395604395606,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.3455609521473387,
+        "BLEU-2": 0.13778064173353152,
+        "BLEU-3": 0.05700417896357368,
+        "BLEU-4": 0.031104156860041327
+      }
+    },
+    {
+      "group_id": 4,
+      "image_ids": [
+        "000000031680.jpg",
+        "000000351598.jpg",
+        "000000332853.jpg"
+      ],
+      "reference": "Four vases, two filled with water and yellow flowers highlighted by sunlight streaming through the window, while the other two hold artificial flowers in blue vases positioned near a lamp.",
+      "prediction": "A bright white vase is adorned with flowers, accompanied by a table filled with flowers and flowers, while a large white vase rests on the side of a plant nearby.",
+      "metrics": {
+        "METEOR": 0.22892561983471077,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.3,
+        "BLEU-2": 0.10170952554312153,
+        "BLEU-3": 0.05008784580996031,
+        "BLEU-4": 0.02982694575964459
+      }
+    },
+    {
+      "group_id": 341,
+      "image_ids": [
+        "000000248793.jpg",
+        "000000011265.jpg",
+        "000000439057.jpg"
+      ],
+      "reference": "A busy street scene features a couple of buildings connected by a bridge, with an arch and a clock tower above, while a group of people strolls in front, reminiscent of a vintage photograph.",
+      "prediction": "On a beautiful view of the city, a man stands next to a building, while a large body of bicycles illuminates the city's sky.",
+      "metrics": {
+        "METEOR": 0.13636363636363635,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.19227851714179608,
+        "BLEU-2": 0.0742375185862959,
+        "BLEU-3": 0.03744062955827699,
+        "BLEU-4": 0.022620194671224128
+      }
+    },
+    {
+      "group_id": 732,
+      "image_ids": [
+        "000000026728.jpg",
+        "000000275913.jpg",
+        "000000333605.jpg"
+      ],
+      "reference": "On a table, two tall thin vases stand alongside a vibrant yellow fire hydrant in the center of a lush green field, with numerous parking meters arranged on the lawn nearby.",
+      "prediction": "In front of a plant, a vase features a vase filled with flowers, while nearby, a woman stands in front of an arbored tree.",
+      "metrics": {
+        "METEOR": 0.1485148514851485,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.21788010425720947,
+        "BLEU-2": 0.08412212934558097,
+        "BLEU-3": 0.042425791465809666,
+        "BLEU-4": 0.025632038599768092
+      }
+    },
+    {
+      "group_id": 151,
+      "image_ids": [
+        "000000369561.jpg",
+        "000000273704.jpg",
+        "000000421564.jpg"
+      ],
+      "reference": "A young girl is blowing out birthday candles on a cake adorned with frosted flowers, while two little boys watch eagerly in front of the cake, and a baby in a high chair gazes at the festive scene.",
+      "prediction": "A group of children sits on a table, while a young boy and a little girl are resting on the table at a table nearby, and a couple of children are enjoying their birthday cake.",
+      "metrics": {
+        "METEOR": 0.24955445954907163,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.39336704505295395,
+        "BLEU-2": 0.17848738832822575,
+        "BLEU-3": 0.06804339964636047,
+        "BLEU-4": 0.035600715803927485
+      }
+    },
+    {
+      "group_id": 30,
+      "image_ids": [
+        "000000480893.jpg",
+        "000000139436.jpg",
+        "000000198178.jpg"
+      ],
+      "reference": "A large gray elephant stands on a dirt field and grass clearing, walking alongside its baby elephant.",
+      "prediction": "In a green field, two elephants are standing in front of a grassy field, while another elephant sits on the grass nearby, holding a large elephant.",
+      "metrics": {
+        "METEOR": 0.25139664804469275,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.30769230769230765,
+        "BLEU-2": 0.11094003924504585,
+        "BLEU-3": 0.05507778237003649,
+        "BLEU-4": 0.03298252220060495
+      }
+    },
+    {
+      "group_id": 568,
+      "image_ids": [
+        "000000205520.jpg",
+        "000000246237.jpg",
+        "000000060018.jpg"
+      ],
+      "reference": "A stop sign stands beside a storefront featuring signs for \"Pepsi\" and \"Just Barb's,\" along with a Rite Aid sign, while multiple street signs are mounted on a pole nearby.",
+      "prediction": "A street sign is parked in front of a street, where a street sign stands next to a street near a street.",
+      "metrics": {
+        "METEOR": 0.136986301369863,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.252779610326865,
+        "BLEU-2": 0.09147422518620694,
+        "BLEU-3": 0.04479701357304626,
+        "BLEU-4": 0.026701510102663834
+      }
+    },
+    {
+      "group_id": 618,
+      "image_ids": [
+        "000000182213.jpg",
+        "000000549759.jpg",
+        "000000306485.jpg"
+      ],
+      "reference": "A desk features two laptops and a computer monitor, alongside a plate with two burgers and a bottle of beer.",
+      "prediction": "A black and white computer is positioned in front of a computer, while a pair of laptops sit on a table next to a computer.",
+      "metrics": {
+        "METEOR": 0.1951219512195122,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.32,
+        "BLEU-2": 0.11547005383792518,
+        "BLEU-3": 0.05714414089472386,
+        "BLEU-4": 0.034181543326622016
+      }
+    },
+    {
+      "group_id": 46,
+      "image_ids": [
+        "000000067888.jpg",
+        "000000431304.jpg",
+        "000000204381.jpg"
+      ],
+      "reference": "A white polar bear with brown spots on its face is sitting on a large rock near a tree branch.",
+      "prediction": "A polar bear is sitting in a garden, while a zoo sits on the outside of a tree, and a giraffe sits nearby, holding a teddy bear.",
+      "metrics": {
+        "METEOR": 0.2821017474801694,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.3333333333333333,
+        "BLEU-2": 0.19611613513818407,
+        "BLEU-3": 0.079741447865292,
+        "BLEU-4": 0.043196066902345405
+      }
+    },
+    {
+      "group_id": 427,
+      "image_ids": [
+        "000000302443.jpg",
+        "000000166069.jpg",
+        "000000100344.jpg"
+      ],
+      "reference": "In a sandy area, silver balls are arranged while a man in a group of people throws a frisee nearby, and others are engaged in a game of tennis in the field.",
+      "prediction": "A group of people, including a man and a woman, enjoys playing tennis in a field, while nearby, a group of people enjoys a variety of sports activities.",
+      "metrics": {
+        "METEOR": 0.37053748022151894,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.4953587998572467,
+        "BLEU-2": 0.3089104854315569,
+        "BLEU-3": 0.18530762626044422,
+        "BLEU-4": 0.12187775623997348
+      }
+    },
+    {
+      "group_id": 582,
+      "image_ids": [
+        "000000025870.jpg",
+        "000000333133.jpg",
+        "000000272132.jpg"
+      ],
+      "reference": "A man and woman pose under a leafless tree where a kite is stuck, while in the background, a cow grazes on hay. The scene is captured from a perspective that includes the long shadow of the photographer on the road, marked by a stop sign.",
+      "prediction": "A man is standing in front of a grassy field, while a couple of people are riding a fence nearby, and a woman is parked in the grass nearby.",
+      "metrics": {
+        "METEOR": 0.1580135440180587,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.268623261221931,
+        "BLEU-2": 0.1033271809078601,
+        "BLEU-3": 0.042000399021067926,
+        "BLEU-4": 0.022730706763571314
+      }
+    },
+    {
+      "group_id": 140,
+      "image_ids": [
+        "000000155951.jpg",
+        "000000021387.jpg",
+        "000000101240.jpg"
+      ],
+      "reference": "A group of wooly sheep grazes on hilly green pasturage, with some lying on a country lane while others stand nearby among the grass and trees.",
+      "prediction": "A group of sheep grazes in a grassy field near a tree, while a group of sheep is grazing on the grass nearby.",
+      "metrics": {
+        "METEOR": 0.33182014699524426,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.41977613330886987,
+        "BLEU-2": 0.25882365955828524,
+        "BLEU-3": 0.1409441912576319,
+        "BLEU-4": 0.0787848317644995
+      }
+    },
+    {
+      "group_id": 963,
+      "image_ids": [
+        "000000509891.jpg",
+        "000000468061.jpg",
+        "000000136078.jpg"
+      ],
+      "reference": "A group of men stands by a river as an elephant wades through the murky water, while a herd of elephants observes a baby elephant nearby.",
+      "prediction": "In a lush green field, a man and a woman are playing with elephants, while a large elephant is grazing in the water nearby.",
+      "metrics": {
+        "METEOR": 0.19379844961240314,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.38335183942888473,
+        "BLEU-2": 0.1238338154815316,
+        "BLEU-3": 0.058849388798818236,
+        "BLEU-4": 0.03451331343012877
+      }
+    },
+    {
+      "group_id": 820,
+      "image_ids": [
+        "000000492440.jpg",
+        "000000107360.jpg",
+        "000000138699.jpg"
+      ],
+      "reference": "A man in a wet suit rides a body board in rough waters, while another person, wearing a helmet and goggles, poses with a snowboard nearby. Meanwhile, a Siamese cat curiously sniffs a vase filled with yellow and red flowers.",
+      "prediction": "A man is wearing a black shirt on a surfboard, while a white unicorn is visible on the inside of a building nearby.",
+      "metrics": {
+        "METEOR": 0.15246752409502629,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.18685916515656553,
+        "BLEU-2": 0.09006596880094342,
+        "BLEU-3": 0.03867253399827995,
+        "BLEU-4": 0.021570658750129583
+      }
+    },
+    {
+      "group_id": 572,
+      "image_ids": [
+        "000000130974.jpg",
+        "000000318386.jpg",
+        "000000110200.jpg"
+      ],
+      "reference": "An assortment of vegetables, including broccoli with white sauce, is arranged on a black plate alongside meat and other food items.",
+      "prediction": "A plate featuring a plate of broccoli, broccoli, and broccoli is accompanied by a bowl of broccoli, along with a variety of vegetables.",
+      "metrics": {
+        "METEOR": 0.275448404379222,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.3478260869565218,
+        "BLEU-2": 0.1257389226923863,
+        "BLEU-3": 0.06180288183260824,
+        "BLEU-4": 0.03688230441120732
+      }
+    },
+    {
+      "group_id": 447,
+      "image_ids": [
+        "000000042439.jpg",
+        "000000320943.jpg",
+        "000000152731.jpg"
+      ],
+      "reference": "A lush green hillside descends to a body of water, where a man stands nearby reaching out to a bull in the meadow, while sheep graze in a large, flat green field.",
+      "prediction": "A sheep grazes in a grassy field near a hill, while a pair of sheep are grazing on the grass nearby.",
+      "metrics": {
+        "METEOR": 0.19417475728155342,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.31023143710737255,
+        "BLEU-2": 0.09584823315969648,
+        "BLEU-3": 0.044342013026620865,
+        "BLEU-4": 0.02570655188655353
+      }
+    },
+    {
+      "group_id": 330,
+      "image_ids": [
+        "000000314246.jpg",
+        "000000197613.jpg",
+        "000000105468.jpg"
+      ],
+      "reference": "A group of men in suits and jackets stands nearby as a train wreck near a river attracts a crowd, while a bridge rises to allow two ships to pass.",
+      "prediction": "A black and white photo captures a man on a boat, while a black and white photograph captures the picture of a man standing in front of a train station.",
+      "metrics": {
+        "METEOR": 0.18333333333333335,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.3333333333333333,
+        "BLEU-2": 0.1516196087157807,
+        "BLEU-3": 0.06536242892575636,
+        "BLEU-4": 0.03641712493031983
+      }
+    },
+    {
+      "group_id": 402,
+      "image_ids": [
+        "000000265636.jpg",
+        "000000108894.jpg",
+        "000000275120.jpg"
+      ],
+      "reference": "A brown teddy bear hangs from a green sign, while a birthday cake for a one-year-old, featuring a large teddy bear on top, is placed on the kitchen counter alongside some liqueur and candles.",
+      "prediction": "A man in a white dress is enjoying a birthday cake, while a chocolate cake features a teddy bear on top of a table next to a table.",
+      "metrics": {
+        "METEOR": 0.2513595258462666,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.3747332396810737,
+        "BLEU-2": 0.25925270732087674,
+        "BLEU-3": 0.18429369097951945,
+        "BLEU-4": 0.11922904711174633
+      }
+    },
+    {
+      "group_id": 708,
+      "image_ids": [
+        "000000288180.jpg",
+        "000000281355.jpg",
+        "000000081704.jpg"
+      ],
+      "reference": "A man is engaging in various activities: he is hitting a ball with his racket, demonstrating the use of a Stop sign for children, and standing in a room while holding a pair of scissors.",
+      "prediction": "A young man stands in front of a TV show, while a group of people sits on a train nearby, and a teddy bear is seated in the middle of a pit.",
+      "metrics": {
+        "METEOR": 0.23054755043227665,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.39834828310376497,
+        "BLEU-2": 0.10816657393231816,
+        "BLEU-3": 0.049741065464548845,
+        "BLEU-4": 0.02860549081513084
+      }
+    },
+    {
+      "group_id": 232,
+      "image_ids": [
+        "000000279692.jpg",
+        "000000327047.jpg",
+        "000000081707.jpg"
+      ],
+      "reference": "A man with glasses is checking something in an oven in a kitchen filled with various electrical appliances, including a microwave and several items on the counters.",
+      "prediction": "In a kitchen featuring a microwave, a man and a woman are preparing to cook in the oven, while a kitchen features a kitchen full of appliances.",
+      "metrics": {
+        "METEOR": 0.2222222222222222,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.4444444444444444,
+        "BLEU-2": 0.2614881801842454,
+        "BLEU-3": 0.1398474995051183,
+        "BLEU-4": 0.07828519641400972
+      }
+    },
+    {
+      "group_id": 286,
+      "image_ids": [
+        "000000581422.jpg",
+        "000000149616.jpg",
+        "000000501031.jpg"
+      ],
+      "reference": "In a black and white photo, two men crouch at the back of a cow with its back legs tied, while a group of farmers prepares to load their horses with supplies.",
+      "prediction": "A black and white cow sits on a grassy farm, while a man in a black and white tractor is grazing at a cattle ranch nearby.",
+      "metrics": {
+        "METEOR": 0.23694267515923564,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.3053548683915197,
+        "BLEU-2": 0.22019452703963652,
+        "BLEU-3": 0.16882383055972613,
+        "BLEU-4": 0.13500361617825393
+      }
+    },
+    {
+      "group_id": 835,
+      "image_ids": [
+        "000000565217.jpg",
+        "000000473541.jpg",
+        "000000308115.jpg"
+      ],
+      "reference": "A man walks in the snow along a city street beside a dress shop, while nearby, a tray with a glass lamb sits next to a pot of flowers. In another scene, a blue skier performs a flip as a group of skiers watches.",
+      "prediction": "A group of people is standing on a white beach nearby, while a pair of white umbrellas stands in front of a large wall, and a woman wears a scarf on the wall.",
+      "metrics": {
+        "METEOR": 0.16317016317016317,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.2822699102260382,
+        "BLEU-2": 0.11243198741622894,
+        "BLEU-3": 0.06635664470755377,
+        "BLEU-4": 0.039523046283744104
+      }
+    },
+    {
+      "group_id": 394,
+      "image_ids": [
+        "000000160245.jpg",
+        "000000474315.jpg",
+        "000000454647.jpg"
+      ],
+      "reference": "In a field, four horses dressed in various colored attire are running, while a person is fitting horseshoes on another horse that is covered with a blanket.",
+      "prediction": "In a pasture, a horse is grazing in a grassy field, while nearby, a woman is preparing to feed a horse.",
+      "metrics": {
+        "METEOR": 0.2272727272727273,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.3578463300358504,
+        "BLEU-2": 0.11595546374196136,
+        "BLEU-3": 0.05450311091812019,
+        "BLEU-4": 0.03184924222604859
+      }
+    },
+    {
+      "group_id": 157,
+      "image_ids": [
+        "000000397143.jpg",
+        "000000349153.jpg",
+        "000000129293.jpg"
+      ],
+      "reference": "A closeup features a wooden spoon alongside a plate of salad with vegetables, fungus, and meat, while a wooden cutting board displays an array of carrots, tangerines, apples, and celery, alongside potatoes.",
+      "prediction": "A large bowl of broccoli is gathered in a wooded area, alongside a variety of vegetables, including broccoli, carrots, and carrots.",
+      "metrics": {
+        "METEOR": 0.14563106796116504,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.2538257212696684,
+        "BLEU-2": 0.0866979889661492,
+        "BLEU-3": 0.04147298996486055,
+        "BLEU-4": 0.02444872880037721
+      }
+    },
+    {
+      "group_id": 921,
+      "image_ids": [
+        "000000580543.jpg",
+        "000000197836.jpg",
+        "000000100812.jpg"
+      ],
+      "reference": "In a narrow bathroom featuring gold paint and a brown wall, there is a glass table surrounded by two white chairs, alongside a whole vegetarian pizza displayed on a plate.",
+      "prediction": "A small wooden table features a large wall mounted on a tiled floor, while a small piece of paper is positioned next to a wall.",
+      "metrics": {
+        "METEOR": 0.1864406779661017,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.29474307110807346,
+        "BLEU-2": 0.10027362908828316,
+        "BLEU-3": 0.048659052987714974,
+        "BLEU-4": 0.028821786835600414
+      }
+    },
+    {
+      "group_id": 342,
+      "image_ids": [
+        "000000263208.jpg",
+        "000000016056.jpg",
+        "000000442685.jpg"
+      ],
+      "reference": "A man, standing on top of two horses, holds the reins of a carriage being pulled by them, while another horse affectionately kisses him on the side of his face.",
+      "prediction": "A man is riding a motorcycle on a horse, while a group of people rides a horse in the background, and a horse rides down the street.",
+      "metrics": {
+        "METEOR": 0.18518518518518515,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.2982797722714565,
+        "BLEU-2": 0.10132060076785508,
+        "BLEU-3": 0.04947533644565928,
+        "BLEU-4": 0.029370338305857793
+      }
+    },
+    {
+      "group_id": 573,
+      "image_ids": [
+        "000000290449.jpg",
+        "000000172279.jpg",
+        "000000561599.jpg"
+      ],
+      "reference": "A little kid stands in front of a giant bear statue, while a man performs a skateboard trick on a large, twisting structure nearby, and a cat sits on a chair, staring at the camera.",
+      "prediction": "A dog is laying on a snow-covered sidewalk near a tree, while a giraffe sits on a beach nearby, and a cat is spotted on a nearby beach nearby.",
+      "metrics": {
+        "METEOR": 0.33281917418130047,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.3925328495678113,
+        "BLEU-2": 0.2824756342749176,
+        "BLEU-3": 0.19317688034161548,
+        "BLEU-4": 0.12253481982269013
+      }
+    },
+    {
+      "group_id": 265,
+      "image_ids": [
+        "000000390585.jpg",
+        "000000162475.jpg",
+        "000000114868.jpg"
+      ],
+      "reference": "A young girl on a tennis court is swinging her racket in an attempt to hit a green tennis ball.",
+      "prediction": "A young tennis player is playing a tennis ball on a tennis court, while a woman in a black suit plays a tennis game nearby.",
+      "metrics": {
+        "METEOR": 0.3350131021971377,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.44,
+        "BLEU-2": 0.30276503540974914,
+        "BLEU-3": 0.1997581617955619,
+        "BLEU-4": 0.13796620851017116
+      }
+    },
+    {
+      "group_id": 926,
+      "image_ids": [
+        "000000018736.jpg",
+        "000000520812.jpg",
+        "000000099165.jpg"
+      ],
+      "reference": "In a lush green field, a couple of sheep are present, including a brown-faced sheep gently nudging two baby white sheep, while a black and white sheep with a blue spot on its side grazes nearby.",
+      "prediction": "A group of sheep is grazing in a grassy field near a tree, while two sheep are grazing on the grass nearby.",
+      "metrics": {
+        "METEOR": 0.2023121387283237,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.312716974522757,
+        "BLEU-2": 0.1537595502404296,
+        "BLEU-3": 0.05782690998290099,
+        "BLEU-4": 0.030205465213547927
+      }
+    },
+    {
+      "group_id": 71,
+      "image_ids": [
+        "000000158964.jpg",
+        "000000521879.jpg",
+        "000000461170.jpg"
+      ],
+      "reference": "A woman in an old-fashioned carriage gives a man a tour of the countryside, while a group of people in vintage attire observe the horse-drawn wagon parked by a white building with tall spires.",
+      "prediction": "A horse riding down a street is accompanied by a group of people, while a person rides a horse on a horse, and a horse rides a bike in the background.",
+      "metrics": {
+        "METEOR": 0.2530497856907353,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.3513913398479548,
+        "BLEU-2": 0.23057151473519638,
+        "BLEU-3": 0.1493040545112505,
+        "BLEU-4": 0.10191944940194166
+      }
+    },
+    {
+      "group_id": 257,
+      "image_ids": [
+        "000000045835.jpg",
+        "000000261843.jpg",
+        "000000215569.jpg"
+      ],
+      "reference": "A group of older women is gathered around a table filled with food and drinks, enjoying wine and cheese together.",
+      "prediction": "A group of people in a black and white dress is sitting in a dining room, while a group of people sits at a table nearby, and a large group of people greets them in the background.",
+      "metrics": {
+        "METEOR": 0.24517569124423963,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.21621621621621626,
+        "BLEU-2": 0.1342312110428049,
+        "BLEU-3": 0.08014559501127351,
+        "BLEU-4": 0.048355337384349856
+      }
+    },
+    {
+      "group_id": 18,
+      "image_ids": [
+        "000000466656.jpg",
+        "000000371773.jpg",
+        "000000358083.jpg"
+      ],
+      "reference": "A cat is walking on the bathroom counter near the sink, sitting in the sink, and standing on the back of the commode while looking at its reflection in the mirror.",
+      "prediction": "A cat is looking out at a white cat, while a black cat sits on a white board next to a cat, and a cat sits in a bathtub nearby.",
+      "metrics": {
+        "METEOR": 0.16181229773462782,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.2901648301446017,
+        "BLEU-2": 0.13912338743607644,
+        "BLEU-3": 0.08744237086321835,
+        "BLEU-4": 0.05342436151562822
+      }
+    },
+    {
+      "group_id": 216,
+      "image_ids": [
+        "000000417374.jpg",
+        "000000033105.jpg",
+        "000000380440.jpg"
+      ],
+      "reference": "A man is skiing down a steep hill without poles, while a person on a snowboard prepares to descend the slope alongside a couple of others skiing.",
+      "prediction": "A skier is skiing on a snowy slope, while another skier skis on the slopes.",
+      "metrics": {
+        "METEOR": 0.17441860465116277,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.2396421141958515,
+        "BLEU-2": 0.12402657718090841,
+        "BLEU-3": 0.052412607157009676,
+        "BLEU-4": 0.029230032175403927
+      }
+    },
+    {
+      "group_id": 136,
+      "image_ids": [
+        "000000094162.jpg",
+        "000000451077.jpg",
+        "000000164388.jpg"
+      ],
+      "reference": "A black and yellow railroad train is approaching the platform at the train station.",
+      "prediction": "A train is parked on a green train, passing by a train station, while another train is visible in the background.",
+      "metrics": {
+        "METEOR": 0.20408163265306123,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.2857142857142857,
+        "BLEU-2": 0.16903085094570333,
+        "BLEU-3": 0.07707245235212754,
+        "BLEU-4": 0.04435867375363758
+      }
+    },
+    {
+      "group_id": 500,
+      "image_ids": [
+        "000000056716.jpg",
+        "000000523096.jpg",
+        "000000225369.jpg"
+      ],
+      "reference": "A made bed features three laptop computers, while nearby, a small table and chair hold another laptop, and a camera is positioned in front of yet another laptop that faces a TV.",
+      "prediction": "A bedroom features a computer, a laptop, and a bed, while a computer sits on a computer nearby.",
+      "metrics": {
+        "METEOR": 0.17973856209150327,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.25523656890884816,
+        "BLEU-2": 0.11745450733596947,
+        "BLEU-3": 0.07344207382893546,
+        "BLEU-4": 0.04327411163433857
+      }
+    },
+    {
+      "group_id": 845,
+      "image_ids": [
+        "000000038714.jpg",
+        "000000083058.jpg",
+        "000000159738.jpg"
+      ],
+      "reference": "At the beach, a group of people is flying large kites while a young man walks alongside a child, carrying a surfboard, and a person rides atop a wave nearby.",
+      "prediction": "A group of people is preparing to fly a kite on a beach, while a group of surfboards glides across the ocean nearby.",
+      "metrics": {
+        "METEOR": 0.34531664770572623,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.38483700721138775,
+        "BLEU-2": 0.2539941916817778,
+        "BLEU-3": 0.18943387787033356,
+        "BLEU-4": 0.1496404797670431
+      }
+    },
+    {
+      "group_id": 370,
+      "image_ids": [
+        "000000301195.jpg",
+        "000000385744.jpg",
+        "000000388453.jpg"
+      ],
+      "reference": "A group of older people and two women taking pictures of food sit around a table in a lavish reception area filled with a crowd in formal wear.",
+      "prediction": "A group of people sits in a dining room, while a group of people gathers at a table nearby, and a couple of men are enjoying a meal at a restaurant.",
+      "metrics": {
+        "METEOR": 0.26072340007852374,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.3548387096774194,
+        "BLEU-2": 0.21751282251166082,
+        "BLEU-3": 0.11772189470432808,
+        "BLEU-4": 0.06688105155884301
+      }
+    },
+    {
+      "group_id": 514,
+      "image_ids": [
+        "000000018699.jpg",
+        "000000458349.jpg",
+        "000000064341.jpg"
+      ],
+      "reference": "A group of people are gathered around a table, posing for a picture while a cake adorned with candles sits nearby, and a woman is enjoying food from the table.",
+      "prediction": "A group of people sits at a table in front of a large crowd, while a group of people gathers in a banquet nearby, and a couple of cakes are present in the background.",
+      "metrics": {
+        "METEOR": 0.38417803768680964,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.4411764705882353,
+        "BLEU-2": 0.3059132028869214,
+        "BLEU-3": 0.2062477595352837,
+        "BLEU-4": 0.1297034434541576
+      }
+    },
+    {
+      "group_id": 632,
+      "image_ids": [
+        "000000359048.jpg",
+        "000000027252.jpg",
+        "000000466585.jpg"
+      ],
+      "reference": "A bicycle is tied to a wooden post at the beach, while teenagers skateboard in a nearby park in the afternoon, and some chairs are set up under an umbrella.",
+      "prediction": "In a park, a man stands next to a sidewalk while a woman strolls along a sidewalk nearby, and a woman is standing on a bicycle in the background.",
+      "metrics": {
+        "METEOR": 0.2637984603510716,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.4330815501666466,
+        "BLEU-2": 0.24448261682846198,
+        "BLEU-3": 0.08963533978596908,
+        "BLEU-4": 0.046071782590206854
+      }
+    },
+    {
+      "group_id": 285,
+      "image_ids": [
+        "000000333156.jpg",
+        "000000419798.jpg",
+        "000000096628.jpg"
+      ],
+      "reference": "A partially-eaten cake with candles is on a paper plate, alongside two additional pieces of cake on a dinner table, while a person uses a lighter to ignite the candles.",
+      "prediction": "A cake featuring a cake, a bowl of cake, and a cake on a table features a plate of cake, while a couple of cakes are present at a table nearby.",
+      "metrics": {
+        "METEOR": 0.2451319675156885,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.3870967741935484,
+        "BLEU-2": 0.22718473369882594,
+        "BLEU-3": 0.1211862732943004,
+        "BLEU-4": 0.06835184361568306
+      }
+    },
+    {
+      "group_id": 565,
+      "image_ids": [
+        "000000047173.jpg",
+        "000000282679.jpg",
+        "000000449622.jpg"
+      ],
+      "reference": "A young person and an older person are playing Nintendo Wii, while a pair of women sits on a bench, one holding a straw umbrella, and a young woman leans against a wall with her hands on her luggage nearby.",
+      "prediction": "A group of people sits on a beach in front of a suitcase, while a group of people holds a laptop nearby, and a woman is enjoying a selfie.",
+      "metrics": {
+        "METEOR": 0.24657677981218196,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.3067700553689215,
+        "BLEU-2": 0.1731774209091721,
+        "BLEU-3": 0.09126315121296377,
+        "BLEU-4": 0.05094663202662494
+      }
+    },
+    {
+      "group_id": 325,
+      "image_ids": [
+        "000000404063.jpg",
+        "000000285612.jpg",
+        "000000106490.jpg"
+      ],
+      "reference": "A smiling teddy bear wearing a red hat is sitting on a bed surrounded by fluffy pillows, holding a book.",
+      "prediction": "A teddy bear sits on a pillow next to a baby, while a stuffed egg is resting on the back of a bed nearby, and a gummy bear rests on the pillow.",
+      "metrics": {
+        "METEOR": 0.34804114255765195,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.28125,
+        "BLEU-2": 0.1649780043990224,
+        "BLEU-3": 0.06799997727290286,
+        "BLEU-4": 0.037023156566891924
+      }
+    },
+    {
+      "group_id": 613,
+      "image_ids": [
+        "000000352828.jpg",
+        "000000579604.jpg",
+        "000000361145.jpg"
+      ],
+      "reference": "A weathered building stands across the road from a stop sign, while a motorcycle is parked in front of a shop nearby, and the country yard is scattered with various items.",
+      "prediction": "A man stands on a grassy street in front of a building, while nearby, a couple of cattle are parked on a dirt street nearby, and a dog sits on a sidewalk nearby.",
+      "metrics": {
+        "METEOR": 0.2528068578364436,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.3939393939393939,
+        "BLEU-2": 0.22190634114964866,
+        "BLEU-3": 0.14700628717745812,
+        "BLEU-4": 0.1014428911294021
+      }
+    },
+    {
+      "group_id": 183,
+      "image_ids": [
+        "000000358690.jpg",
+        "000000220226.jpg",
+        "000000366109.jpg"
+      ],
+      "reference": "In a vibrant park scene, a man plays a saxophone on the steps while an older person sits on a bench engrossed in a game from a magazine. Nearby, an older man wearing glasses, a cap, and an apron operates a machine with a turning wheel, all amidst blurred foot traffic in",
+      "prediction": "A man in a box stands in front of a wooden bench, while a woman in a green suit stands nearby, and a woman is posing for a pizza with a spoon.",
+      "metrics": {
+        "METEOR": 0.2184487534626039,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.28435763390071356,
+        "BLEU-2": 0.14014079249189,
+        "BLEU-3": 0.04952104103531865,
+        "BLEU-4": 0.02496466137402642
+      }
+    },
+    {
+      "group_id": 259,
+      "image_ids": [
+        "000000238390.jpg",
+        "000000359314.jpg",
+        "000000519088.jpg"
+      ],
+      "reference": "A large green agricultural truck is loading and unloading grain nearby, while construction equipment is situated around a group of people, and a red garbage truck is parked with a man standing behind it.",
+      "prediction": "In a small field, a man and a woman are parked in front of a fire hydrant, while a couple of children are grazing on the grass nearby.",
+      "metrics": {
+        "METEOR": 0.1497005988023952,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.28825633821621055,
+        "BLEU-2": 0.13127771136343588,
+        "BLEU-3": 0.05628064466734774,
+        "BLEU-4": 0.031292764562711635
+      }
+    },
+    {
+      "group_id": 731,
+      "image_ids": [
+        "000000474387.jpg",
+        "000000146837.jpg",
+        "000000177356.jpg"
+      ],
+      "reference": "A girl waits for the train while checking her cell phone, as a man rides a skateboard nearby, attempting a trick among the downtown skyscrapers.",
+      "prediction": "A man in a blue shirt is riding a skateboard, while a young man is walking through a sidewalk nearby, and a man is attempting to ride a bike.",
+      "metrics": {
+        "METEOR": 0.19685039370078744,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.3103448275862069,
+        "BLEU-2": 0.14888750009563953,
+        "BLEU-3": 0.06514453594409038,
+        "BLEU-4": 0.0365786757096783
+      }
+    },
+    {
+      "group_id": 996,
+      "image_ids": [
+        "000000146685.jpg",
+        "000000512254.jpg",
+        "000000184389.jpg"
+      ],
+      "reference": "A large elephant holds a whole tree branch in its trunk while a smaller elephant stands nearby, and in the background, a baseball player observes his bat.",
+      "prediction": "In a playful environment, a large elephant walks through a grassy field, while a small elephant sits in the grass next to a tree.",
+      "metrics": {
+        "METEOR": 0.38285476487723674,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.4412484512922977,
+        "BLEU-2": 0.2602341392354209,
+        "BLEU-3": 0.13953174192695267,
+        "BLEU-4": 0.07761015451052516
+      }
+    },
+    {
+      "group_id": 501,
+      "image_ids": [
+        "000000467256.jpg",
+        "000000557659.jpg",
+        "000000030685.jpg"
+      ],
+      "reference": "A woman stands near a barricade in a building as a person on a motorbike drives past a gate, while an old-looking soda fridge sits on the sidewalk nearby.",
+      "prediction": "In a red and white building, a man is standing in front of a large building, while a black and white vehicle stands next to a building.",
+      "metrics": {
+        "METEOR": 0.15625,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.30953430196439335,
+        "BLEU-2": 0.148695468938714,
+        "BLEU-3": 0.06468700873562319,
+        "BLEU-4": 0.03624527746828655
+      }
+    },
+    {
+      "group_id": 994,
+      "image_ids": [
+        "000000217725.jpg",
+        "000000252724.jpg",
+        "000000381961.jpg"
+      ],
+      "reference": "A beige living room features a leather sofa set, while outside, a group of animals, including several large elephants, play on the grass and stand in a nearby mud field.",
+      "prediction": "In a lush green field, two elephants are grazing in a grassy field, while nearby, a large elephant is grazing on the grass near a tree.",
+      "metrics": {
+        "METEOR": 0.3240485383342526,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.42870195958022067,
+        "BLEU-2": 0.21002021054055983,
+        "BLEU-3": 0.11636761513533087,
+        "BLEU-4": 0.06614233073377045
+      }
+    },
+    {
+      "group_id": 433,
+      "image_ids": [
+        "000000568869.jpg",
+        "000000026518.jpg",
+        "000000235967.jpg"
+      ],
+      "reference": "A person is at a skate park, riding a skateboard while holding another skateboard in his right hand, with their feet resting on the side of the upended board.",
+      "prediction": "A skateboarder is riding a skateboard on the sidewalk, while another skateboarder performs a trick on the skateboard.",
+      "metrics": {
+        "METEOR": 0.21505376344086022,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.36183165410948126,
+        "BLEU-2": 0.18616085021864906,
+        "BLEU-3": 0.10554026504449893,
+        "BLEU-4": 0.05921458651434414
+      }
+    },
+    {
+      "group_id": 883,
+      "image_ids": [
+        "000000331165.jpg",
+        "000000522525.jpg",
+        "000000210241.jpg"
+      ],
+      "reference": "A long red passenger train is passing through a bridge with a city backdrop, while another black train travels along the tracks near a mountain, showcasing a graffiti-covered wall nearby.",
+      "prediction": "A black and white train is parked on a railroad track near a station, while nearby, a yellow train is positioned on the side of a train.",
+      "metrics": {
+        "METEOR": 0.3757575757575758,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.43084855994765947,
+        "BLEU-2": 0.1722119068147457,
+        "BLEU-3": 0.07046374193149048,
+        "BLEU-4": 0.03829055477182748
+      }
+    },
+    {
+      "group_id": 403,
+      "image_ids": [
+        "000000185941.jpg",
+        "000000146533.jpg",
+        "000000514890.jpg"
+      ],
+      "reference": "A bustling city street features a red bus, a telephone booth, and a British bus stop sign, alongside a vibrant red fire hydrant.",
+      "prediction": "A red and white street is illuminated with a red and white sign, while a red double-decker bus stops in front of a building.",
+      "metrics": {
+        "METEOR": 0.29730599978533867,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.4166666666666667,
+        "BLEU-2": 0.13459547551454135,
+        "BLEU-3": 0.06396363899728479,
+        "BLEU-4": 0.037512660129602374
+      }
+    },
+    {
+      "group_id": 5,
+      "image_ids": [
+        "000000433212.jpg",
+        "000000307768.jpg",
+        "000000546959.jpg"
+      ],
+      "reference": "A man is sitting in the snow with his snowboard, while two people pause on the slopes nearby, and a group of friends stands together, each holding their snowboards.",
+      "prediction": "A group of people is skiing on a snow-covered slope, while a couple of skiers are seated nearby, and a pair of skateboards is also present in the snow.",
+      "metrics": {
+        "METEOR": 0.3488888888888889,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.4482758620689655,
+        "BLEU-2": 0.3099340466946034,
+        "BLEU-3": 0.2201736563541296,
+        "BLEU-4": 0.10843038433302625
+      }
+    },
+    {
+      "group_id": 696,
+      "image_ids": [
+        "000000062344.jpg",
+        "000000265074.jpg",
+        "000000197029.jpg"
+      ],
+      "reference": "A person is preparing broccoli on a cutting board, surrounded by various cut-up vegetables and additional veggies laid out on a nearby table.",
+      "prediction": "In a kitchen, a group of scissors is positioned in a table, while a handful of vegetables are sliced into pieces, along with a variety of cutting tools.",
+      "metrics": {
+        "METEOR": 0.1702127659574468,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.25,
+        "BLEU-2": 0.05554614789936852,
+        "BLEU-3": 0.02704033486343002,
+        "BLEU-4": 0.016021086348089204
+      }
+    },
+    {
+      "group_id": 662,
+      "image_ids": [
+        "000000124145.jpg",
+        "000000065962.jpg",
+        "000000137953.jpg"
+      ],
+      "reference": "At the intersection of Park Avenue and another street, a bus waits at a stoplight, surrounded by traffic, while people carrying umbrellas walk out of the nearby parking lot in the rain.",
+      "prediction": "A black and white street is dotted with signs, including a stop sign, a bus, and a parking lot.",
+      "metrics": {
+        "METEOR": 0.1864654656650934,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.18586412993426568,
+        "BLEU-2": 0.10207093869385452,
+        "BLEU-3": 0.04498520108964142,
+        "BLEU-4": 0.02549635988468642
+      }
+    },
+    {
+      "group_id": 884,
+      "image_ids": [
+        "000000230680.jpg",
+        "000000474775.jpg",
+        "000000072714.jpg"
+      ],
+      "reference": "A group of dairy cows is herding down a paved road in Europe, while some are crossing the street in the rain, and two cattle are grazing on grass in a nearby field, with many others in the background.",
+      "prediction": "A group of sheep is riding a cow in a grassy field, while a group of cows stands nearby, and a man stands in a pasture nearby.",
+      "metrics": {
+        "METEOR": 0.23973889358504746,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.3087164833181263,
+        "BLEU-2": 0.15112766687421517,
+        "BLEU-3": 0.0836712118272171,
+        "BLEU-4": 0.04765579492504135
+      }
+    },
+    {
+      "group_id": 587,
+      "image_ids": [
+        "000000369140.jpg",
+        "000000443065.jpg",
+        "000000050058.jpg"
+      ],
+      "reference": "A group of skiers rides along the edge of a snowbank, while cross-country skiers navigate a snowy road winding through a pine forest. Nearby, a snowboarder sits atop a mountain of snow, enjoying the winter landscape.",
+      "prediction": "A person is skiing on a snowy slope, while a couple of people are skiing nearby, and a skier observes a snow-covered snowy scene.",
+      "metrics": {
+        "METEOR": 0.15804597701149428,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.22744899739223753,
+        "BLEU-2": 0.07744697777786871,
+        "BLEU-3": 0.03745703749330561,
+        "BLEU-4": 0.0221610966959236
+      }
+    },
+    {
+      "group_id": 938,
+      "image_ids": [
+        "000000372583.jpg",
+        "000000445093.jpg",
+        "000000338146.jpg"
+      ],
+      "reference": "A child is squatting in preparation to snowboard, while a birthday cake adorned with gumdrops and a bag of Cheetos cheese bacon snacks sits on a table nearby, and a stove and counter are visible in the room.",
+      "prediction": "A colorful kitchen featuring a wooden counter, a kitchen, and a glass of wine, is displayed on a wall, while nearby, a kid is enjoying a bowl of art in a kitchen.",
+      "metrics": {
+        "METEOR": 0.2244761540980028,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.33679307926078766,
+        "BLEU-2": 0.13421486613223,
+        "BLEU-3": 0.05566921280008965,
+        "BLEU-4": 0.030405043159054537
+      }
+    },
+    {
+      "group_id": 306,
+      "image_ids": [
+        "000000462381.jpg",
+        "000000513080.jpg",
+        "000000222016.jpg"
+      ],
+      "reference": "A man is sitting on a park bench speaking on his cellphone, while another man skateboards down a city street nearby, and a big red telephone booth stands in the vicinity where a man is also standing.",
+      "prediction": "A man in a black and white shirt is walking down a sidewalk, while a person sits on a sidewalk nearby, and a man sits in front of him.",
+      "metrics": {
+        "METEOR": 0.2794966236955187,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.3663740146776566,
+        "BLEU-2": 0.24409352215003058,
+        "BLEU-3": 0.11875387503338043,
+        "BLEU-4": 0.06369590023000125
+      }
+    },
+    {
+      "group_id": 798,
+      "image_ids": [
+        "000000460712.jpg",
+        "000000241170.jpg",
+        "000000542938.jpg"
+      ],
+      "reference": "A man in a black tank top holds an orange and white surfboard while standing in the water, as a young boy flies a kite on the beach nearby, and another male surfer rides a small ocean wave.",
+      "prediction": "A man in a black suit is riding a surfboard on a nearby beach, while a man holds a kite nearby, and a man paddles on the water nearby.",
+      "metrics": {
+        "METEOR": 0.32871403931875365,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.4550859850850053,
+        "BLEU-2": 0.30876081976550757,
+        "BLEU-3": 0.19803423347511123,
+        "BLEU-4": 0.14466854186519162
+      }
+    },
+    {
+      "group_id": 558,
+      "image_ids": [
+        "000000373548.jpg",
+        "000000062581.jpg",
+        "000000190272.jpg"
+      ],
+      "reference": "A red train, uniquely shaped like a bus, is traveling through the rural countryside, while in the background, a bus frame sits in a gravel lot with dogs nearby.",
+      "prediction": "A green and yellow truck is parked in front of a train station, while a red light is visible on the street.",
+      "metrics": {
+        "METEOR": 0.1590106007067138,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.2976015718735706,
+        "BLEU-2": 0.10153497332664513,
+        "BLEU-3": 0.048757402556207925,
+        "BLEU-4": 0.028778265333993844
+      }
+    },
+    {
+      "group_id": 278,
+      "image_ids": [
+        "000000050305.jpg",
+        "000000279961.jpg",
+        "000000580057.jpg"
+      ],
+      "reference": "A group of three friends, with one girl holding a stuffed animal, is standing together near a booth in a restaurant where a family is sitting and looking up.",
+      "prediction": "A group of people sits in a pool, while a group of people holds a white umbrella on a snowy slope nearby, and a man in a black suit poses for a photo.",
+      "metrics": {
+        "METEOR": 0.2716871872716028,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.2727272727272727,
+        "BLEU-2": 0.15990053726670783,
+        "BLEU-3": 0.09378053746144309,
+        "BLEU-4": 0.055681745667215
+      }
+    },
+    {
+      "group_id": 263,
+      "image_ids": [
+        "000000522916.jpg",
+        "000000219225.jpg",
+        "000000164672.jpg"
+      ],
+      "reference": "A very tall brick clock tower stands prominently between two large buildings on this street.",
+      "prediction": "A modern building features a tall clock tower, surrounded by buildings and buildings, while a large clock sits on the street next to a building.",
+      "metrics": {
+        "METEOR": 0.24999999999999997,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.32,
+        "BLEU-2": 0.11547005383792518,
+        "BLEU-3": 0.05714414089472386,
+        "BLEU-4": 0.034181543326622016
+      }
+    },
+    {
+      "group_id": 410,
+      "image_ids": [
+        "000000282828.jpg",
+        "000000063571.jpg",
+        "000000194820.jpg"
+      ],
+      "reference": "A cluttered desk features a damaged laptop, various electronics, and scattered compact discs, creating a chaotic scene.",
+      "prediction": "A desk features a computer, a desk, and a laptop, while a computer sits on a table next to a table.",
+      "metrics": {
+        "METEOR": 0.20114942528735633,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.3333333333333333,
+        "BLEU-2": 0.1825741858350554,
+        "BLEU-3": 0.1206077035002158,
+        "BLEU-4": 0.0738062184976524
+      }
+    },
+    {
+      "group_id": 484,
+      "image_ids": [
+        "000000314383.jpg",
+        "000000314540.jpg",
+        "000000433096.jpg"
+      ],
+      "reference": "A boy is performing a trick on a skateboard on a ramp inside a large room.",
+      "prediction": "A man is riding a skateboard on his skateboard, while a man performs a trick on the skateboard.",
+      "metrics": {
+        "METEOR": 0.30864197530864196,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.5,
+        "BLEU-2": 0.3429971702850177,
+        "BLEU-3": 0.24499865251482236,
+        "BLEU-4": 0.12974432869545718
+      }
+    },
+    {
+      "group_id": 377,
+      "image_ids": [
+        "000000083801.jpg",
+        "000000539820.jpg",
+        "000000096991.jpg"
+      ],
+      "reference": "A wide shot captures a group of people in the woods near a camper, while the scene also features a cozy kitchen with wooden cabinets and countertops, alongside a wintery view of a bench by a mountain lake.",
+      "prediction": "A wooden bed features a table, a bench, and a dog, while nearby, a log cabin is available in a wooded area.",
+      "metrics": {
+        "METEOR": 0.17857142857142858,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.26357731701263204,
+        "BLEU-2": 0.11013721762429571,
+        "BLEU-3": 0.04491218813001877,
+        "BLEU-4": 0.024428166480534367
+      }
+    },
+    {
+      "group_id": 902,
+      "image_ids": [
+        "000000235437.jpg",
+        "000000388250.jpg",
+        "000000182821.jpg"
+      ],
+      "reference": "A bathroom area featuring a sink, toilet, and bathtub is juxtaposed with a dining table that holds a plate of soup, while in front of it, some hotdogs are placed alongside glasses of water.",
+      "prediction": "A white and white sand beach is adorned with a white and white shirt, while a black and white dress are placed on a white table nearby, and a small white striped shirt is positioned on the floor.",
+      "metrics": {
+        "METEOR": 0.19964443590236403,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.2894736842105263,
+        "BLEU-2": 0.1250888731004559,
+        "BLEU-3": 0.05407328025680491,
+        "BLEU-4": 0.030106886771358556
+      }
+    },
+    {
+      "group_id": 473,
+      "image_ids": [
+        "000000404537.jpg",
+        "000000037900.jpg",
+        "000000015311.jpg"
+      ],
+      "reference": "A digital clock sits on a decorated table next to a handbag that contains a cell phone, a pen, a pocketknife, a wallet, keys, a change bag, and eyeglasses.",
+      "prediction": "A laptop is mounted on a computer, along with a plastic bag and a USB port, while a laptop holds a laptop in the background.",
+      "metrics": {
+        "METEOR": 0.2222027972027972,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.3067717640278361,
+        "BLEU-2": 0.14759563378437296,
+        "BLEU-3": 0.0638085335130881,
+        "BLEU-4": 0.03567386627628598
+      }
+    },
+    {
+      "group_id": 897,
+      "image_ids": [
+        "000000444498.jpg",
+        "000000026026.jpg",
+        "000000369380.jpg"
+      ],
+      "reference": "A man in glasses is walking an elephant with kids on it down a city street, while nearby, two elephants hold tails as they stroll together, and a very big elephant stands in the jungle woods.",
+      "prediction": "In a bustling area, a large elephant walks through a grassy field, while nearby, two elephants are grazing in the grass near a waterfall.",
+      "metrics": {
+        "METEOR": 0.2937420178799489,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.277993219034957,
+        "BLEU-2": 0.17124171095745538,
+        "BLEU-3": 0.11737070959976885,
+        "BLEU-4": 0.08266623603770386
+      }
+    },
+    {
+      "group_id": 276,
+      "image_ids": [
+        "000000490027.jpg",
+        "000000073941.jpg",
+        "000000568403.jpg"
+      ],
+      "reference": "A person skis through the snow, soaring through the air while also racing closely with another competitor downhill.",
+      "prediction": "A skier prepares to ski on a snowy slope, while a woman in a black suit skis nearby, and a skier skis on the slopes.",
+      "metrics": {
+        "METEOR": 0.106951871657754,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.15999999999999998,
+        "BLEU-2": 0.046324045770839144,
+        "BLEU-3": 0.024670982876682013,
+        "BLEU-4": 0.015308943726302393
+      }
+    },
+    {
+      "group_id": 393,
+      "image_ids": [
+        "000000530713.jpg",
+        "000000052231.jpg",
+        "000000519077.jpg"
+      ],
+      "reference": "A cast iron pan blueberry cake has been enjoyed, while a slice of cherry cheesecake is being eaten with a spoon, alongside a white and red plate featuring a pizza topped with olives.",
+      "prediction": "A table features a slice of pizza, accompanied by a couple of slices of doughnuts, while a small slice of pizza rests on the side of a table.",
+      "metrics": {
+        "METEOR": 0.15384615384615385,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.26886352734417324,
+        "BLEU-2": 0.15807689554851032,
+        "BLEU-3": 0.09298301428218857,
+        "BLEU-4": 0.05471576541522517
+      }
+    },
+    {
+      "group_id": 776,
+      "image_ids": [
+        "000000431281.jpg",
+        "000000033979.jpg",
+        "000000282158.jpg"
+      ],
+      "reference": "A group of people is flying large kites on a lush green field near the beach.",
+      "prediction": "In a bustling city, a group of people is enjoying a kite while nearby, a man and a woman are flying kites in the background.",
+      "metrics": {
+        "METEOR": 0.45364891518737666,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.36,
+        "BLEU-2": 0.2449489742783178,
+        "BLEU-3": 0.19854009393860164,
+        "BLEU-4": 0.16331948281960493
+      }
+    },
+    {
+      "group_id": 941,
+      "image_ids": [
+        "000000314504.jpg",
+        "000000226734.jpg",
+        "000000075742.jpg"
+      ],
+      "reference": "A white and orange cat relaxes on a chair with a blue cushion, while a black cat sits on a sink in front of a mirror, and another cat is positioned underneath a parked car.",
+      "prediction": "A black and white cat sits on a white board, while a black cat is positioned on the side of a fence nearby, and a white cat looks out at it.",
+      "metrics": {
+        "METEOR": 0.4005419075144508,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.5387086009056848,
+        "BLEU-2": 0.3972805729434687,
+        "BLEU-3": 0.28812186809452006,
+        "BLEU-4": 0.19685237466297179
+      }
+    },
+    {
+      "group_id": 470,
+      "image_ids": [
+        "000000521643.jpg",
+        "000000463320.jpg",
+        "000000066011.jpg"
+      ],
+      "reference": "A vase containing drooping flowers sits next to a glass jar of fresh flowers and a bottle of water beside a remote.",
+      "prediction": "A colorful table with a cat, a bottle, and a box of fruit, rests on a table next to a wooden table.",
+      "metrics": {
+        "METEOR": 0.26543209876543217,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.4090909090909091,
+        "BLEU-2": 0.2791452631195413,
+        "BLEU-3": 0.15735365791787148,
+        "BLEU-4": 0.0892268322016619
+      }
+    },
+    {
+      "group_id": 373,
+      "image_ids": [
+        "000000144533.jpg",
+        "000000465926.jpg",
+        "000000219467.jpg"
+      ],
+      "reference": "A kitchen featuring a tile floor and a stainless steel refrigerator, with a microwave on a stand that has its door open, alongside a bathroom wall equipped with a towel ring near the sink.",
+      "prediction": "In a bathroom, a kitchen features a sink and a shower, while a bathroom features a mirror in the background, and a toilet sits in front of a sink nearby.",
+      "metrics": {
+        "METEOR": 0.2347492251338405,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.350069327617179,
+        "BLEU-2": 0.1780269260957143,
+        "BLEU-3": 0.06958459224865238,
+        "BLEU-4": 0.036916273202159386
+      }
+    },
+    {
+      "group_id": 672,
+      "image_ids": [
+        "000000262724.jpg",
+        "000000055575.jpg",
+        "000000185774.jpg"
+      ],
+      "reference": "A vibrant city scene features a large elephant statue adorned with colorful decorations, alongside a display of a long train of model animals illustrating how Noah's Ark was filled, while two zebras can be seen relaxing in their natural habitat nearby.",
+      "prediction": "Two giraffes are gathered in a wooded building, while nearby, a pair of zebras is seen grazing in the sky.",
+      "metrics": {
+        "METEOR": 0.1633676092544987,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.15747198710001994,
+        "BLEU-2": 0.02947621729995781,
+        "BLEU-3": 0.013626309953209155,
+        "BLEU-4": 0.007902780461924554
+      }
+    },
+    {
+      "group_id": 223,
+      "image_ids": [
+        "000000509677.jpg",
+        "000000089395.jpg",
+        "000000149157.jpg"
+      ],
+      "reference": "On a sunny day at the beach, yellow and blue public benches provide seating near a unique water fountain in the park, while several people on the shore enjoy flying different kites.",
+      "prediction": "On a sunny day, a group of people is standing on a beach near a beach, while nearby, a couple of giraffes are standing on the beach.",
+      "metrics": {
+        "METEOR": 0.25357470812016264,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.3385353440338597,
+        "BLEU-2": 0.2547877288979851,
+        "BLEU-3": 0.16280735950658165,
+        "BLEU-4": 0.11055960746998698
+      }
+    },
+    {
+      "group_id": 599,
+      "image_ids": [
+        "000000539784.jpg",
+        "000000512545.jpg",
+        "000000152281.jpg"
+      ],
+      "reference": "A large herd of tagged sheep is grazing on a weedy lawn near a road on a farm.",
+      "prediction": "A group of people is grazing in a grassy field, while a flock of sheep stands nearby, and a large flock of sheep is visible in the background.",
+      "metrics": {
+        "METEOR": 0.30734243014944773,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.32142857142857145,
+        "BLEU-2": 0.18898223650461357,
+        "BLEU-3": 0.07706669881349235,
+        "BLEU-4": 0.04179174237138872
+      }
+    },
+    {
+      "group_id": 710,
+      "image_ids": [
+        "000000410168.jpg",
+        "000000134324.jpg",
+        "000000382710.jpg"
+      ],
+      "reference": "A Shepherd mix dog wearing a yellow smiley face party hat stands upright, holding a frisbee, while a cat with its eyes closed balances on a suitcase nearby.",
+      "prediction": "A black and white dog sits on a wall next to a metal tag, while a black and white cat sits in front of a wooden fence nearby.",
+      "metrics": {
+        "METEOR": 0.24527744982290436,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.3571428571428572,
+        "BLEU-2": 0.16265001215808886,
+        "BLEU-3": 0.0697304016373858,
+        "BLEU-4": 0.038771002965571864
+      }
+    },
+    {
+      "group_id": 6,
+      "image_ids": [
+        "000000343954.jpg",
+        "000000486869.jpg",
+        "000000569479.jpg"
+      ],
+      "reference": "On a hill, people are flying kites, while a man snowboards high in the air against a blue sky, raising the question of whether these are a new type of kite flying overhead.",
+      "prediction": "A man in a black shirt is flying a kite on a sunny day, while a group of people glides along a towering sky nearby.",
+      "metrics": {
+        "METEOR": 0.20186335403726707,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.37759749927831926,
+        "BLEU-2": 0.18513240549076806,
+        "BLEU-3": 0.0703594356028559,
+        "BLEU-4": 0.03688171337420853
+      }
+    },
+    {
+      "group_id": 995,
+      "image_ids": [
+        "000000058483.jpg",
+        "000000532269.jpg",
+        "000000124294.jpg"
+      ],
+      "reference": "Two white birds are perched on an elephant's back while two men sit in a dugout, one holding a baseball bat, as two trains pass by each other on adjacent tracks.",
+      "prediction": "A group of giraffes sits alongside a large white field, while nearby, a pair of tractors stand on a grassy field nearby.",
+      "metrics": {
+        "METEOR": 0.09966777408637874,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.15096678246915804,
+        "BLEU-2": 0.03841939971181646,
+        "BLEU-3": 0.01964084046116737,
+        "BLEU-4": 0.011961245777005998
+      }
+    },
+    {
+      "group_id": 282,
+      "image_ids": [
+        "000000256930.jpg",
+        "000000094940.jpg",
+        "000000317103.jpg"
+      ],
+      "reference": "On a table, there are two red vases with price tags, alongside a vase featuring a painting, while four colorful vases of various types are displayed on a shelf.",
+      "prediction": "A vase featuring a vase filled with flowers, accompanied by a vase and a vase, is displayed in a vase alongside a vase of flowers.",
+      "metrics": {
+        "METEOR": 0.2097902097902098,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.3408575155864846,
+        "BLEU-2": 0.22002258021601498,
+        "BLEU-3": 0.17523207464332075,
+        "BLEU-4": 0.1201524836906881
+      }
+    },
+    {
+      "group_id": 673,
+      "image_ids": [
+        "000000307554.jpg",
+        "000000358237.jpg",
+        "000000325668.jpg"
+      ],
+      "reference": "A deserted street features a run-down store and a couple of large buildings with prominent signs, while a man rides his bike in front of a nearby bike shop.",
+      "prediction": "A bustling street features a building, parked in front of a street, while nearby, a black and white street is parked on the street.",
+      "metrics": {
+        "METEOR": 0.3179694799127997,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.4059681730753175,
+        "BLEU-2": 0.26768748614602567,
+        "BLEU-3": 0.19944610764803494,
+        "BLEU-4": 0.13234113223279653
+      }
+    },
+    {
+      "group_id": 352,
+      "image_ids": [
+        "000000512582.jpg",
+        "000000396212.jpg",
+        "000000394590.jpg"
+      ],
+      "reference": "A woman and a child are engaged in sports-related activities at home, while another man and child are seated on a ski, and the woman is also seen holding a little girl's hand as they cross-country ski together.",
+      "prediction": "A girl is riding a skateboard on a snowy slope, while a girl in a white jacket rides a bicycle nearby, and a young girl is skiing nearby.",
+      "metrics": {
+        "METEOR": 0.14864864864864866,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.22489474415629188,
+        "BLEU-2": 0.10796181639345957,
+        "BLEU-3": 0.04710472771412989,
+        "BLEU-4": 0.026421805494242934
+      }
+    },
+    {
+      "group_id": 923,
+      "image_ids": [
+        "000000089892.jpg",
+        "000000563024.jpg",
+        "000000553071.jpg"
+      ],
+      "reference": "A tray filled with various sandwiches and a basket brimming with yellow and red apples sits alongside a large display of carrots, complete with a sale sign.",
+      "prediction": "A table displays a large stack of cereals, including a salad, a salad and a salad.",
+      "metrics": {
+        "METEOR": 0.15444015444015444,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.21998881536228665,
+        "BLEU-2": 0.1214453639376306,
+        "BLEU-3": 0.052761112853817224,
+        "BLEU-4": 0.02978990528845109
+      }
+    },
+    {
+      "group_id": 683,
+      "image_ids": [
+        "000000548109.jpg",
+        "000000327565.jpg",
+        "000000098043.jpg"
+      ],
+      "reference": "A man poses in front of a blue motorcycle on display, surrounded by people who are admiring it from different angles and observing its engine parts.",
+      "prediction": "A motorcycle is parked on a motorcycle, while a motorcycle is positioned in front of a nearby motorcycle, and a man is riding a motorcycle.",
+      "metrics": {
+        "METEOR": 0.296010296010296,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.34588419809483634,
+        "BLEU-2": 0.2353443876178018,
+        "BLEU-3": 0.1666400385471149,
+        "BLEU-4": 0.11923009857847565
+      }
+    },
+    {
+      "group_id": 215,
+      "image_ids": [
+        "000000449373.jpg",
+        "000000513497.jpg",
+        "000000523914.jpg"
+      ],
+      "reference": "The tall stone and brick clock tower, part of a large brick building, stands prominently beside trees under a big blue sky, with an old classic church nearby.",
+      "prediction": "A church is adorned with a tall clock tower, while a church features a large church and a church in the background.",
+      "metrics": {
+        "METEOR": 0.2715328467153285,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.3460456303167608,
+        "BLEU-2": 0.15839813375972328,
+        "BLEU-3": 0.06658509879863514,
+        "BLEU-4": 0.03677072071831245
+      }
+    },
+    {
+      "group_id": 967,
+      "image_ids": [
+        "000000053569.jpg",
+        "000000362373.jpg",
+        "000000184205.jpg"
+      ],
+      "reference": "This modern urban kitchen features white painted accessories and has been redone with stylish cabinets, while the adjacent room includes bookcases, chairs, numerous books, and a cozy rug.",
+      "prediction": "A kitchen features a sink, a refrigerator, and a microwave, while a table is positioned on the side of a building nearby.",
+      "metrics": {
+        "METEOR": 0.1556163828061638,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.20762737819005644,
+        "BLEU-2": 0.1226946668243486,
+        "BLEU-3": 0.05616004734911312,
+        "BLEU-4": 0.032362342874538784
+      }
+    },
+    {
+      "group_id": 631,
+      "image_ids": [
+        "000000426852.jpg",
+        "000000005703.jpg",
+        "000000348913.jpg"
+      ],
+      "reference": "A living room features a chair and a table on a tiled floor, adorned with four vases of flowers, alongside some plants outside.",
+      "prediction": "A large set of chairs features a large wall mounted on a table, while a large white table sits nearby, and a large set of furniture is positioned in front of a wall.",
+      "metrics": {
+        "METEOR": 0.3074363425925926,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.2727272727272727,
+        "BLEU-2": 0.1846372364689991,
+        "BLEU-3": 0.0727171953598067,
+        "BLEU-4": 0.03868999249467727
+      }
+    },
+    {
+      "group_id": 779,
+      "image_ids": [
+        "000000207889.jpg",
+        "000000067966.jpg",
+        "000000480167.jpg"
+      ],
+      "reference": "A dog is sitting at a table with several slices of pizza, while a little kid gazes at a large pizza nearby. Additionally, there is a close-up of the same dog sitting on a towel inside a car.",
+      "prediction": "A dog is sitting on a couch next to a large dog, while a dog sits on a chair beside a dog and a dog.",
+      "metrics": {
+        "METEOR": 0.20435967302452313,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.33293150686330886,
+        "BLEU-2": 0.24027261888654888,
+        "BLEU-3": 0.16481229897278307,
+        "BLEU-4": 0.10487651806649508
+      }
+    },
+    {
+      "group_id": 295,
+      "image_ids": [
+        "000000225617.jpg",
+        "000000277630.jpg",
+        "000000422145.jpg"
+      ],
+      "reference": "A cozy hotel room featuring a bed adorned with numerous pillows and a blanket, complemented by two nightstands with lamps, a chair, and a window, all set in a clean, all-white decor.",
+      "prediction": "A bedroom features a bed with a bed and a bed, accompanied by a set of sheets, while a large bed features a wall mounted on the wall.",
+      "metrics": {
+        "METEOR": 0.189873417721519,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.3405591749018571,
+        "BLEU-2": 0.14787963631117096,
+        "BLEU-3": 0.06239900427942915,
+        "BLEU-4": 0.0344201800958655
+      }
+    },
+    {
+      "group_id": 633,
+      "image_ids": [
+        "000000380979.jpg",
+        "000000547351.jpg",
+        "000000545549.jpg"
+      ],
+      "reference": "A man and two women are sitting in a small fire truck while a woman gazes up at fireworks illuminating the night sky, as a cyclist approaches them closely.",
+      "prediction": "A group of people stands on a snowy street, while a woman in a white suit poses for a photo, and a group of people is gathered nearby.",
+      "metrics": {
+        "METEOR": 0.20205903712247428,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.2756902698206771,
+        "BLEU-2": 0.1719230890893729,
+        "BLEU-3": 0.10313233457908398,
+        "BLEU-4": 0.06128672538408289
+      }
+    },
+    {
+      "group_id": 848,
+      "image_ids": [
+        "000000321035.jpg",
+        "000000235253.jpg",
+        "000000422818.jpg"
+      ],
+      "reference": "A large red and white sheet cake adorned with hearts sits on a table, alongside a freshly made pie on top of the stove.",
+      "prediction": "A large white cake is adorned with a variety of cakes, including a cake and a cake, while another cake features a large bowl of cake on top of a table.",
+      "metrics": {
+        "METEOR": 0.40653522746328724,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.41935483870967744,
+        "BLEU-2": 0.26437184630417737,
+        "BLEU-3": 0.13407386734371188,
+        "BLEU-4": 0.07373407949897204
+      }
+    },
+    {
+      "group_id": 475,
+      "image_ids": [
+        "000000152041.jpg",
+        "000000248711.jpg",
+        "000000088398.jpg"
+      ],
+      "reference": "A train is approaching a depot along the tracks, while a red and white tram is positioned on its own track nearby a building, and a tunnel is visible with another train emerging from it.",
+      "prediction": "An old train is parked on a green train near a train station, while nearby, a large train is positioned on the side of a train.",
+      "metrics": {
+        "METEOR": 0.2967090257412838,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.3537018237020308,
+        "BLEU-2": 0.22370067509074937,
+        "BLEU-3": 0.11383178536665424,
+        "BLEU-4": 0.06200454321144423
+      }
+    },
+    {
+      "group_id": 166,
+      "image_ids": [
+        "000000396779.jpg",
+        "000000074711.jpg",
+        "000000343821.jpg"
+      ],
+      "reference": "A duck and its ducklings are swimming in blue water, while two other ducks wade in a nearby pond.",
+      "prediction": "A couple of birds are laying on a grassy field near a lake, while a small group of birds sits on the water nearby.",
+      "metrics": {
+        "METEOR": 0.15384615384615383,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.25,
+        "BLEU-2": 0.05877419788763367,
+        "BLEU-3": 0.029220927592290002,
+        "BLEU-4": 0.017528348097191393
+      }
+    },
+    {
+      "group_id": 327,
+      "image_ids": [
+        "000000208261.jpg",
+        "000000533599.jpg",
+        "000000443934.jpg"
+      ],
+      "reference": "A cowboy is riding a horse near a brown house that is peeking between the boards of a fence, while two harnessed horses stand under a covered area nearby.",
+      "prediction": "A horse is riding a horse on a grassy field, while a pair of horses are grazing on the grass nearby.",
+      "metrics": {
+        "METEOR": 0.23049645390070922,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.39040595581425613,
+        "BLEU-2": 0.20002353039830406,
+        "BLEU-3": 0.1422321204714396,
+        "BLEU-4": 0.1022277396102877
+      }
+    },
+    {
+      "group_id": 86,
+      "image_ids": [
+        "000000113113.jpg",
+        "000000009185.jpg",
+        "000000334208.jpg"
+      ],
+      "reference": "Fresh fruits, including a bunch of oranges and apples, are stacked in a bowl, while additional fruits and vegetables are arranged on a mat.",
+      "prediction": "A salad features a variety of vegetables, including oranges, carrots, and fruit, along with a selection of herbs and vegetables.",
+      "metrics": {
+        "METEOR": 0.2910071438576831,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.36842883888509187,
+        "BLEU-2": 0.12600000432665776,
+        "BLEU-3": 0.06003035416295087,
+        "BLEU-4": 0.03534430737098717
+      }
+    },
+    {
+      "group_id": 438,
+      "image_ids": [
+        "000000096500.jpg",
+        "000000024554.jpg",
+        "000000223740.jpg"
+      ],
+      "reference": "A large group of people is gathered in a restaurant for a pizza party, with five young ladies smiling for the camera as a man cuts a pizza in a box.",
+      "prediction": "A group of people is eating a pizza in a restaurant, while a group of people sits at a table nearby, and a family is seated in a dining room.",
+      "metrics": {
+        "METEOR": 0.3928901657750478,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.4513675135582694,
+        "BLEU-2": 0.34703470018213894,
+        "BLEU-3": 0.27501756443067404,
+        "BLEU-4": 0.19647973373151997
+      }
+    },
+    {
+      "group_id": 141,
+      "image_ids": [
+        "000000090358.jpg",
+        "000000462709.jpg",
+        "000000571366.jpg"
+      ],
+      "reference": "A clean and organized living room features a couch, chair, and TV, adorned with floral designs and a balloon, while also providing a view of the dining room and bedroom.",
+      "prediction": "A living room features a large living room, a couch, and a sofa, along with a fireplace, is adorned with wood floors, while nearby, a white couch is positioned on the floor.",
+      "metrics": {
+        "METEOR": 0.3350257542310523,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.4375,
+        "BLEU-2": 0.29099384762368896,
+        "BLEU-3": 0.17805689056335608,
+        "BLEU-4": 0.11811895313352072
+      }
+    },
+    {
+      "group_id": 930,
+      "image_ids": [
+        "000000055707.jpg",
+        "000000220538.jpg",
+        "000000030273.jpg"
+      ],
+      "reference": "A table set with a plate of pepperoni pizza and spaghetti, alongside a couple of large cooked pizzas, as well as a plate featuring toast and an omelet next to a water bottle.",
+      "prediction": "A plate featuring a sandwich, a pizza, and a plate of spaghetti, is accompanied by a meal filled with food, while a small plate of pizza sits on a table next to a plate.",
+      "metrics": {
+        "METEOR": 0.35284025213531767,
+        "CIDEr": 0.0,
+        "BLEU-1": 0.5,
+        "BLEU-2": 0.3481553119113957,
+        "BLEU-3": 0.22482215651130458,
+        "BLEU-4": 0.10662783378237249
+      }
+    }
+  ]
+}

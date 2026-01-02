@@ -1,0 +1,6 @@
+tqdm
+numpy
+pandas
+regex
+nltk
+openai>=1.40.0

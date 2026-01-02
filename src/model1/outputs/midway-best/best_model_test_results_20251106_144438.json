@@ -1,0 +1,34 @@
+{
+  "timestamp": "20251106_144438",
+  "experiment_dir": "outputs/image2haiku_20251106_125849",
+  "checkpoint_info": {
+    "epoch": 221,
+    "best_epoch": 221,
+    "best_metric": 0.3625660490300005,
+    "primary_metric": "unknown"
+  },
+  "test_metrics": {
+    "METEOR": 0.24118678117081718,
+    "CIDEr": 0.28806415007263614,
+    "BLEU-1": 0.33170338870514526,
+    "BLEU-2": 0.17549405997231632,
+    "BLEU-3": 0.09864791688800757,
+    "BLEU-4": 0.060508635136001
+  },
+  "model_config": {
+    "clip_dim": 512,
+    "hidden_dim": 512,
+    "t5_model_name": "t5-small",
+    "aggregation_method": "attention",
+    "use_lora": true,
+    "lora_r": 8,
+    "lora_alpha": 32,
+    "lora_dropout": 0.1
+  },
+  "data_config": {
+    "features_path": "../../data/test_data/model1/features/image_features.npy",
+    "image_ids_path": "../../data/test_data/model1/features/image_ids.json",
+    "annotations_path": "../../data/test_data/model1/annotations/image_groups_with_1caption.json"
+  },
+  "test_samples_file": "outputs/image2haiku_20251106_125849/test_results/best_model_test_samples_20251106_144438.json"
+}
