@@ -6,7 +6,7 @@ from typing import Dict, Any, List
 from openai import OpenAI
 from prompts import SYSTEM_JUDGE, USER_JUDGE
 
-API_KEY = "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"
+API_KEY = "api key"
 BASE_URL = os.environ.get("OPENAI_BASE_URL")
 
 def _get_client() -> OpenAI:
